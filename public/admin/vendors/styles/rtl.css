@@ -1,0 +1,58 @@
+.left-side-bar, .left-side-bar:before {right: 0 !important;left: auto;    text-align: right;}
+@media (max-width: 1300px){
+    .left-side-bar {
+        left: -281px;
+    }
+}
+.main-container {padding: 80px 300px 2px 20px;}
+.header{direction: rtl;left: 0 !important;right: auto;padding-left: 42px;}
+.right-sidebar-visible{
+    left: 0 !important;
+    right: auto;
+    text-align: right;
+    direction: rtl;
+}
+@media (max-width: 1300px){
+    .main-container {
+        padding: 20px 0 5px 0;
+    }
+}
+.sidebar-menu .dropdown-toggle {
+    padding: 18px 67px 18px 15px;
+}
+.sidebar-menu .dropdown-toggle .micon{
+    right: 10px;
+    left: auto;
+}
+.sidebar-menu .dropdown-toggle:after{
+    left: 16px;
+    right: auto;
+}
+.sidebar-menu .submenu li a{
+    padding: 18px 60px 18px 15px;
+}
+.sidebar-menu .submenu li>a:before {
+    left: auto;
+    right: 28px;
+}
+.notification-list ul li a {
+    text-align: right;
+    padding: 10px 75px 10px 15px;
+}
+.notification-list ul li a img {
+    right: 10px;
+    left: auto;
+}
+.dropdown-menu-icon-list .dropdown-item {
+    padding-right: 45px;
+    padding-left: 0;
+    text-align: right;
+}
+.dropdown-menu-icon-list .dropdown-item i {
+    right: 16px;
+    left: auto;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "\f104" !important;
+    padding-left: .5rem;
+}
