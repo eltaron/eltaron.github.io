@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MasterCode Course</title>
+  <meta content="MasterCode Course" name="description">
+  <meta content="Html, Css, Js, jquery, bootstrap, oop, course, mastercode" name="keywords">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none" style="font-size: 37px;"><i class="bx bx-menu"></i></button>
+  <img src="../assets/img/logo.png" alt="" class="img-fluid d-md-block d-xl-none" style="width: 118px;padding: 8px 30px 0;">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/img/logo.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Master Code</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/MasterC00636045" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/MasterC0de" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          
+          <a href="https://www.linkedin.com/in/master-code-8a57b81b6/?midToken=AQEVsPwSvGBmEA&midSig=2a1-hWoTMQ7pQ1&trk=eml-email_pymk_02-header-49-profile&trkEmail=eml-email_pymk_02-header-49-profile-null-dyijnh%7Ekq942ap0%7Etr-null-neptune%2Fprofile%7Evanity%2Eview" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="../css.html"><i class="bx bx-home"></i> <span>All Sessions</span></a></li>
+          <li class="active"><a href="#Introduction"><i class="bx bx-checkbox-checked"></i> <span>Css Introduction</span></a></li>
+          <li><a href="#Colors"><i class="bx bx-checkbox-checked"></i> <span>Colors && Backgrounds</span></a></li>
+          <li><a href="#Borders"><i class="bx bx-checkbox-checked"></i> <span>Css Borders</span></a></li>
+          <li><a href="#Text"><i class="bx bx-checkbox-checked"></i> <span>Text && Fonts</span></a></li>
+          <li><a href="#Margin"><i class="bx bx-checkbox-checked"></i> <span>Margin && Padding</span></a></li>
+          <li><a href="#Width"><i class="bx bx-checkbox-checked"></i> <span>Width && Height</span></a></li>
+          <li><a href="#Lists"><i class="bx bx-checkbox-checked"></i> <span>Styling Lists</span></a></li>
+          <li style="margin-bottom: 150px;"><a href="../text-editor.html"><i class="bx bx-caret-right-circle"></i> <span>Text Editor</span></a></li>         
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <main id="main">
+    <section id="Introduction" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Introduction</h2>
+        <ul>
+          <li>CSS stands for Cascading Style Sheets</li>
+          <li>CSS describes how HTML elements are to be displayed on screen,  
+          paper, or in other media</li>
+          <li>CSS saves a lot of work. It can control the layout of 
+          multiple web pages all at once</li>
+          <li>External stylesheets are stored in CSS files</li>
+          <li>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</li>
+          <li>
+            <b class="text-primary">EX: <br>
+              <pre>
+                <code>
+    h1 {
+      color: white;
+      text-align: center;
+    }
+                </code>
+              </pre>
+            </b>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Syntax</h2>
+        <div class="row">
+          <div class="col-md-6"><img src="css1.png" width="100%"></div>
+          <div class="col-md-6">
+            <ul>
+              <li>The selector points to the HTML element you want to style.</li>
+              <li>The declaration block contains one or more declarations separated by semicolons.</li>
+              <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+              <li>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section-title">
+        <h2>The CSS Selectors</h2>
+        <p>The element selector selects HTML elements based on the element name.</p>
+        <ul>
+          <li>
+            <h4>The CSS element Selector</h4>
+            The element selector selects HTML elements based on the element name. <br>
+              <pre>
+                <code>
+    p {
+      text-align: center;
+      color: red;
+    }
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>The CSS id Selector</h4>
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element. <br>
+              <pre>
+                <code>
+    #id {
+      text-align: center;
+      color: red;
+    }
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>The CSS class Selector</h4>
+            To select elements with a specific class, write a period (.) character, followed by the class name. <br>
+              <pre>
+                <code>
+    .class {
+      text-align: center;
+      color: red;
+    }
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>The CSS Universal Selector</h4>
+            The universal selector (*) selects all HTML elements on the page. <br>
+              <pre>
+                <code>
+    * {
+      text-align: center;
+      color: red;
+    }
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>The CSS Grouping Selector</h4>
+            The grouping selector selects all the HTML elements with the same style definitions. <br>
+              <pre>
+                <code>
+    h1, h2, p {
+      text-align: center;
+      color: red;
+    }
+                </code>
+              </pre>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Comments</h2>
+        <ul>
+          <li>Comments are used to explain the code, and may help when you edit the source code at a later date.</li>
+          <li>CSS comments are not displayed in the browser, but they can help document your source code.</li>
+          <li>
+            <b class="text-primary">EX: </b> <br>
+            <pre>
+              <code>
+    /* This is a single-line comment */
+    p {
+      color: red;  /* Set text color to red */
+    }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <b class="text-primary">Comments can also span multiple lines: </b> <br>
+            <pre>
+              <code>
+    /* This is
+    a multi-line
+    comment */
+    p {
+      color: red;  /* Set text color to red */
+    }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Colors" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Colors</h2>
+        <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+        <ul>
+          <li>
+            <b class="text-primary">EX: <br>
+              <pre>
+                <code>
+    h1 {
+      color: white;
+      background-color: rgba(255, 99, 71, 0.5);
+      border:2px solid #ff0;
+    }
+                </code>
+              </pre>
+            </b>
+          </li>
+          <li>
+            <h4>CSS Color Values</h4>
+            <p>In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:</p>
+            <b class="text-primary">EX: </b><br>
+            <div class="table-responsive xmp"> 
+              <xmp>
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+    <h1 style="background-color:#ff6347;">...</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+              </xmp>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Opacity </h2>
+        <ul>
+          <li>The opacity property specifies the opacity/transparency of an element. <br> The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent.</li>
+          <li>
+            <b class="text-primary">EX:</b> <br>
+            <pre>
+              <code>
+    img {
+      opacity: 0.5;
+    }
+              </code>
+            </pre>
+          </li>
+          <li>When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. </li>
+          <li>
+            <h3>If you do not want to apply opacity to child elements, like in our example above, use RGBA color values.</h3>
+            <pre>
+              <code>
+  div {
+    background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Gradients </h2>
+        <ul>
+          <li>CSS gradients let you display smooth transitions between two or more specified colors.</li>
+          <li>
+            <h4>CSS defines two types of gradients</h4>
+            <ul>
+              <li><strong>Linear Gradients (goes down/up/left/right/diagonally)</strong></li>
+              <li><strong>Radial Gradients (defined by their center)</strong></li>
+              </ul>
+          </li>
+          <li>
+            <h4>CSS Linear Gradients</h4>
+            <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p>
+            <pre> 
+    Syntax :  <code> 
+        background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+              </code>
+            </pre>
+            <pre style="background-image: linear-gradient(to right, red , yellow);"> 
+    Ex1 :   <code> 
+      #grad {
+        background-image: linear-gradient(to right, red , yellow);
+      }
+              </code>
+            </pre>
+            <pre style="background-image: linear-gradient(180deg, red, yellow);"> 
+    Ex2 :     <code> 
+      #grad {
+        background-image: linear-gradient(180deg, red, yellow);
+      }
+              </code>
+            </pre>
+            <pre style="background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);"> 
+    Ex3 :     <code> 
+      #grad {
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+      }
+              </code>
+            </pre>
+            <pre style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));"> 
+    Ex4 :     <code> 
+      #grad {
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+      }
+              </code>
+            </pre>
+            <pre style="background-image: repeating-linear-gradient(red, yellow 10%, green 20%)"> 
+    Ex5 Using repeating-linear-gradient() :     <code> 
+      #grad {
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+      }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Backgrounds </h2>
+        <h4>All CSS Background Properties</h4>
+        <div class="table-responsive"> 
+          <table class="table table-bordered table-active">
+            <tbody>
+              <tr>
+              <th style="width:30%">Property</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>background</td>
+              <td>Sets all the background properties in one declaration</td>
+            </tr>
+            <tr>
+              <td>background-attachment</td>
+              <td>Sets whether a background image is fixed or scrolls with the rest of the page</td>
+            </tr>
+            <tr>
+              <td>background-clip</td>
+              <td>Specifies the painting area of the background</td>
+            </tr>
+            <tr>
+              <td>background-color</td>
+              <td>Sets the background color of an element</td>
+            </tr>
+            <tr>
+              <td>background-image</td>
+              <td>Sets the background image for an element</td>
+            </tr>
+            <tr>
+              <td>background-origin</td>
+              <td>Specifies where the background image(s) is/are positioned</td>
+            </tr>
+            <tr>
+              <td>background-position</td>
+              <td>Sets the starting position of a background image</td>
+            </tr>
+            <tr>
+              <td>background-repeat</td>
+              <td>Sets how a background image will be repeated</td>
+            </tr>
+            <tr>
+              <td>background-size</td>
+              <td>Specifies the size of the background image(s)</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        <ul>
+          <li>
+            <h4>CSS background-color</h4>
+            <ul>
+              <li>The background-color property specifies the background color of an element.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+    body {
+      background-color: lightblue;
+    }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">Transparency using RGBA:</b>
+                <p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+                <pre>
+                  <code>
+    div {
+      background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS background-image</h4>
+            <ul>
+              <li>The background-image property specifies an image to use as the background of an element. By default, the image is repeated so it covers the entire element.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+    p {
+      background-image: url("paper.png");
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS background-repeat</h4>
+            <ul>
+              <li>By default, the background-image property repeats an image both horizontally and vertically.</li>
+              <li>
+                <h5>To repeat an image vertically, set background-repeat: repeat-y;</h5>
+                <h5>To repeat an image horizontally , set background-repeat: repeat-x;</h5>
+                <h5>Showing the background image only once is also specified by the background-repeat property.</h5>
+              </li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+    body {
+      background-image: url("gradient_bg.png");
+      background-repeat: repeat-x;
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS background-position</h4>
+            <ul>
+              <li>The background-position property is used to specify the position of the background image.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+    body {
+      background-image: url("img_tree.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS background-attachment</h4>
+            <ul>
+              <li>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).</li>
+              <li>
+                <b class="text-primary">EX1:</b>
+                <pre>
+                  <code>
+    body {
+      background-image: url("img_tree.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-attachment: scroll;
+    }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">EX2:</b>
+                <pre>
+                  <code>
+    body {
+      background-image: url("img_tree.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-attachment: fixed;
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS background-attachment</h4>
+            <p>
+              To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+              <br> Instead of writing: <br>
+              <pre>
+                <code>
+  body {
+    background-color: #ffffff;
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+                </code>
+              </pre>
+              You can use the shorthand property background <br>
+              <pre>
+                <code>
+  body {
+    background: #ffffff url("img_tree.png") no-repeat right top;
+  }
+                </code>
+              </pre>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Borders" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Borders</h2>
+        <ul>
+          <li>The CSS border properties allow you to specify the style, width, and color of an element's border.</li>
+          <li>The border-style property specifies what kind of border to display.</li>
+          <li>
+            <h4>The following values are allowed:</h4>
+            <ul>
+              <li><code>dotted</code> - Defines a dotted border</li>
+              <li><code>dashed</code> - Defines a dashed border</li>
+              <li><code>solid</code> - Defines a solid border</li>
+              <li><code>double</code> - Defines a double border</li>
+              <li><code>groove</code> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+              <li><code>ridge</code> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+              <li><code>inset</code> - Defines a 3D inset border. The effect depends on the border-color value</li>
+              <li><code>outset</code> - Defines a 3D outset border. The effect depends on the border-color value</li>
+              <li><code>none</code> - Defines no border</li>
+              <li><code>hidden</code> - Defines a hidden border</li>
+              </ul>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+    p.dotted {
+      border-style: dotted;
+    }
+    p.mix {
+      border-style: dotted dashed solid double;
+    }
+              </code>
+            </pre>
+          </li>
+          <div class="table-responsive"> 
+            <table class="table table-bordered table-active">
+              <thead>
+                <tr class="text-primary">
+                  <td>Property</td>
+                  <td>Description</td>
+                  <td>Example</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CSS Border Width</td>
+                  <td>
+                    The border-width property specifies the width of the four borders. <br>
+                    The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).
+                  </td>
+                  <td>
+                    <pre>
+                      <code>
+    p.three {
+      border-style: solid;
+      border-width: 25px 10px 4px 35px; 
+      /* 25px top, 10px right, 4px bottom and 35px left */
+    }
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS Border Color</td>
+                  <td>
+                    The border-color property is used to set the color of the four borders. <br>
+                    The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). 
+                  </td>
+                  <td>
+                    <pre>
+                      <code>
+    p.one {
+      border-style: solid;
+      border-color: red green blue yellow; 
+      /* red top, green right, blue bottom and yellow left */
+    }
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS Rounded Borders</td>
+                  <td>
+                    The border-radius property is used to add rounded borders to an element. <br>
+                    The border-radius property can have from one to four values. <br>
+                    Ex : <br>
+                    border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner).
+                  </td>
+                  <td>
+                    <pre>
+                      <code>
+    p {
+      border: 2px solid red;
+      border-radius: 5px;
+    }
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS Border Images</td>
+                  <td>
+                    The CSS border-image property allows you to specify an image to be used instead of the normal border around an element. <br>
+                  </td>
+                  <td>
+                    <pre>
+                      <code>
+    p {
+      border: 10px solid transparent;
+      padding: 15px;
+      border-image: url(border.png) 30 round;
+    }
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h2>CSS Shorthand Border Property</h2>
+            <ul>
+              <li>To shorten the code, it is also possible to specify all the individual border properties in one property.</li>
+              <li>
+                The border property is a shorthand property for the following individual border properties: <br>
+                <ul>
+                  <li><code>border-width</code></li>
+                  <li><code>border-style</code> (required)</li>
+                  <li><code>border-color</code></li>
+                </ul>
+              </li>
+              <li>
+                <b class="text-primary">EX1:</b>
+                <pre>
+                  <code>
+  #example1 {
+    border: 5px solid red;
+  }
+                  </code>
+                </pre>
+                <b class="text-primary">EX2:</b>
+                <pre>
+                  <code>
+  #example1 {
+    border-left: 6px solid red;
+    background-color: lightgrey;
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Outline</h2>
+        <ul>
+          <li>An outline is a line drawn outside the element's border.</li>
+          <li>
+            Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline. <br>
+            <div class="row">
+              <div class="col-md-6"><img src="css-outline-design.jpg" width="100%"></div>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+    #example1 {
+      outline-style: dotted;
+    }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Text" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Text</h2>
+        <ul>
+          <li>CSS has a lot of properties for formatting text.</li>
+          <li>
+            <h4>Text Color</h4>
+            <ul>
+              <li>
+                The color property is used to set the color of the text. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+      h1 {
+        background-color: lightgrey;
+        color: blue;
+      }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Text Alignment</h4>
+            <ul>
+              <li>
+                The text-align property is used to set the horizontal alignment of a text. <br>
+                A text can be left or right aligned, centered, or justified. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+      h1 {
+        background-color: lightgrey;
+        color: blue;
+        text-align: center;
+      }
+                  </code>
+                </pre>
+                <h5>Note : When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers).</h5>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Text Direction</h4>
+            <ul>
+              <li>
+                The direction properties can be used to change the text direction of an element. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+      h1 {
+        background-color: lightgrey;
+        color: blue;
+        text-align: center;
+        direction: rtl;
+      }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Text Decoration</h4>
+            <ul>
+              <li>
+                The text-decoration property is used to set or remove decorations from text. <br>
+                it has four values (overline, line-through, underline, none). <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+      h1 {
+        background-color: lightgrey;
+        color: blue;
+        text-align: center;
+        direction: rtl;
+        text-decoration: line-through;
+      }
+                  </code>
+                </pre>
+                <h5>Note : The value text-decoration: none; is often used to remove underlines from links.</h5>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Text Transformation</h4>
+            <ul>
+              <li>
+                The text-transform property is used to specify uppercase and lowercase letters in a text. <br>
+                it has three values (uppercase, lowercase, capitalize). <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+      h1 {
+        background-color: lightgrey;
+        color: blue;
+        text-align: center;
+        direction: rtl;
+        text-decoration: line-through;
+        text-transform: capitalize;
+      }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Text Indentation</h4>
+            <ul>
+              <li>
+                The text-indent property is used to specify the indentation of the first line of a text. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  p {
+    text-indent: 50px;
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Letter Spacing</h4>
+            <ul>
+              <li>
+                The letter-spacing property is used to specify the space between the characters in a text. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  p {
+    text-indent: 50px;
+    letter-spacing: 3px;
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Line Height</h4>
+            <ul>
+              <li>
+                The line-height property is used to specify the space between lines. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  p {
+    text-indent: 50px;
+    letter-spacing: 3px;
+    line-height: 0.8;
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Text Shadow</h4>
+            <ul>
+              <li>
+                The text-shadow property adds shadow to text. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  p {
+    text-shadow: 2px 2px 5px red;
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>In its simplest use, you only specify the horizontal shadow (2px), the vertical shadow (2px), a blur effect (5px), and color is red.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Fonts</h2>
+        <ul>
+          <li>Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.</li>
+          <li>
+            <h4>CSS font-family</h4>
+            <ul>
+              <li>
+                In CSS, we use the font-family property to specify the font of a text. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  p {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+            <h5>Note: If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".</h5>
+          </li>
+          <li>
+            <h4>CSS Font Style</h4>
+            <ul>
+              <li>
+                The font-style property is mostly used to specify italic text. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  p {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: italic;
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                This property has three values: <br>
+                <ul>
+                  <li>normal - The text is shown normally</li>
+                  <li>italic - The text is shown in italics</li>
+                  <li>oblique - The text is "leaning"
+                  (oblique is very similar to italic, but less supported)</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS Font Style</h4>
+            <ul>
+              <li>
+                The font-weight property specifies the weight of a font. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  p {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS Font Size</h4>
+            <ul>
+              <li>
+                The font-size property sets the size of the text. <br>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  p {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: italic;
+    font-size: 40px;
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).</li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS Google Fonts</h4>
+            <ul>
+              <li>
+                Just add a special style sheet link in the <code>&lt;head&gt;</code> section and then refer to the font in the CSS. <br>
+                <b class="text-primary">EX:</b>
+                <div class="table-responsive xmp mt-3 mb-3"> 
+                  <xmp>
+<head>
+  <link rel="stylesheet" 
+  href="https://fonts.googleapis.com/css?family=Sofia">
+  <style>
+    body {
+      font-family: "Sofia", sans-serif;
+    }
+  </style>
+</head>
+                  </xmp>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS Font Property</h4>
+            <ul>
+              <li>
+                <ul>
+                  <li>To shorten the code, it is also possible to specify all the individual font properties in one property.</li>
+                  <li>
+                    The font property is a shorthand property for:
+                    <ul>
+                      <li><code>font-style</code></li>
+                      <li><code>font-variant</code></li>
+                      <li><code>font-weight</code></li>
+                      <li><code>font-size/line-height</code> (required)</li>
+                      <li><code>font-family</code> (required)</li>
+                      </ul>
+                  </li>
+                </ul>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  p {
+    font: italic small-caps bold 12px/30px Georgia, serif;
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Margin" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Margins</h2>
+        <ul>
+          <li>Margins are used to create space around elements, outside of any defined borders.</li>
+          <li>
+            CSS has properties for specifying the margin for each side of an element:
+            <ul>
+              <li><code>margin-top</code></li>
+              <li><code>margin-right</code></li>
+              <li><code>margin-bottom</code></li>
+              <li><code>margin-left</code></li>
+              </ul>
+          </li>
+          <li>
+            All the margin properties can have the following values : 
+            <ul>
+              <li><b>auto</b> - the browser calculates the margin</li>
+              <li><b>length</b> - specifies a margin in px, pt, cm, etc.</li>
+              <li><em>%</em> - specifies a margin in % of the width of the containing element</li>
+              <li><b>inherit</b> - specifies that the margin should be inherited from the parent element</li>
+              </ul>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+      h1 {
+        margin-top: 100px;
+        margin-bottom: auto;
+        margin-right: 150px;
+        margin-left: 80px;
+      }
+                  </code>
+                </pre>
+          </li>
+          <li>
+            <b class="text-primary">The margin property is a shorthand property for all individual margin properties:</b>
+                <pre>
+                  <code>
+      h1 {
+        margin: 25px 50px 75px 100px;
+      }
+                  </code>
+                </pre>
+          </li>
+          <li>You can set the margin property to auto to horizontally center the element within its container. <br>
+            The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Padding</h2>
+        <ul>
+          <li>Padding is used to create space around an element's content, inside of any defined borders.</li>
+          <li>
+            CSS has properties for specifying the padding for each side of an element:
+            <ul>
+              <li><code>padding-top</code></li>
+              <li><code>padding-right</code></li>
+              <li><code>padding-bottom</code></li>
+              <li><code>padding-left</code></li>
+              </ul>
+          </li>
+          <li>
+            All the padding properties can have the following values: 
+            <ul>
+              <li><b>length</b> - specifies a padding  in px, pt, cm, etc.</li>
+              <li><em>%</em> - specifies a padding  in % of the width of the containing element</li>
+              <li><b>inherit</b> - specifies that the padding  should be inherited from the parent element</li>
+              </ul>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+      h1 {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+      }
+                  </code>
+                </pre>
+          </li>
+          <li>
+            <b class="text-primary">The padding property is a shorthand property for all individual padding properties:</b>
+                <pre>
+                  <code>
+      h1 {
+        padding: 25px 50px 75px 100px;
+      }
+                  </code>
+                </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Width" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Height and Width</h2>
+        <h4>All CSS Dimension Properties</h4>
+        <div class="table-responsive"> 
+          <table class="table table-bordered table-active">
+            <tbody><tr>
+              <th style="width:20%">Property</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>height</td>
+              <td>Sets the height of an element</td>
+            </tr>
+            <tr>
+              <td>max-height</td>
+              <td>Sets the maximum height of an element</td>
+            </tr>
+            <tr>
+              <td>max-width</td>
+              <td>Sets the maximum width of an element</td>
+            </tr>
+            <tr>
+              <td>min-height</td>
+              <td>Sets the minimum height of an element</td>
+            </tr>
+            <tr>
+              <td>min-width</td>
+              <td>Sets the minimum width of an element</td>
+            </tr>
+            <tr>
+              <td>width</td>
+              <td>Sets the width of an element</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        <ul>
+          <li>The CSS height and width properties are used to set the height and width of an element.</li>
+          <li>The CSS max-width property is used to set the maximum width of an element.</li>
+          <li>
+            The height and width properties may have the following values: <br>
+            <ul>
+              <li><code>auto</code> - This is default. The browser 
+              calculates the height and width</li>
+              <li><code>length</code> - Defines the height/width in px, cm 
+              etc.</li>
+              <li><code>%</code> - Defines the height/width in percent of 
+              the containing block</li>
+              <li><code>initial</code> - Sets the height/width to its 
+              default value</li>
+                <li><code>inherit</code> - The height/width will be 
+                inherited from its parent value</li>
+            </ul>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+    div {
+      height: 200px;
+      width: 50%;
+      background-color: powderblue;
+    }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Units</h2>
+        <ul>
+          <li>CSS has several different units for expressing a length.</li>
+          <li>Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+    #p {
+      font-size: 25px;
+      line-height: 50px;
+    }
+              </code>
+            </pre>
+          </li>
+          <li>There are two types of length units: absolute and relative.</li>
+          <li>
+            <h4>Absolute Lengths</h4>
+            <ul>
+              <li>The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.</li>
+              <li>Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.</li>
+            </ul>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <tbody><tr>
+                  <th style="width:12%">Unit</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>cm</td>
+                  <td>centimeters
+                  </td>
+                </tr>
+                  <tr>
+                  <td>mm</td>
+                  <td>millimeters
+                  </td>
+                  </tr>
+                <tr>
+                  <td>in</td>
+                  <td>inches (1in = 96px = 2.54cm)
+                  </td>
+                </tr>
+                  <tr class="text-success">
+                  <td>px</td>
+                  <td>pixels (1px = 1/96th of 1in)
+                  </td>
+                  </tr>
+                <tr>
+                  <td>pt</td>
+                  <td>points (1pt = 1/72 of 1in)
+                  </td>
+                </tr>
+                <tr>
+                  <td>pc</td>
+                  <td>picas (1pc = 12 pt)
+                  </td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <h4>Relative Lengths</h4>
+            <ul>
+              <li>Relative length units specify a length relative to another length property. Relative length units scales better between different rendering mediums.</li>
+            </ul>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <tbody><tr>
+                  <th style="width:12%">Unit</th>
+                  <th>Description</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>em</td>
+                  <td>Relative to the font-size of the element (2em means 2 times the size of the current font)</td>
+                </tr>
+                <tr>
+                  <td>ex</td>
+                  <td>Relative to the x-height of the current font (rarely used)</td>
+                </tr>
+                <tr>
+                  <td>ch</td>
+                  <td>Relative to width of the "0" (zero)</td>
+                </tr>
+                <tr>
+                  <td>rem</td>
+                  <td>Relative to font-size of the root element</td>
+                </tr>
+                <tr>
+                  <td>vw</td>
+                  <td>Relative to 1% of the width of the viewport*</td>
+                </tr>
+                <tr>
+                  <td>vh</td>
+                  <td>Relative to 1% of the height of the viewport*</td>
+                </tr>
+                <tr>
+                  <td>vmin</td>
+                  <td>Relative to 1% of viewport's* smaller dimension</td>
+                </tr>
+                <tr>
+                  <td>vmax</td>
+                  <td>Relative to 1% of viewport's* larger dimension</td>
+                </tr>
+                <tr>
+                  <td>%</td>
+                  <td>Relative to the parent element</td>
+                </tr>
+                  </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Lists" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Lists</h2>
+        <ul>
+          <li>
+            In HTML, there are two main types of lists:
+            <ul>
+              <li>unordered lists (ul) - the list items are marked with bullets</li>
+              <li>ordered lists (ol) - the list items are marked with numbers or letters</li>
+            </ul>
+          </li>
+          <li>
+            The CSS list properties allow you to:
+            <ul>
+              <li>Set different list item markers for ordered lists</li>
+              <li>Set different list item markers for unordered lists</li>
+              <li>Set an image as the list item marker</li>
+              <li>Add background colors to lists and list items</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Different List Item Markers</h4>
+            <p>The list-style-type property specifies the type of list item marker.</p>
+            <b class="text-primary">Examples:</b>
+            <pre>
+              <code>
+  ul.a {
+    list-style-type: circle;
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ol.c {
+    list-style-type: upper-roman;
+  }
+  
+  ol.d {
+    list-style-type: lower-alpha;
+  }
+  ul {
+    /*The list-style-image property specifies an image as the list item marker*/
+    list-style-image: url('sqpurple.gif');
+  }
+  ul {
+    /* Remove Default Settings */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Position The List Item Markers</h4>
+            <ul>
+              <li>The list-style-position property specifies the position of the list-item markers (bullet points).</li>
+              <li><code>list-style-position: outside;</code> means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. </li>
+              <li><code>list-style-position: inside;</code> means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start.</li>
+            </ul>
+          </li>
+          <li>
+            <h4>List - Shorthand property</h4>
+            <ul>
+              <li>The list-style property is a shorthand property. It is used to set all the list properties in one declaration.</li>
+              <li>
+                When using the shorthand property, the order of the property values are:
+                <ul>
+                  <li><code>list-style-type</code> (if a list-style-image is specified, 
+                  the value of this property will be displayed if the image for some reason 
+                  cannot be displayed)</li>
+                  <li><code>list-style-position</code> (specifies whether the list-item markers should appear inside or outside the content flow)</li>
+                  <li><code>list-style-image</code> (specifies an image as the list item 
+                  marker)</li>
+                  </ul>
+              </li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+    ul {
+      list-style: square inside url("sqpurple.gif");
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Master Code</span></strong> 
+      </div>
+      <div class="credits">
+        <strong style="color:red;"> &hearts; </strong> Designed by <a href="https://www.facebook.com/MasterC0de">Master Code</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <a href="#" class="back-to-top"><i class="bx bx-chevrons-up"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

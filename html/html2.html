@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MasterCode Course</title>
+  <meta content="MasterCode Course" name="description">
+  <meta content="Html, Css, Js, jquery, bootstrap, oop, course, mastercode" name="keywords">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none" style="font-size: 37px;"><i class="bx bx-menu"></i></button>
+  <img src="../assets/img/logo.png" alt="" class="img-fluid d-md-block d-xl-none" style="width: 118px;padding: 8px 30px 0;"><!-- .nav-menu -->
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/img/logo.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Master Code</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="html.html" class="instagram"><i class="bx bx-exit"></i></a>
+          <a href="https://twitter.com/MasterC00636045" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/MasterC0de" class="facebook"><i class="bx bxl-facebook"></i></a>
+          
+          <a href="https://www.linkedin.com/in/master-code-8a57b81b6/?midToken=AQEVsPwSvGBmEA&midSig=2a1-hWoTMQ7pQ1&trk=eml-email_pymk_02-header-49-profile&trkEmail=eml-email_pymk_02-header-49-profile-null-dyijnh%7Ekq942ap0%7Etr-null-neptune%2Fprofile%7Evanity%2Eview" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="../html.html"><i class="bx bx-home"></i> <span>All Sessions</span></a></li>
+          <li class="active"><a href="#MainIntroduction"><i class="bx bx-checkbox-checked"></i> <span>Html Elements</span></a></li>
+          <li><a href="#Introduction"><i class="bx bx-checkbox-checked"></i> <span>HTML Attributes</span></a></li>
+          <li><a href="#Iframes"><i class="bx bx-checkbox-checked"></i> <span>HTML Iframes</span></a></li>
+          <li><a href="#Media"><i class="bx bx-checkbox-checked"></i> <span>HTML Media</span></a></li>
+          <li><a href="../text-editor.html"><i class="bx bx-caret-right-circle"></i> <span>Text Editor</span></a></li>
+        </ul>
+      </nav>
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <main id="main">
+    <section id="MainIntroduction" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>HTML Quotation and Citation Elements</h2>
+        <div class="table-responsive xmp">
+          <xmp>
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Page Title</title> 
+  </head>
+  <body>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 50 years, WWF has been protecting the future of nature.
+      The world's leading conservation organization,
+      WWF works in 100 countries and is supported by
+      1.2 million members in the United States and
+      close to 5 million globally.
+    </blockquote>
+    <!-- The HTML <q> tag defines a short quotation ("") -->
+    <p>
+      WWF's goal is to: <q>Build a future where people live in with nature.</q>
+    </p>
+    <!-- The HTML <abbr> tag defines an abbreviation 'اختصار' ,like "HTML","Dr." -->
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <!-- The HTML <address> tag defines the contact information for the author -->
+    <address>
+      Written by John Doe.<br>
+      Visit us at:<br>
+      Example.com<br>
+      Box 564, Disneyland<br>
+      USA
+    </address>
+    <!-- The HTML <cite> tag defines the title of a work (a book, a poem, etc.) -->
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <!-- The HTML <bdo> tag is used to override the current text direction. -->
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+  </body>
+</html>
+          </xmp>
+        </div>
+      </div>
+      <div class="section-title">
+        <h2>HTML Tables</h2>
+        <ul>
+          <li>HTML tables allow web developers to arrange data into rows and columns.</li>
+          <li>The <b class="text-primary"> &lt;table&gt; </b> tag defines an HTML table.</li>
+          <li>Each table row is defined with a <b class="text-primary">&lt;tr&gt;</b> tag.</li>
+          <li> Each table header is defined with a <b class="text-primary">&lt;th&gt;</b> tag.</li>
+          <li> Each table data/cell is defined with a <b class="text-primary">&lt;td&gt;</b> tag.</li>
+          <li>By default, the text in <b class="text-primary">&lt;th&gt;</b> elements are bold and centered.</li>
+          <li>By default, the text in <b class="text-primary">&lt;td&gt;</b> elements are regular and left-aligned.</li>
+        </ul>
+        <div class="table-responsive xmp">
+          <xmp>
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Page Title</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+      table {
+		width:100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- A simple HTML table: -->
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <hr>
+    <!-- To make a cell span more than one column, use the colspan attribute: -->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td>55577854</td>
+        <td>55577855</td>
+      </tr>
+    </table>
+    <hr>
+    <!-- To make a cell span more than one row, use the rowspan attribute -->
+    <table>
+      <tr>
+        <th>Name:</th>
+        <td>Bill Gates</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Telephone:</th>
+        <td>55577854</td>
+      </tr>
+      <tr>
+        <td>55577855</td>
+      </tr>
+    </table>
+  </body>
+</html>
+          </xmp>
+        </div>
+      </div>
+      <div class="section-title">
+        <h2>HTML Links</h2>
+        <ul>
+          <li>HTML links are hyperlinks when click on a link and jump to another document.</li>
+          <li>The HTML <b class="text-primary"> &lt;a&gt; </b> tag defines a hyperlink.</li>
+          <li>It has the following syntax: <b class="text-primary"> &lt;a href="url"&gt;link text&lt;/a&gt; </b> </li>
+          <li>
+            <b>The target Attribute : </b>
+            <ul>
+              <li>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</li>
+              <li>Example : <b class="text-primary"> &lt;a href="https://www.Google.com/" target="_blank"&gt;Visit Google!&lt;/a&gt; </b></li>
+              <li>
+                The target attribute can have one of the following values:
+                <ul>
+                  <li><b class="text-primary">_self </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Default. Opens the document in the same window/tab as it was clicked</li>
+                  <li><b class="text-primary">_blank </b>&nbsp;&nbsp;&nbsp;- Opens the document in a new window or tab</li>
+                  <li><b class="text-primary">_parent </b>&nbsp;- Opens the document in the parent frame</li>
+                  <li><b class="text-primary">_top </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Opens the document in the full body of the window</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <b>Link to an Email Address</b>
+            <ul>
+              <li>Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email).</li>
+              <li>Example : <b class="text-primary"> &lt;a href="mailto:someone@example.com"&gt;Send email&lt;/a&gt; </b></li>
+            </ul>
+          </li>
+          <li>
+            <b>Create a Bookmark in HTML</b>
+            <ul>
+              <li>Bookmarks can be useful if a web page is very long.</li>
+              <li>Example : <br>
+                <b class="text-primary"> &lt;h2 id="C6"&gt;Chapter 6&lt;/h2&gt; <br>
+                &lt;a href="#C6"&gt;Jump to Chapter 6&lt;/a&gt; </b>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>HTML Images</h2>
+        <ul>
+          <li>The HTML <b class="text-primary">&lt;img&gt;</b> tag is used to embed an image in a web page.</li>
+          <li>The <b class="text-primary">&lt;img&gt;</b> tag is empty, it contains attributes only, and does not have a closing tag.</li>
+          <li>EX: <b class="text-primary">&lt;img src="logo.png" alt="Logo" width="500" height="600"&gt;</b></li>
+          <li><img src="logo.png" alt="Logo" width="200" height="200"></li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Introduction" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>HTML Attributes</h2>
+        <ul>
+          <li>Attributes provide <b>additional information</b> about elements</li>
+          <li>Attributes are always specified in <b>the start tag</b></li>
+          <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>The href Attribute</h2>
+        <ul>
+          <li>The <b class="text-primary">&lt;a&gt;</b> tag defines a hyperlink. The 
+            href attribute specifies the URL of the page 
+            the link goes to</li>
+          <li>EX: <b class="text-primary">&lt;a href="https://www.google.com/"&gt;Google&lt;/a&gt;</b></li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>The src && alt Attributes</h2>
+        <ul>
+          <li>The <b class="text-primary">&lt;img&gt;</b> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed</li>
+          <li>The <b class="text-primary">&lt;img&gt;</b> tag is used to embed an image in an HTML page. The tag attribute specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.</li>
+          <li>EX: <b class="text-primary">&lt;img src="logo.png" alt="Logo"&gt;</b></li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>There are two ways to specify the URL</h2>
+        <ul>
+          <li>
+            <b>Absolute URL</b><br>
+            <p>Links to an external image that is hosted on another website. Example: src="https://getwallpapers.com/wallpaper/full/8/d/1/59198.jpg".</p>
+          </li>
+          <li>
+            <b>Relative URL</b><br>
+            <p>Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="logo.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/logo.jpg".</p>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>The width && height Attributes</h2>
+        <ul>
+          <li>The <b class="text-primary">&lt;img&gt;</b> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels)</li>
+          <li>EX: <b class="text-primary">&lt;img src="logo.png" alt="Logo" width="500" height="600"&gt;</b></li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>The style Attribute</h2>
+        <ul>
+          <li>The style attribute is used to add styles to an element, such as color, font, size, and more.</li>
+          <li>EX: <b class="text-primary">&lt;h2 style="color:#007bff;"&gt; This is H2 &lt;/h2&gt;</b></li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Iframes" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>HTML Iframes</h2>
+        <ul>
+          <li>The HTML &lt;iframe&gt; tag specifies an inline frame.</li>
+          <li>An inline frame is used to embed another document within the current HTML document.</li>
+          <li>EX : <b class="text-primary">&lt;iframe src="html1.html" height="300" width="100" title="first session"&gt;&lt;/iframe&gt;</b></li>
+          <li><iframe src="html1.html" height="300" width="100%" title="first session"></iframe></li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>Iframe - Target for a Link</h2>
+        <ul>
+          <li>An iframe can be used as the target frame for a link. <br>
+            The target attribute of the link must refer to the name attribute of the iframe</li>
+          <li>
+            <div class="row">
+              <div class="col-md-5">
+                <b class="text-primary">
+                  &lt;iframe src="html1.html" name="iframe" width="100%" title="Iframe Example"&gt;&lt;/iframe&gt;
+                  <br>&lt;a href="html1.html" target="iframe"&gt;Show Iframe&lt;/a&gt;
+                </b>
+              </div>
+              <div class="col-md-7">
+                <iframe src="html1.html" name="iframe" title="Iframe Example" width="100%"></iframe>
+                <br><a href="html1.html" target="iframe">Show Iframe</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Media" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>HTML Media</h2>
+        <ul>
+          <li>Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more.</li>
+          <li><b>Common Video Formats</b>[The MP4, WebM, and Ogg formats are supported by HTML]</li>
+          <li><b>Common Audio Formats</b>[Only MP3, WAV, and Ogg audio are supported by the HTML standard.]</li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>HTML Video</h2>
+        <ul>
+          <li>The HTML &lt;video&gt; element is used to show a video on a web page.</li>
+          <li class="text-primary">EX: <br>
+            &lt;video width="320" height="240" controls&gt; <br>
+            &lt;source src="movie.mp4" type="video/mp4"&gt; <br>
+            &lt;source src="movie.ogg" type="video/ogg"&gt; <br>
+              Your browser does not support the video tag. <br>
+              &lt;/video&gt;
+          </li>
+          <li>
+            <ul>
+              <li>The controls attribute adds video controls, like play, pause, and volume.</li>
+              <li>The &lt;source&gt; element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.</li>
+              <li>The text between the &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element.</li>
+              <li>To start a video automatically, use the autoplay attribute</li>
+              <li>Add muted after autoplay to let your video start playing automatically (but muted)</li>
+            </ul>
+          </li>
+          <li>Example:</li>
+          <div class="row">
+            <div class="col-12">
+              <div class="table-responsive xmp">
+                <xmp>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <br><br>
+  <video id="video1" width="420">
+    <source src="Motivational.mp4" type="video/mp4">
+    <source src="Motivational.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+<script> 
+  var myVideo = document.getElementById("video1"); 
+  function playPause() { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } 
+</script>
+                </xmp>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div> 
+                <button onclick="playPause()">Play/Pause</button> 
+                <br><br>
+                <video id="video1" width="420">
+                  <source src="Motivational.mp4" type="video/mp4">
+                  <source src="Motivational.ogg" type="video/ogg">
+                  Your browser does not support HTML video.
+                </video>
+              </div> 
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>HTML Audio</h2>
+        <ul>
+          <li>The HTML &lt;Audio&gt; element is used to show a Audio on a web page.</li>
+          <li class="text-primary">EX: <br>
+            &lt;audio controls&gt; <br>
+            &lt;source src="movie.ogg" type="audio/ogg"&gt; <br>
+            &lt;source src="movie.mp3" type="audio/mp3"&gt; <br>
+              Your browser does not support the video tag. <br>
+              &lt;/audio&gt;
+          </li>
+          <li>
+            <ul>
+              <li>The controls attribute adds audio controls, like play, pause, and volume.</li>
+              <li>The &lt;source&gt; element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.</li>
+              <li>The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do not support the &lt;audio&gt; element.</li>
+              <li>To start a audio  automatically, use the autoplay attribute</li>
+              <li>Add muted after autoplay to let your audio  start playing automatically (but muted)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>HTML YouTube Videos</h2>
+        <p>To play your video on a web page, do the following:</p>
+        <ul>
+          <li>Upload the video to YouTube</li>
+          <li>Take a note of the video id</li>
+          <li>Define an &lt;iframe&gt; element in your web page</li>
+          <li>Let the src attribute point to the video URL</li>
+          <li>Use the width and 
+          height attributes to specify the dimension of the player</li>
+          <li>Add any other parameters to the URL (see below)</li>
+          <li>Example: <br>
+            <b class="text-primary">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/WucfckO0q48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</b>
+          </li>
+         </ul>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/WucfckO0q48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Master Code</span></strong> 
+      </div>
+      <div class="credits">
+        <strong style="color:red;"> &hearts; </strong> Designed by <a href="https://www.facebook.com/MasterC0de">Master Code</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <a href="#" class="back-to-top"><i class="bx bx-chevrons-up"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script> 
+    var myVideo = document.getElementById("video1"); 
+    function playPause() { 
+      if (myVideo.paused) 
+        myVideo.play(); 
+      else 
+        myVideo.pause(); 
+    } 
+  </script>
+</body>
+</html>
