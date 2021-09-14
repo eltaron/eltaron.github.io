@@ -195,7 +195,7 @@ hr{
   font-size: 37px;
   width: 100%;
   box-sizing: content-box;
-  background-color: #040b14;
+  background-color: #040b14 !important;
   z-index: 9998;
   border: 0;
   background: none;
