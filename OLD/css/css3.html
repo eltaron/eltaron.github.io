@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MasterCode Course</title>
+  <meta content="MasterCode Course" name="description">
+  <meta content="Html, Css, Js, jquery, bootstrap, oop, course, mastercode" name="keywords">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none" style="font-size: 37px;"><i class="bx bx-menu"></i></button>
+  <img src="../assets/img/logo.png" alt="" class="img-fluid d-md-block d-xl-none" style="width: 118px;padding: 8px 30px 0;">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/img/logo.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Master Code</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/MasterC00636045" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/MasterC0de" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          
+          <a href="https://www.linkedin.com/in/master-code-8a57b81b6/?midToken=AQEVsPwSvGBmEA&midSig=2a1-hWoTMQ7pQ1&trk=eml-email_pymk_02-header-49-profile&trkEmail=eml-email_pymk_02-header-49-profile-null-dyijnh%7Ekq942ap0%7Etr-null-neptune%2Fprofile%7Evanity%2Eview" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="../css.html"><i class="bx bx-home"></i> <span>All Sessions</span></a></li>
+          <li class="active"><a href="#Backgrounds"><i class="bx bx-checkbox-checked"></i> <span>CSS Multiple Backgrounds</span></a></li>
+          <li><a href="#Transforms"><i class="bx bx-checkbox-checked"></i> <span>2D, 3D Transforms</span></a></li>
+          <li><a href="#Transitions"><i class="bx bx-checkbox-checked"></i> <span>Css Transitions</span></a></li>
+          <li><a href="#Animations"><i class="bx bx-checkbox-checked"></i> <span>Css Animations</span></a></li>
+          <li><a href="#Images"><i class="bx bx-checkbox-checked"></i> <span>Styling Images</span></a></li>
+          <li><a href="#Variables"><i class="bx bx-checkbox-checked"></i> <span>Css Variables</span></a></li>
+          <li><a href="#Sources"><i class="bx bx-checkbox-checked"></i> <span>Extra Sources</span></a></li>
+          <li style="margin-bottom: 150px;"><a href="../text-editor.html"><i class="bx bx-caret-right-circle"></i> <span>Text Editor</span></a></li>         
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <main id="main">
+    <section id="Backgrounds" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Advanced Background Properties</h2>
+        <div class="table-responsive"> 
+          <table class="table table-bordered table-active">
+            <tbody><tr>
+              <th style="width:28%">Property</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>background</td>
+              <td>A shorthand property for setting all the background properties in one declaration</td>
+            </tr>
+            <tr>
+              <td>background-clip</td>
+              <td>Specifies the painting area of the background</td>
+            </tr>
+            <tr>
+              <td>background-image</td>
+              <td>Specifies one or more background images for an element</td>
+            </tr>
+            <tr>
+              <td>background-origin</td>
+              <td>Specifies where the background image(s) is/are positioned</td>
+            </tr>
+            <tr>
+              <td>background-size</td>
+              <td>Specifies the size of the background image(s)</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        <h2>CSS Multiple Backgrounds</h2>
+        <ul>
+          <li>CSS allows you to add multiple background images for an element, through the background-image property.</li>
+          <li>The different background images are separated by commas, and the images are stacked on top of each other, where the first image is closest to the viewer.</li>
+          <li>
+            <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+    #example1 {
+      background-image: url(img_flwr.gif), url(paper.gif);
+      background-position: right bottom, left top;
+      background-repeat: no-repeat, repeat;
+    }
+                  </code>
+                </pre>
+            <b class="text-primary">OR:</b>
+                <pre>
+                  <code>
+    #example1 {
+      background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+    }
+                  </code>
+                </pre>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Background Size</h2>
+        <ul>
+          <li>The CSS background-size property allows you to specify the size of background images.</li>
+          <li>The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover.</li>
+          <li>The contain keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area). As such, depending on the proportions of the background image and the background positioning area, there may be some areas of the background which are not covered by the background image.</li>
+          <li>The cover keyword scales the background image so that the content area is completely covered by the background image (both its width and height are equal to or exceed the content area). As such, some parts of the background image may not be visible in the background positioning area.</li>
+          <li>
+            <b class="text-primary">EX1:</b>
+            <pre>
+              <code>
+    #div1 {
+      background: url(img_flower.jpg);
+      background-size: 100px 80px;
+      background-repeat: no-repeat;
+    }
+              </code>
+            </pre>
+            <b class="text-primary">EX2:</b>
+            <pre>
+              <code>
+    #div2 {
+      background: url(img_flower.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+              </code>
+            </pre>
+            <b class="text-primary">EX3:</b>
+            <pre>
+              <code>
+    #div3 {
+      background: url(img_flower.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+              </code>
+            </pre>
+            <b class="text-primary">EX4:</b>
+            <pre>
+              <code>
+    #div4 {
+      background: url(img_tree.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat;
+      background-size: 50px, 130px, auto;
+    }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS background-clip Property</h2>
+        <ul>
+          <li>The CSS background-clip property specifies the painting area of the background.</li>
+          <li>
+            <h4>The property takes three different values:</h4>
+            <ul>
+              <li>border-box - (default) the background is painted to the outside edge of the border</li>
+              <li>padding-box - the background is painted to the outside edge of the padding</li>
+              <li>content-box - the background is painted within the content box</li>
+            </ul>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+    #example1 {
+      border: 10px dotted black;
+      padding: 35px;
+      background: yellow;
+      background-clip: content-box;
+    }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Transforms" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS 2D Transforms</h2>
+        <ul>
+          <li>CSS transforms allow you to move, rotate, scale, and skew elements.</li>
+          <li>
+            With the CSS transform property you can use the following 2D transformation methods:
+            <ul>
+              <li><code>translate()</code></li>
+              <li><code>rotate()</code></li>
+              <li><code>scaleX()</code></li>
+              <li><code>scaleY()</code></li>
+              <li><code>scale()</code></li>
+              <li><code>skewX()</code></li>
+              <li><code>skewY()</code></li>
+              <li><code>skew()</code></li>
+              <li><code>matrix()</code></li>
+            </ul>
+          </li>
+          <li>
+            <h4>2D transformation methods</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 15%;">Method</th>
+                  <th style="width: 45%;">Description</th>
+                  <th>Example</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>translate()</td>
+                    <td>The <code>translate()</code> method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).</td>
+                    <td>
+                      <pre>
+                        <code>
+  // div moves 50 pixels to the right,
+  and 100 pixels down from its position
+  div {
+    transform: translate(50px, 100px);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>rotate()</td>
+                    <td>
+                      The <code>rotate()</code> method rotates an element clockwise or counter-clockwise according to a given degree. <br>
+                      Using negative values will rotate the element counter-clockwise.
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  // div rotates clockwise with 20 degrees
+  div {
+    transform: rotate(20deg);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>scale()</td>
+                    <td>The <code>scale()</code> method increases or decreases the size of an element (according to the parameters given for the width and height).</td>
+                    <td>
+                      <pre>
+                        <code>
+  //increases div to be two times of its width,
+  and three times of its height.
+  div {
+    transform: scale(2, 3);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>scaleX()</td>
+                    <td>The <code>scaleX()</code> method increases or decreases the width of an element.</td>
+                    <td>
+                      <pre>
+                        <code>
+  // increases div to be two times of its width
+  div {
+    transform: scaleX(2);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>scaleY()</td>
+                    <td>The <code>scaleY()</code> method increases or decreases the height of an element.</td>
+                    <td>
+                      <pre>
+                        <code>
+  // decreases div to be half of its height
+  div {
+    transform: scaleY(0.5);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>skewX()</td>
+                    <td>The <code>skewX()</code> method skews an element along the X-axis by the given angle.</td>
+                    <td>
+                      <pre>
+                        <code>
+  // skews div 20 degrees along the X-axis
+  div {
+    transform: skewX(20deg);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>skewY()</td>
+                    <td>The <code>skewY()</code> method skews an element along the Y-axis by the given angle.</td>
+                    <td>
+                      <pre>
+                        <code>
+  // skews div 20 degrees along the Y-axis
+  div {
+    transform: skewY(20deg);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>skew()</td>
+                    <td>The <code>skew()</code> method skews an element along the X and Y-axis by the given angles.</td>
+                    <td>
+                      <pre>
+                        <code>
+  // skews div 20 degrees along the X-axis,
+  and 10 degrees along the Y-axis
+  div {
+    transform: skew(20deg, 10deg);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>matrix()</td>
+                    <td>
+                      <ul>
+                        <li>The <code>matrix()</code> method combines all the 2D transform methods into one.</li>
+                        <li>The <code>matrix()</code> method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.</li>
+                        <li>The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  div {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+        <h2>CSS 3D Transforms</h2>
+        <ul>
+          <li>
+            With the CSS transform property you can use the following 3D transformation methods:
+            <ul>
+              <li><code>rotateX()</code></li>
+              <li><code>rotateY()</code></li>
+              <li><code>rotateZ()</code></li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS 3D Transforms Methods</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 15%;">Method</th>
+                  <th style="width: 45%;">Description</th>
+                  <th>Example</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>rotateX()</td>
+                    <td>The <code>rotateX()</code> method rotates an element around its X-axis at a given degree.</td>
+                    <td>
+                      <pre>
+                        <code>
+  #myDiv {
+    transform: rotateX(150deg);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>rotateY()</td>
+                    <td>The <code>rotateY()</code> method rotates an element around its Y-axis at a given degree.</td>
+                    <td>
+                      <pre>
+                        <code>
+  #myDiv {
+    transform: rotateY(150deg);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>rotateZ()</td>
+                    <td>The <code>rotateZ()</code> method rotates an element around its Z-axis at a given degree.</td>
+                    <td>
+                      <pre>
+                        <code>
+  #myDiv {
+    transform: rotateZ(90deg);
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+        <h2>CSS Transform Origin</h2>
+        <ul>
+          <li>The <code>transform-origin</code> property allows you to change the position of transformed elements.</li>
+          <li>2D transformations can change the x- and y-axis of an element. 3D transformations can also change the z-axis of an element.</li>
+          <li>This property must be used together with the transform property.</li>
+          <li><b>Syntax :</b> <code>transform-origin: x-axis y-axis z-axis|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 20%;">Property Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i>x-axis</i></td>
+                    <td>Defines where the view is placed at the x-axis. Possible values:
+                      <ul class="row">
+                        <li class="col-md-4">left</li>
+                        <li class="col-md-4">center</li>
+                        <li class="col-md-4">right</li>
+                        <li class="col-md-4"><i>length</i></li>
+                        <li class="col-md-4"><i>%</i></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i>y-axis</i></td>
+                    <td>Defines where the view is placed at the y-axis. Possible values:
+                      <ul class="row">
+                        <li class="col-md-4">top</li>
+                        <li class="col-md-4">center</li>
+                        <li class="col-md-4">bottom</li>
+                        <li class="col-md-4"><i>length</i></li>
+                        <li class="col-md-4"><i>%</i></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i>z-axis</i></td>
+                    <td>Defines where the view is placed at the z-axis (for 3D transformations). Possible values:
+                      <ul>
+                        <li><i>length</i></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  div {
+    transform: rotate(45deg);
+    transform-origin: 20% 40%;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS Transform Style</h2>
+        <ul>
+          <li>The <code>transform-style</code> property specifies how nested elements are rendered in 3D space.</li>
+          <li>This property must be used together with the transform property.</li>
+          <li><b>Syntax :</b> <code>transform-style: flat|preserve-3d|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 20%;">Property Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody> 
+                <tr>
+                  <td>flat</td>
+                  <td>Specifies that child elements will NOT preserve its 3D position. This is default</td>
+                </tr>
+                <tr>
+                  <td>preserve-3d</td>
+                  <td>Specifies that child elements will preserve its 3D position</td>
+                </tr>
+                <tr>
+                  <td>initial</td>
+                  <td>Sets this property to its default value.</td>
+                </tr>
+                <tr>
+                  <td>inherit</td>
+                  <td>Inherits this property from its parent element.</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="test-primary">EX: </b>
+            <pre>
+              <code>
+  div {
+    transform: rotateY(60deg);
+    transform-style: preserve-3d;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Transitions" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Transitions</h2>
+        <ul>
+          <li>CSS transitions allows you to change property values smoothly, over a given duration.</li>
+          <li>
+            CSS Transitions properties:
+            <ul>
+              <li><code>transition</code></li>
+              <li><code>transition-delay</code></li>
+              <li><code>transition-duration</code></li>
+              <li><code>transition-property</code></li>
+              <li><code>transition-timing-function</code></li>
+            </ul>
+          </li>
+          <li>
+            To create a transition effect, you must specify two things:
+            <ul>
+              <li>the CSS property you want to add an effect to</li>
+              <li>the duration of the effect</li>
+            </ul>
+          </li>
+          <li>If the duration part is not specified, the transition will have no effect, because the default value is 0.</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style> 
+      div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: width 2s;
+      }
+      div:hover {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div></div>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li><b>Syntax : </b> <code>transition: property duration timing-function delay|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 20%;">Property Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td><i>transition-property</i></td>
+                    <td>Specifies the name of the CSS property the transition effect is for</td>
+                  </tr>
+                  <tr>
+                    <td><i>transition-duration</i></td>
+                    <td>Specifies how many seconds or milliseconds the transition effect takes to complete</td>
+                  </tr>
+                  <tr>
+                    <td><i>transition-timing-function</i></td>
+                    <td>Specifies the speed curve of the transition effect</td>
+                  </tr>
+                  <tr>
+                    <td><i>transition-delay</i></td>
+                    <td>Defines when the transition effect will start</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+        <h2>CSS transition-delay Property</h2>
+        <ul>
+          <li>The <code>transition-delay</code> property specifies when the transition effect will start.</li>
+          <li>The <code>transition-delay</code> value is defined in seconds (s) or milliseconds (ms).</li>
+          <li><b>Syntax : </b> <code>transition-delay: time|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 20%;">Property Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td><i>time</i></td>
+                    <td>Specifies the number of seconds or milliseconds to wait before the transition effect will start</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                    </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  div {
+    transition-delay: 2s;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS transition-duration Property</h2>
+        <ul>
+          <li>The <code>transition-duration</code> property specifies how many seconds (s) or milliseconds (ms) a transition effect takes to complete.</li>
+          <li><b>Syntax : </b> <code>transition-duration: time|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 20%;">Property Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody>  
+                  <tr>
+                    <td><i>time</i></td>
+                    <td>Specifies how many seconds or milliseconds a transition effect takes to complete. Default value is 0s, meaning there will be no effect</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+              </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  div {
+    transition-duration: 5s;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS transition-property Property</h2>
+        <ul>
+          <li>The <code>transition-property</code> property specifies the name of the CSS property the transition effect is for (the transition effect will start when the specified CSS property changes).</li>
+          <li>A transition effect could typically occur when a user hover over an element.</li>
+          <li><b>Syntax : </b> <code>transition-property: none|all|property|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 20%;">Property Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>none</td>
+                    <td>No property will get a transition effect</td>
+                  </tr>
+                  <tr>
+                    <td>all</td>
+                    <td>Default value. All properties will get a transition effect</td>
+                  </tr>
+                  <tr>
+                    <td><i>property</i></td>
+                    <td>Defines a comma separated list of CSS property names the transition effect is for</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  div {
+    transition-property: width, height;
+  }
+  div:hover {
+    width: 300px;
+    height: 300px;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS transition-timing-function Property</h2>
+        <ul>
+          <li>The transition-timing-function property specifies the speed curve of the transition effect.</li>
+          <li>This property allows a transition effect to change speed over its duration.</li>
+          <li><b>Syntax :</b> <code>transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 20%;">Property Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ease</td>
+                    <td>Default value. Specifies a transition effect with a slow start, then fast, then end slowly (equivalent to cubic-bezier(0.25,0.1,0.25,1))</td>
+                  </tr>
+                  <tr>
+                    <td>linear</td>
+                    <td>Specifies a transition effect with the same speed from start to end (equivalent to cubic-bezier(0,0,1,1))</td>
+                  </tr>
+                  <tr>
+                    <td>ease-in</td>
+                    <td>Specifies a transition effect with a slow start (equivalent to cubic-bezier(0.42,0,1,1))</td>
+                  </tr>
+                  <tr>
+                    <td>ease-out</td>
+                    <td>Specifies a transition effect with a slow end (equivalent to cubic-bezier(0,0,0.58,1))</td>
+                  </tr>
+                  <tr>
+                    <td>ease-in-out</td>
+                    <td>Specifies a transition effect with a slow start and end (equivalent to cubic-bezier(0.42,0,0.58,1))</td>
+                  </tr>
+                  <tr>
+                    <td>step-start</td>
+                    <td>Equivalent to steps(1, start)</td>
+                  </tr>
+                  <tr>
+                    <td>step-end</td>
+                    <td>Equivalent to steps(1, end)</td>
+                  </tr>
+                  <tr>
+                    <td>steps(int,start|end)</td>
+                    <td>Specifies a stepping function, with two parameters. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value "end" </td>
+                  </tr>
+                  <tr>
+                    <td>cubic-bezier(<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>)</td>
+                    <td>Define your own values in the cubic-bezier function. Possible values are numeric values from 0 to 1</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value. </td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <p>Here are five different div elements with five different values</p>
+            <div class="table-responsive xmp mt-3 mb-3"> 
+              <xmp>
+  #div1 {transition-timing-function: linear;}
+  #div2 {transition-timing-function: ease;}
+  #div3 {transition-timing-function: ease-in;}
+  #div4 {transition-timing-function: ease-out;}
+  #div5 {transition-timing-function: ease-in-out;}
+              </xmp>
+            </div>
+            <p>Same as the example above, but the speed curves are specified with the cubic-bezier function.</p>
+            <div class="table-responsive xmp mt-3 mb-3"> 
+              <xmp>
+  #div1 {transition-timing-function: cubic-bezier(0,0,1,1);}
+  #div2 {transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+  #div3 {transition-timing-function: cubic-bezier(0.42,0,1,1);}
+  #div4 {transition-timing-function: cubic-bezier(0,0,0.58,1);}
+  #div5 {transition-timing-function: cubic-bezier(0.42,0,0.58,1);}
+              </xmp>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Animations" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Animations</h2>
+        <ul>
+          <li>CSS allows animation of HTML elements without using JavaScript or Flash.</li>
+          <li>
+            <h4>CSS Animations properties:</h4>
+            <ul>
+              <li><code>@keyframes</code></li>
+              <li><code>animation-name</code></li>
+              <li><code>animation-duration</code></li>
+              <li><code>animation-delay</code></li>
+              <li><code>animation-iteration-count</code></li>
+              <li><code>animation-direction</code></li>
+              <li><code>animation-timing-function</code></li>
+              <li><code>animation-fill-mode</code></li>
+              <li><code>animation</code></li>
+            </ul>
+          </li>
+          <li>An animation lets an element gradually change from one style to another.</li>
+          <li>You can change as many CSS properties you want, as many times as you want.</li>
+          <li>To use CSS animation, you must first specify some keyframes for the animation.</li>
+          <li>Keyframes hold what styles the element will have at certain times.</li>
+          <li>When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.</li>
+          <li>To get an animation to work, you must bind the animation to an element.</li>
+          <li>
+            The following example binds the "example" animation to the div element. The animation will last for 4 seconds, and it will gradually change the background-color of the div element from "red" to "yellow":
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style> 
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 6s;
+      }
+      @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+        </ul>
+        <h2>CSS animation</h2>
+        <ul>
+          <li>
+            The animation property is a shorthand property for:
+            <ul>
+              <li>animation-name</li>
+              <li>animation-duration</li>
+              <li>animation-timing-function</li>
+              <li>animation-delay</li>
+              <li>animation-iteration-count</li>
+              <li>animation-direction</li>
+              <li>animation-fill-mode</li>
+              <li>animation-play-state</li>
+            </ul>
+          </li>
+          <li><b>Syntax : </b> <code>animation: name duration timing-function delay iteration-count direction fill-mode play-state;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th>Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody>  
+                  <tr>
+                    <td><i>animation-name</i></td>
+                    <td>Specifies the name of the keyframe you want to bind to the selector</td>
+                  </tr>
+                  <tr>
+                    <td><i>animation-duration</i></td>
+                    <td>Specifies how many seconds or milliseconds an animation takes to complete</td>
+                  </tr>
+                  <tr>
+                    <td><i>animation-timing-function</i></td>
+                    <td>Specifies the speed curve of the animation</td>
+                  </tr>
+                  <tr>
+                    <td><i>animation-delay</i></td>
+                    <td>Specifies a delay before the animation will start</td>
+                  </tr>
+                  <tr>
+                    <td><i>animation-iteration-count</i></td>
+                    <td>Specifies how many times an animation should be played</td>
+                  </tr>
+                  <tr>
+                    <td><i>animation-direction</i></td>
+                    <td>Specifies whether or not the animation should play in reverse on alternate cycles</td>
+                  </tr>
+                  <tr>
+                    <td><em>animation-fill-mode</em></td>
+                    <td>Specifies what values are applied by the animation outside the time it is executing</td>
+                  </tr>
+                  <tr>
+                    <td><em>animation-play-state</em></td>
+                    <td>Specifies whether the animation is running or paused</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                    </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  div {
+    animation: mymove 5s infinite;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS animation-name</h2>
+        <ul>
+          <li>The <code>animation-name</code> property specifies a name for the @keyframes animation.</li>
+          <li><b>Syntax : </b> <code>animation-name: keyframename|none|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th>Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>keyframename</td>
+                    <td>Specifies the name of the keyframe you want to bind to the selector</td>
+                  </tr>
+                  <tr>
+                    <td>none</td>
+                    <td>Default value. Specifies that there will be no animation (can be used to override animations coming from the cascade) </td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  // Specify a name for the @keyframes animation
+  div {
+    animation-name: myanimation;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS @keyframes Rule</h2>
+        <ul>
+          <li>The @keyframes rule specifies the animation code.</li>
+          <li>The animation is created by gradually changing from one set of CSS styles to another.</li>
+          <li>During the animation, you can change the set of CSS styles many times.</li>
+          <li>Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.</li>
+          <li><b>Syntax :</b> <code>@keyframes animationname {keyframes-selector {css-styles;}}</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th>Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td><i>animationname</i></td>
+                    <td>Required. Defines the name of the animation.</td>
+                  </tr>
+                  <tr>
+                    <td><i>keyframes-selector</i></td>
+                    <td>Required. Percentage of the animation duration.<p>Legal values:</p><p>0-100%<br>
+                    from (same as 0%)<br>
+                    to (same as 100%)</p><p><b>Note:</b> You can have many keyframes-selectors in one animation.</p></td>
+                  </tr>
+                  <tr>
+                    <td><i>css-styles</i></td>
+                    <td>Required. One or more legal CSS style properties</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  @keyframes mymove {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 100px; background: blue;}
+    50%  {top: 100px; left: 100px; background: yellow;}
+    75%  {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS animation-delay</h2>
+        <ul>
+          <li>The animation-delay property specifies a delay for the start of an animation.</li>
+          <li>The animation-delay value is defined in seconds (s) or milliseconds (ms).</li>
+          <li><b>Syntax : </b> <code>animation-delay: time|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th>Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td><i>time</i></td>
+                    <td>Optional. Defines the number of seconds (s) or milliseconds (ms) to wait before the animation will start. Default value is 0. Negative values are allowed. 
+                    If you use negative values, the animation will start as if it had already 
+                    been playing for <em>N</em> seconds/milliseconds.</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value. <a href="css_initial.asp">Read about <em>initial</em></a></td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element. <a href="css_inherit.asp">Read about <em>inherit</em></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  div {
+    animation-delay: 2s;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS animation-direction</h2>
+        <ul>
+          <li>The <code>animation-direction</code> property defines whether an animation should be played forwards, backwards or in alternate cycles.</li>
+          <li><b>Syntax : </b> <code>animation-direction: normal|reverse|alternate|alternate-reverse|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th>Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td>normal</td>
+                    <td>Default value. The animation is played as normal (forwards)</td>
+                  </tr>
+                  <tr>
+                    <td>reverse</td>
+                    <td>The animation is played in reverse direction (backwards)</td>
+                  </tr>
+                  <tr>
+                    <td>alternate</td>
+                    <td>The animation is played forwards first, then backwards</td>
+                  </tr>
+                  <tr>
+                    <td>alternate-reverse</td>
+                    <td>The animation is played backwards first, then forwards</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b> 
+            <pre>
+              <code>
+  // Play the animation backwards first, then forwards
+  div {
+    animation-direction: alternate-reverse;
+  }
+  // Play the animation backwards
+  div {
+    animation-direction: reverse;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS animation-duration</h2>
+        <ul>
+          <li>The <code>animation-duration</code> property defines how long an animation should take to complete one cycle.</li>
+          <li><b>Syntax : </b> <code>animation-duration: time|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th>Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td><i>time</i></td>
+                    <td>Specifies the length of time an animation should take to complete one cycle. This can be specified in seconds or 
+                    milliseconds. Default value is 0, which means that no animation will occur</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  // Specify that the animation should complete one cycle in 3 seconds
+  div {
+    animation-duration: 3s;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS animation-fill-mode</h2>
+        <ul>
+          <li>The <code>animation-fill-mode</code> property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both).</li>
+          <li>CSS animations do not affect the element before the first keyframe is played or after the last keyframe is played. The <code>animation-fill-mode</code> property can override this behavior.</li>
+          <li><b>Syntax : </b> <code>animation-fill-mode: none|forwards|backwards|both|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th>Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td>none</td>
+                    <td>Default value. Animation will not apply any styles to the element before or after it is executing</td>
+                  </tr>
+                  <tr>
+                    <td>forwards</td>
+                    <td>The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)</td>
+                  </tr>
+                  <tr>
+                    <td>backwards</td>
+                    <td>The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during 
+                    the 
+                    animation-delay period</td>
+                  </tr>
+                  <tr>
+                    <td>both</td>
+                    <td>The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions </td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  // Let div retain the style values from the last keyframe when the animation ends:
+  div {
+    animation-fill-mode: forwards;
+  }
+  // Let div get the style values set by the first keyframe before the animation starts :
+  div {
+    animation-fill-mode: backwards;
+  }
+  // Let div get the style values set by the first keyframe before the animation starts,
+  and retain the style values from the last keyframe when the animation ends:
+  div {
+    animation-fill-mode: both;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS animation-iteration-count</h2>
+        <ul>
+          <li>The <code>animation-iteration-count</code> property specifies the number of times an animation should be played.</li>
+          <li><b>Syntax : </b> <code>animation-iteration-count: number|infinite|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values </h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th>Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i>number</i></td>
+                    <td>A number that defines how many times an animation should be played. Default value is 1</td>
+                  </tr>
+                  <tr>
+                    <td>infinite</td>
+                    <td>Specifies that the animation should be played infinite times (for ever)</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value. </td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  // Play the animation two times
+  div {
+    animation-iteration-count: 2;
+  }
+  // Play the animation forever
+  div {
+    animation-iteration-count: infinite;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS animation-play-state</h2>
+        <ul>
+          <li>The <code>animation-play-state</code> property specifies whether the animation is running or paused.</li>
+          <li>Use this property in a JavaScript to pause an animation in the middle of a cycle.</li>
+          <li><b>Syntax : </b> <code>animation-play-state: paused|running|initial|inherit;</code></li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th>Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td>paused</td>
+                    <td>Specifies that the animation is paused</td>
+                  </tr>
+                  <tr>
+                    <td>running</td>
+                    <td>Default value. Specifies that the animation is running</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  // Pause an animation
+  div {
+    animation-play-state: paused;
+  }
+  // Pause an animation on hover
+  div:hover {
+    animation-play-state: paused;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>CSS animation-timing-function</h2>
+        <ul>
+          <li>The <code>animation-timing-function</code> specifies the speed curve of an animation.</li>
+          <li>The speed curve defines the TIME an animation uses to change from one set of CSS styles to another.</li>
+          <li>The speed curve is used to make the changes smoothly.</li>
+          <li><b>Syntax : </b> <code>animation-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;</code></li>
+          <li>The animation-timing-function uses a mathematical function, called the Cubic Bezier curve, to make the speed curve. You can use your own values in this function, or use one of the pre-defined values.</li>
+          <li>
+            <h4>Property Values</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th>Value</th>
+                  <th>Description</th>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td>linear</td>
+                    <td>The animation has the same speed from start to end</td>
+                  </tr>
+                  <tr>
+                    <td>ease</td>
+                    <td>Default value. The animation has a slow start, then fast, before it ends slowly</td>
+                  </tr>
+                  <tr>
+                    <td>ease-in</td>
+                    <td>The animation has a slow start</td>
+                  </tr>
+                  <tr>
+                    <td>ease-out</td>
+                    <td>The animation has a slow end</td>
+                  </tr>
+                  <tr>
+                    <td>ease-in-out</td>
+                    <td>The animation has both a slow start and a slow end</td>
+                  </tr>
+                  <tr>
+                    <td>step-start</td>
+                    <td>Equivalent to steps(1, start)</td>
+                  </tr>
+                  <tr>
+                    <td>step-end</td>
+                    <td>Equivalent to steps(1, end)</td>
+                  </tr>
+                  <tr>
+                    <td>steps(int,start|end)</td>
+                    <td>Specifies a stepping function, with two parameters. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value "end"</td>
+                  </tr>
+                  <tr>
+                    <td>cubic-bezier(<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>)</td>
+                    <td>Define your own values in the cubic-bezier function<br>Possible values are numeric values from 0 to 1</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp"> 
+  <xmp>
+    // Here are five different div elements with five different values
+    #div1 {animation-timing-function: linear;}
+    #div2 {animation-timing-function: ease;}
+    #div3 {animation-timing-function: ease-in;}
+    #div4 {animation-timing-function: ease-out;}
+    #div5 {animation-timing-function: ease-in-out;}
+    // Same as the example above, but the speed curves are defined with the cubic-bezier function
+    #div1 {animation-timing-function: cubic-bezier(0,0,1,1);}
+    #div2 {animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+    #div3 {animation-timing-function: cubic-bezier(0.42,0,1,1);}
+    #div4 {animation-timing-function: cubic-bezier(0,0,0.58,1);}
+    #div5 {animation-timing-function: cubic-bezier(0.42,0,0.58,1);}
+  </xmp>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Images" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>Image Filters</h2>
+        <ul>
+          <li>The CSS <code>filter</code> property adds visual effects (like blur and saturation) to an element.</li>
+          <li>
+            <b class="text-primary mb-3">EX:</b>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img {
+        width: 33%;
+        height: auto;
+        float: left; 
+        max-width: 235px;
+      }
+      .blur {filter: blur(4px);}
+      .brightness {filter: brightness(250%);}
+      .contrast {filter: contrast(180%);}
+      .grayscale {filter: grayscale(100%);}
+      .huerotate {filter: hue-rotate(180deg);}
+      .invert {filter: invert(100%);}
+      .opacity {filter: opacity(50%);}
+      .saturate {filter: saturate(7);}
+      .sepia {filter: sepia(100%);}
+      .shadow {filter: drop-shadow(8px 8px 10px green);}
+    </style>
+  </head>
+  <body>
+    <img src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="blur" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="brightness" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="contrast" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="grayscale" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="huerotate" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="invert" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="opacity" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="saturate" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="sepia" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="shadow" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+        </ul>
+        <h2>CSS Image Reflection</h2>
+        <ul>
+          <li>The <code>box-reflect</code> property is used to create an image reflection.</li>
+          <li>The value of the <code>box-reflect</code> property can be: below, above, left , or right.</li>
+          <li>
+            <b class="text-primary">Examples:</b>
+            <pre>
+              <code>
+  // Here we want the reflection below the image
+  img {
+    -webkit-box-reflect: below;
+  }
+  // Here we want the reflection below the image, with a 20px offset
+  img {
+    -webkit-box-reflect: below 20px;
+  }
+  // Create a fade-out effect on the reflection
+  img {
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Variables" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Variables</h2>
+        <ul>
+          <li>The <code>var()</code> function is used to insert the value of a CSS variable.</li>
+          <li>CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.</li>
+          <li>A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables.</li>
+          <li><b>syntax : </b> <code>var(--name, value)</code></li>
+          <li>The variable name must begin with two dashes (--) and it is case sensitive.</li>
+          <li>CSS variables can have a global or local scope.</li>
+          <li>Global variables can be used through the entire document, while local variables can be used only inside the selector where it is declared.</li>
+          <li>To create a variable with global scope, declare it inside the <code>:root</code> selector. The <code>:root</code> selector matches the document's root element.</li>
+          <li>To create a variable with local scope, declare it inside the selector that is going to use it.</li>
+          <li>The following example is equal to the example above, but here we use the var() function.</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  :root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+  }
+  body { background-color: var(--blue); }
+  h2 { border-bottom: 2px solid var(--blue); }
+  .container {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+  }
+  button {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            Advantages of using var() are:
+            <ul>
+              <li>makes the code easier to read (more understandable)</li>
+              <li>makes it much easier to change the color values</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Overriding Global Variables With Local Variables</h4>
+            <p>Sometimes we want the variables to change only in a specific section of the page.</p>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  :root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+  }
+  button {
+    --blue: #0000ff;
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Add a New Local Variable</h4>
+            <p>If a variable is to be used only one single place, we could also have declared a new local variable.</p>
+            <pre>
+              <code>
+  :root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+  }
+  button {
+    --button-blue: #0000ff;
+    background-color: var(--white);
+    color: var(--button-blue);
+    border: 1px solid var(--button-blue);
+    padding: 5px;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Using Variables in Media Queries</h4>
+            <p>Here, we first declare a new local variable named --fontsize for the <code>.container</code> class. We set its value to 25 pixels. Then we use it in the <code>.container</code> class further down. Then, we create a <code>@media</code> rule that says "When the browser's width is 450px or wider, change the --fontsize variable value of the <code>.container</code> class to 50px."</p>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  :root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+  }
+  .container {
+    --fontsize: 25px;
+  }
+  body {
+    background-color: var(--blue);
+  }
+  h2 {
+    border-bottom: 2px solid var(--blue);
+  }
+  .container {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+    font-size: var(--fontsize);
+  }
+  @media screen and (min-width: 450px) {
+    .container {
+      --fontsize: 50px;
+    }
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Sources" class="p-4 p-md-5 mb-5">
+      <div class="section-title">
+        <h2>Extra Sources</h2>
+        <p>There are more lessons in that chapter but it's your turn to try to find and learn them and here are some examples:</p>
+        <ul>
+          <li>Css counters</li>
+          <li>Css object position</li>
+          <li>Css object fit</li>
+          <li>CSS multiple columns</li>
+          <li>Css Grid</li>
+          <li>Css Buttons</li>
+          <li>Css Tooltips</li>
+          <li>Css Dropdowns</li>
+          <li>Css Pagination</li>
+          <li>Css SASS</li>
+        </ul>
+      </div>
+    </section>
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Master Code</span></strong> 
+      </div>
+      <div class="credits">
+        <strong style="color:red;"> &hearts; </strong> Designed by <a href="https://www.facebook.com/MasterC0de">Master Code</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <a href="#" class="back-to-top"><i class="bx bx-chevrons-up"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

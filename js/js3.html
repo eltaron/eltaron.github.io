@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MasterCode Course</title>
+  <meta content="MasterCode Course" name="description">
+  <meta content="Html, Css, Js, jquery, bootstrap, oop, course, mastercode" name="keywords">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none" style="font-size: 37px;"><i class="bx bx-menu"></i></button>
+  <img src="../assets/img/logo.png" alt="" class="img-fluid d-md-block d-xl-none" style="width: 118px;padding: 8px 30px 0;">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/img/logo.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Master Code</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/MasterC00636045" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/MasterC0de" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          
+          <a href="https://www.linkedin.com/in/master-code-8a57b81b6/?midToken=AQEVsPwSvGBmEA&midSig=2a1-hWoTMQ7pQ1&trk=eml-email_pymk_02-header-49-profile&trkEmail=eml-email_pymk_02-header-49-profile-null-dyijnh%7Ekq942ap0%7Etr-null-neptune%2Fprofile%7Evanity%2Eview" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+         <li><a href="../javascript.html"><i class="bx bx-home"></i> <span>All Sessions</span></a></li>
+          <li class="active"><a href="#Conditions"><i class="bx bx-checkbox-checked"></i> <span>Conditions</span></a></li>
+          <li><a href="#Functions"><i class="bx bx-checkbox-checked"></i> <span>JS Functions</span></a></li>
+          <li><a href="#Loop"><i class="bx bx-checkbox-checked"></i> <span>Loop</span></a></li>
+          <li><a href="text-editor.html"><i class="bx bx-caret-right-circle"></i> <span>Text Editor</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <main id="main">
+    <section id="Conditions" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>Conditional Statements</h2>
+        <ul>
+          <li>Very often when you write code, you want to perform different actions for different decisions. <br> You can use conditional statements in your code to do this.</li>
+          <li>
+            In JavaScript we have the following conditional statements:
+            <ul>
+              <li>Use <code>if</code> to specify a block of code to be executed, if a specified condition is true</li>
+              <li>Use <code>else</code> to specify a block of code to be executed, if the same condition is 
+              false</li>
+              <li>Use <code>else if</code> to specify a new condition to test, if the first condition is false</li>
+              <li>Use <code>switch</code> to specify many alternative blocks of code to be executed</li>
+            </ul>
+          </li>
+          <li>
+            <h4>if Statement</h4>
+            <ul>
+              <li>Use the <code>if</code> statement to specify a block of JavaScript code to be executed if a condition is true.</li>
+              <li>
+                <b class="text-primary">Syntax :</b> 
+                <pre>
+                  <code>
+    if (condition) {
+      //  block of code to be executed if the condition is true 
+    }
+                  </code>
+                </pre>
+              </li>
+              <li>Note that <code>if</code> is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error.</li>
+              <li>
+                <b class="text-primary">EX :</b>
+                <pre>
+                  <code>
+    if (hour < 18) {
+      greeting = "Good day";
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>The else Statement</h4>
+            <ul>
+              <li>Use the <code>else</code> statement to specify a block of code to be executed if the condition is false.</li>
+              <li>
+                <b class="text-primary">Syntax :</b> 
+                <pre>
+                  <code>
+    if (condition) {
+      //  block of code to be executed if the condition is true
+    } else {
+      //  block of code to be executed if the condition is false
+    }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">EX :</b>
+                <pre>
+                  <code>
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>else if Statement</h4>
+            <ul>
+              <li>Use the <code>else if</code> statement to specify a new condition if the first condition is false.</li>
+              <li>
+                <b class="text-primary">Syntax :</b> 
+                <pre>
+                  <code>
+    if (condition1) {
+      //  block of code to be executed if condition1 is true
+    } else if (condition2) {
+      //  block of code to be executed if the condition1 is false and condition2 is true
+    } else {
+      //  block of code to be executed if the condition1 is false and condition2 is false
+    }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">EX :</b>
+                <pre>
+                  <code>
+    if (time < 10) {
+      greeting = "Good morning";
+    } else if (time < 20) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>Switch Statement</h2>
+        <ul>
+          <li>Use the <code>switch</code> statement to select one of many code blocks to be executed.</li>
+          <li>
+            <b class="text-primary">EX :</b>
+            <pre>
+              <code>
+  switch(expression) {
+    case x:
+      // code block
+      break;
+    case y:
+      // code block
+      break;
+    default:
+      // code block
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            This is how it works:
+            <ul>
+              <li>The switch expression is evaluated once.</li>
+              <li>The value of the expression is compared with the values of each case.</li>
+              <li>If there is a match, the associated block of code is executed.</li>
+              <li>If there is no match, the default code block is executed.</li>
+            </ul>
+          </li>
+          <li>
+            <b class="text-primary">EX :</b>
+            <pre>
+              <code>
+  switch (new Date().getDay()) {
+    case 0:
+      day = "Sunday";
+      break;
+    case 1:
+      day = "Monday";
+      break;
+    case 2:
+        day = "Tuesday";
+      break;
+    case 3:
+      day = "Wednesday";
+      break;
+    case 4:
+      day = "Thursday";
+      break;
+    case 5:
+      day = "Friday";
+      break;
+    case 6:
+      day = "Saturday";
+  }
+              </code>
+            </pre>
+            The <code>getDay()</code> method returns the weekday as a number between 0 and 6.
+          </li>
+          <li>
+            <h4>The break Keyword</h4>
+            <ul>
+              <li>When JavaScript reaches a <code>break</code> keyword, it breaks out of the switch block.</li>
+              <li>This will stop the execution inside the switch block.</li>
+              <li>It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.</li>
+              <li>If you omit the break statement, the next case will be executed even if the evaluation does not match the case.</li>
+            </ul>
+          </li>
+          <li>
+            <h4>The default Keyword</h4>
+            <ul>
+              <li>The <code>default</code> keyword specifies the code to run if there is no case match.</li>
+              <li>
+                <b class="text-primary">EX :</b>
+                <pre>
+                  <code>
+  switch (new Date().getDay()) {
+    case 6:
+      text = "Today is Saturday";
+      break;
+    case 0:
+      text = "Today is Sunday";
+      break;
+    default:
+      text = "Looking forward to the Weekend";
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>The <code>default</code> case does not have to be the last case in a switch block</li>
+              <li>If <code>default</code> is not the last case in the switch block, remember to end the default case with a break.</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Common Code Blocks</h4>
+            <ul>
+              <li>Sometimes you will want different switch cases to use the same code.</li>
+              <li>
+                <b class="text-primary">EX :</b>
+                <pre>
+                  <code>
+  switch (new Date().getDay()) {
+    case 4:
+    case 5:
+      text = "Soon it is Weekend";
+      break;
+    case 0:
+    case 6:
+      text = "It is Weekend";
+      break;
+    default:
+      text = "Looking forward to the Weekend";
+  }
+                  </code>
+                </pre>
+                In this example case 4 and 5 share the same code block, and 0 and 6 share another code block.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Switching Details</h4>
+            <ul>
+              <li>If multiple cases matches a case value, the <b>first</b> case is selected.</li>
+              <li>If no matching cases are found, the program continues to the <code>default</code> label.</li>
+              <li>If no default label is found, the program continues to the statement(s) <code>after the switch</code>.</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Strict Comparison</h4>
+            <ul>
+              <li>The values must be of the same type to match.</li>
+              <li>A strict comparison can only be true if the operands are of the same type.</li>
+              <li>
+                <b class="text-primary">EX :</b>
+                <pre>
+                  <code>
+  let x = "0";
+  switch (x) {
+    case 0:
+      text = "Off";
+      break;
+    case 1:
+      text = "On";
+      break;
+    default:
+      text = "No value found";
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>Conditional (Ternary) Operator</h2>
+        <ul>
+          <li>JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.</li>
+          <li><b class="text-primary">Syntax : </b> <code>variablename = (condition) ? value1:value2 </code></li>
+          <li><b class="text-primary">EX : </b> <code>let voteable = (age < 18) ? "Too young":"Old enough"; </code></li>
+          <li>If the variable age is a value below 18, the value of the variable voteable will be "Too young", otherwise the value of voteable will be "Old enough".</li>
+        </ul>
+        <h2>try and catch</h2>
+        <ul>
+          <li>The <code>try</code> statement allows you to define a block of code to be tested for errors while it is being executed.</li>
+          <li>The <code>catch</code> statement allows you to define a block of code to be executed, if an error occurs in the try block.</li>
+          <li>
+            The JavaScript statements try and catch come in pairs:
+            <pre>
+              <code>
+  try {
+    Block of code to try
+  }
+  catch(err) {
+    Block of code to handle errors
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>throw Statement</h4>
+            <ul>
+              <li>The <code>throw</code> statement allows you to create a custom error.</li>
+              <li>Technically you can throw an exception (throw an error).</li>
+              <li>The exception can be a JavaScript String, a Number, a Boolean or an Object.</li>
+              <li>If you use throw together with try and catch, you can control program flow and generate custom error messages.</li>
+            </ul>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp mt-3">
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Please input a number between 5 and 10:</p>
+    <input id="demo" type="text">
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="p01"></p>
+    <script>
+      function myFunction() {
+        const message = document.getElementById("p01");
+        message.innerHTML = "";
+        let x = document.getElementById("demo").value;
+        try {
+          if(x == "") throw "empty";
+          if(isNaN(x)) throw "not a number";
+          x = Number(x);
+          if(x < 5) throw "too low";
+          if(x > 10) throw "too high";
+        }
+        catch(err) {
+          message.innerHTML = "Input is " + err;
+        }
+      }
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li>
+            <h4 class="mt-3">finally Statement</h4>
+            <ul>
+              <li>The <code>finally</code> statement lets you execute code, after try and catch, regardless of the result.</li>
+              <li>
+                <b class="text-primary">Syntax :</b>
+                <pre>
+                  <code>
+  try {
+    Block of code to try
+  }
+  catch(err) {
+    Block of code to handle errors
+  }
+  finally {
+    Block of code to be executed regardless of the try / catch result
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <div class="table-responsive xmp mt-3">
+                  <xmp>
+  <!DOCTYPE html>
+  <html>
+    <body>
+      <h2>JavaScript try catch</h2>
+      <p>Please input a number between 5 and 10:</p>
+      <input id="demo" type="text">
+      <button type="button" onclick="myFunction()">Test Input</button>
+      <p id="p01"></p>
+      <script>
+        function myFunction() {
+          const message = document.getElementById("p01");
+          message.innerHTML = "";
+          let x = document.getElementById("demo").value;
+          try { 
+            if(x == "")  throw "is empty";
+            if(isNaN(x)) throw "is not a number";
+            x = Number(x);
+            if(x > 10)   throw "is too high";
+            if(x < 5)  throw "is too low";
+          }
+          catch(err) {
+            message.innerHTML = "Input " + err;
+          }
+          finally {
+            document.getElementById("demo").value = "";
+          }
+        }
+      </script>
+    </body>
+  </html>
+                  </xmp>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Functions" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>JS Function Definitions</h2>
+        <ul>
+          <li>JavaScript functions are defined with the function keyword.</li>
+          <li>You can use a function declaration or a function expression.</li>
+          <li>
+            <h4>Function Declarations</h4>
+            <ul>
+              <li><b class="text-primary">Syntax : </b> <code>function functionName(parameters) { // code to be executed }</code></li>
+              <li>Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).</li>
+              <li>
+                <b class="text-primary">EX:</b> 
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This example calls a function which performs a calculation 3*4:</p>
+    <p id="demo"></p>
+    <script>
+      var x = myFunction(4, 3);
+      document.getElementById("demo").innerHTML = x;
+      function myFunction(a, b) {
+        return a * b;
+      }
+    </script>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Function Expressions</h4>
+            <ul>
+              <li>A JavaScript function can also be defined using an expression.</li>
+              <li>A function expression can be stored in a variable.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre><code>
+  const x = function (a, b) {return a * b};
+  let z = x(4, 3);
+                  </code></pre>
+              </li>
+              <li>The function above is actually an anonymous function (a function without a name).</li>
+              <li>The function above ends with a semicolon because it is a part of an executable statement.</li>
+            </ul>
+          </li>
+          <li>
+            <h4>The Function() Constructor</h4>
+            <ul>
+              <li>As you have seen in the previous examples, JavaScript functions are defined with the <code>function</code> keyword.</li>
+              <li>Functions can also be defined with a built-in JavaScript function constructor called <code>Function()</code>.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  const myFunction = new Function("a", "b", "return a * b");
+  let x = myFunction(4, 3);
+                  </code>
+                </pre>
+                You actually don't have to use the function constructor. The example above is the same as writing.
+                <pre>
+                  <code>
+  const myFunction = function (a, b) {return a * b};
+  let x = myFunction(4, 3);
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <h4>Self-Invoking Functions</h4>
+                <ul>
+                  <li>Function expressions can be made "self-invoking".</li>
+                  <li>A self-invoking expression is invoked (started) automatically, without being called.</li>
+                  <li>Function expressions will execute automatically if the expression is followed by ().</li>
+                  <li>You cannot self-invoke a function declaration.You have to add parentheses around the function to indicate that it is a function expression.</li>
+                  <li>
+                    <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  (function () {
+    let x = "Hello!!";  // I will invoke myself
+  })();
+                  </code>
+                </pre>
+                  </li>
+                  <li>The function above is actually an anonymous self-invoking function (function without name).</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Functions are Objects</h4>
+            <ul>
+              <li>JavaScript functions have both properties and methods.</li>
+              <li>The <code>arguments.length</code> property returns the number of arguments received when the function was invoked.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  function myFunction(a, b) {
+    return arguments.length;
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>The <code>toString()</code> method returns the function as a string.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  function myFunction(a, b) {
+    return a * b;
+  }
+  let text = myFunction.toString();
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Function Parameters and Arguments</h4>
+            <ul>
+              <li>Function parameters are the names listed in the function definition.</li>
+              <li>Function arguments are the real values passed to (and received by) the function.</li>
+              <li>
+                <h5>Parameter Rules</h5>
+                <ul>
+                  <li>JavaScript function definitions do not specify data types for parameters.</li>
+                  <li>JavaScript functions do not perform type checking on the passed arguments.</li>
+                  <li>JavaScript functions do not check the number of arguments received.</li>
+                </ul>
+              </li>
+              <li>
+                <h5>Default Parameters</h5>
+                <ul>
+                  <li>If a function is called with missing arguments (less than declared), the missing values are set to <code>undefined</code>.</li>
+                  <li>Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter.</li>
+                  <li>
+                    <b class="text-primary">EX:</b>
+                    <div class="table-responsive xmp"> 
+                      <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Setting a default value to a function parameter.</p>
+    <p id="demo"></p>
+    <script>
+      function myFunction(x, y) {
+        if (y === undefined) {
+          y = 2;
+        }  
+        return x * y;
+      }
+      document.getElementById("demo").innerHTML = myFunction(4);
+    </script>
+  </body>
+</html>
+                      </xmp>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h5>Arguments Object</h5>
+                <ul>
+                  <li>JavaScript functions have a built-in object called the arguments object.</li>
+                  <li>The argument object contains an array of the arguments used when the function was called (invoked).</li>
+                  <li>This way you can simply use a function to find (for instance) the highest value in a list of numbers.</li>
+                  <li>
+                    <b class="text-primary">Finding the largest number:</b>
+                    <div class="table-responsive xmp"> 
+                      <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Finding the largest number.</p>
+    <p id="demo"></p>
+    <script>
+      function findMax() {
+        let max = -Infinity;
+        for(let i = 0; i < arguments.length; i++) {
+          if (arguments[i] > max) {
+            max = arguments[i];
+          }
+        }
+        return max;
+      } 
+      document.getElementById("demo").innerHTML = findMax(4, 6,30,1,55);
+    </script>
+  </body>
+</html>
+                      </xmp>
+                    </div>
+                  </li>
+                  <li>
+                    <b class="text-primary">Sum of all arguments:</b>
+                    <div class="table-responsive xmp"> 
+                      <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Sum of all arguments:</p>
+    <p id="demo"></p>
+    <script>
+      function sumAll() {
+        let sum = 0;
+        for(let i = 0; i < arguments.length; i++) {
+          sum += arguments[i];
+        }
+        return sum;
+      }
+      document.getElementById("demo").innerHTML = sumAll(1, 123, 500, 115, 44, 88);
+    </script>
+  </body>
+</html>
+                      </xmp>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>JavaScript Function Invocation</h4>
+            <ul>
+              <li>The code inside a function is executed when the function is invoked.</li>
+              <li>It is common to use the term "call a function" instead of "invoke a function".</li>
+              <li>
+                <h5>this Keyword</h5>
+                <ul>
+                  <li>In JavaScript, the thing called <code>this</code>, is the object that "owns" the current code.</li>
+                  <li>The value of <code>this</code>, when used in a function, is the object that "owns" the function.</li>
+                  <li>Note that <code>this</code> is not a variable. It is a keyword. You cannot change the value of <code>this</code>.</li>
+                  <li>
+                    <b class="text-primary">EX:</b>
+                    <pre>
+                      <code>
+const myObject = {
+  firstName:"Ahmed",
+  lastName: "Mohamed",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+}
+myObject.fullName(); 
+                      </code>
+                    </pre>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Loop" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>JavaScript For Loop</h2>
+        <p>
+          JavaScript supports different kinds of loops:
+          <ul>
+            <li><code>for</code> - loops through a block of code a number of times</li>
+            <li><code>for/in</code> - loops through the properties of an object</li>
+            <li><code>for/of</code> - loops through the values of an 
+            iterable object </li>
+            <li><code>while</code> - loops through a block of code while a specified condition is true</li>
+            <li><code>do/while</code> - also loops through a block of code while a specified condition is true</li>
+          </ul>
+        </p>
+        <ul>
+          <li>
+            <h2>For Loop</h2>
+            <ul>
+              <li>
+                The for loop has the following syntax:
+                <pre>
+                  <code>
+  for (statement 1; statement 2; statement 3) {
+    // code block to be executed
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b>Statement 1</b> is executed (one time) before the execution of the code block.
+                <ul>
+                  <li>Normally you will use statement 1 to initialize the variable used in the loop (let i = 0).</li>
+                  <li>This is not always the case, JavaScript doesn't care. Statement 1 is optional.</li>
+                  <li>
+                    You can initiate many values in statement 1 (separated by comma):
+                    <pre>
+                      <code>
+  for (let i = 0, len = cars.length, text = ""; i < len; i++) {
+    text += cars[i] + &lt;br&gt;;
+  }
+                      </code>
+                    </pre>
+                  </li>
+                  <li>
+                    And you can omit statement 1 (like when your values are set before the loop starts):
+                    <pre>
+                      <code>
+  let i = 2;
+  let len = cars.length;
+  let text = "";
+  for (; i < len; i++) {
+    text += cars[i] + &lt;br&gt;;
+  }
+                      </code>
+                    </pre>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Statement 2</b> defines the condition for executing the code block.
+                <ul>
+                  <li>Often statement 2 is used to evaluate the condition of the initial variable.</li>
+                  <li>This is not always the case, JavaScript doesn't care. Statement 2 is also optional.</li>
+                  <li>If statement 2 returns true, the loop will start over again, if it returns false, the loop will end.</li>
+                  <li>If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will never end. This will crash your browser. Read about breaks in a later chapter of this tutorial.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Statement 3</b> is executed (every time) after the code block has been executed.
+                <ul>
+                  <li>Often statement 3 increments the value of the initial variable.</li>
+                  <li>This is not always the case, JavaScript doesn't care, and statement 3 is optional.</li>
+                  <li>Statement 3 can do anything like negative increment (i--), positive increment (i = i + 15), or anything else.</li>
+                  <li>
+                    Statement 3 can also be omitted (like when you increment your values inside the loop):
+                    <pre>
+                      <code>
+  let i = 0;
+  let len = cars.length;
+  let text = "";
+  for (; i < len; ) {
+    text += cars[i] + &lt;br&gt;;
+    i++;
+  }
+                      </code>
+                    </pre>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4>Loop Scope</h4>
+                <ul>
+                  <li>
+                    <h5>Using var in a loop:</h5>
+                    <p>using var, the variable declared in the loop redeclares the variable outside the loop.</p>
+                    <pre>
+                      <code>
+  var i = 5;
+  for (var i = 0; i < 10; i++) {
+    // some statements
+  }
+  document.getElementById("demo").innerHTML = i;
+                      </code>
+                    </pre>
+                  </li>
+                  <li>
+                    <h5>Using let in a loop:</h5>
+                    <p>
+                      using let, the variable declared in the loop does not redeclare the variable outside the loop. <br>
+                      When let is used to declare the i variable in a loop, the i variable will only be visible within the loop.
+                    </p>
+                    <pre>
+                      <code>
+  let i = 5;
+  for (let i = 0; i < 10; i++) {
+    // some statements
+  }
+  document.getElementById("demo").innerHTML = i;
+                      </code>
+                    </pre>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2>For In Loop</h2>
+            <ul>
+              <li>The JavaScript <code>for in</code> statement loops through the properties of an Object</li>
+              <li>
+                <b class="text-primary">Syntax : </b>
+                <pre>
+                  <code>
+  for (key in object) {
+    // code block to be executed
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">EX : </b>
+                <pre>
+                  <code>
+  const person = {fname:"John", lname:"Doe", age:25}; 
+  let txt = "";
+  for (let x in person) {
+    txt += person[x] + &lt;br&gt;;
+  }
+  document.getElementById("demo").innerHTML = txt;
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <h4>For In Over Arrays</h4>
+                <ul>
+                  <li>The JavaScript <code>for in</code> statement can also loop over the properties of an Array.</li>
+                  <li>
+                    <b class="text-primary">Syntax : </b>
+                    <pre>
+                      <code>
+      for (variable in array) {
+        // code block to be executed
+      }
+                      </code>
+                    </pre>
+                  </li>
+                  <li>
+                    <b class="text-primary">EX : </b>
+                    <pre>
+                      <code>
+      const numbers = [45, 4, 9, 16, 25];
+      let txt = "";
+      for (let x in numbers) {
+        txt += numbers[x];
+      }
+      document.getElementById("demo").innerHTML = txt;
+                      </code>
+                    </pre>
+                  </li>
+                  <li>Do not use for in over an Array if the index order is important.</li>
+                  <li>The index order is implementation-dependent, and array values may not be accessed in the order you expect.</li>
+                  <li>It is better to use a for loop, a for of loop, or Array.forEach() when the order is important.</li>
+                </ul>
+              </li>
+              <li>
+                <h4>Array.forEach()</h4>
+                <ul>
+                  <li>The <code>forEach()</code> method calls a function (a callback function) once for each array element.</li>
+                  <li>
+                    <b class="text-primary">EX:</b>
+                    <div class="table-responsive xmp"> 
+                      <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Array.forEach()</h2>
+    <p>Calls a function once for each array element.</p>
+    <p id="demo"></p>
+    <script>
+      const numbers = [45, 4, 9, 16, 25];
+      let txt = "";
+      numbers.forEach(myFunction);
+      document.getElementById("demo").innerHTML = txt;
+      function myFunction(value, index, array) {
+        txt += index + " => " + value + " in [" + array + "] <br> "; 
+      }
+    </script>
+  </body>
+</html>
+                      </xmp>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2>For Of Loop</h2>
+            <ul>
+              <li>The JavaScript <code>for of</code> statement loops through the values of an iterable object.</li>
+              <li>It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more.</li>
+              <li>
+                <b class="text-primary">Syntax : </b>
+                <pre>
+                  <code>
+  for (variable of iterable) {
+    // code block to be executed
+  }
+                  </code>
+                </pre>
+              </li>
+              <li><b>variable</b> - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.</li>
+              <li><b>iterable</b> - An object that has iterable properties.</li>
+              <li>
+                <b class="text-primary">Examples</b>
+                <h5>Looping over an Array</h5>
+                <pre>
+                  <code>
+  const cars = ["BMW", "Volvo", "Mini"];
+  let text = "";
+  for (let x of cars) {
+    text += x;
+  }
+                  </code>
+                </pre>
+                <h5>Looping over a String</h5>
+                <pre>
+                  <code>
+  let language = "JavaScript";
+  let text = "";
+  for (let x of language) {
+  text += x;
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2>While Loop</h2>
+            <ul>
+              <li>The <code>while</code> loop loops through a block of code as long as a specified condition is true.</li>
+              <li>
+                <b class="text-primary">Syntax : </b> 
+                <pre>
+                  <code>
+  while (condition) {
+    // code block to be executed
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">EX:</b> In the following example, the code in the loop will run, over and over again, as long as a variable (i) is less than 10:
+                <pre>
+                  <code>
+  while (i < 10) {
+    text += "The number is " + i;
+    i++;
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>If you forget to increase the variable used in the condition, the loop will never end. This will crash your browser.</li>
+            </ul>
+          </li>
+          <li>
+            <h2>Do While Loop</h2>
+            <ul>
+              <li>The <code>do while</code> loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</li>
+              <li>
+                <b class="text-primary">Syntax:</b>
+                <pre>
+                  <code>
+  do {
+    // code block to be executed
+  }
+  while (condition);
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">EX:</b> The example below uses a <code>do while</code> loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:
+                <pre>
+                  <code>
+  do {
+    text += "The number is " + i;
+    i++;
+  }
+  while (i < 10);
+                  </code>
+                </pre>
+              </li>
+              <li>Do not forget to increase the variable used in the condition, otherwise the loop will never end!</li>
+            </ul>
+          </li>
+          <li>
+            <h2>Break and Continue</h2>
+            <ul>
+              <li>The <code>break</code> statement "jumps out" of a loop.</li>
+              <li>
+                <pre>
+                  <code>
+  for (let i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    text += "The number is " + i + &lt;br&gt;;
+  }
+                  </code>
+                </pre>
+                the break statement ends the loop ("breaks" the loop) when the loop counter (i) is 3.
+              </li>
+              <li>The <code>continue</code> statement "jumps over" one iteration in the loop.</li>
+              <li>
+                <pre>
+                  <code>
+  for (let i = 0; i < 10; i++) {
+    if (i === 3) { continue; }
+    text += "The number is " + i + "&lt;br&gt;";
+  }
+                  </code>
+                </pre>
+                This example skips the value of 3
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2>JavaScript Labels</h2>
+            <ul>
+              <li>
+                To label JavaScript statements you precede the statements with a label name and a colon:
+                <pre>
+                  <code>
+  label:
+  statements
+                  </code>
+                </pre>
+                The break and the continue statements are the only JavaScript statements that can "jump out of" a code block. <br>
+                Syntax: <br>
+                <pre>
+                  <code>
+  break labelname;
+  continue labelname;
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary"> EX: </b>
+                  <div class="table-responsive xmp mt-3 mb-3"> 
+                    <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript break</h2>
+    <p id="demo"></p>
+    <script>
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      let text = "";
+      list: {
+        text += cars[0] + "<br>"; 
+        text += cars[1] + "<br>"; 
+        break list;
+        text += cars[2] + "<br>"; 
+        text += cars[3] + "<br>"; 
+      }
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
+                    </xmp>
+                  </div>
+                </b>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Master Code</span></strong> 
+      </div>
+      <div class="credits">
+        <strong style="color:red;"> &hearts; </strong> Designed by <a href="https://www.facebook.com/MasterC0de">Master Code</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <a href="#" class="back-to-top"><i class="bx bx-chevrons-up"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

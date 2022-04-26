@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MasterCode Course</title>
+  <meta content="MasterCode Course" name="description">
+  <meta content="Html, Css, Js, jquery, bootstrap, oop, course, mastercode" name="keywords">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none" style="font-size: 37px;"><i class="bx bx-menu"></i></button>
+  <img src="../assets/img/logo.png" alt="" class="img-fluid d-md-block d-xl-none" style="width: 118px;padding: 8px 30px 0;">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/img/logo.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Master Code</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/MasterC00636045" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/MasterC0de" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          
+          <a href="https://www.linkedin.com/in/master-code-8a57b81b6/?midToken=AQEVsPwSvGBmEA&midSig=2a1-hWoTMQ7pQ1&trk=eml-email_pymk_02-header-49-profile&trkEmail=eml-email_pymk_02-header-49-profile-null-dyijnh%7Ekq942ap0%7Etr-null-neptune%2Fprofile%7Evanity%2Eview" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+         <li><a href="../javascript.html"><i class="bx bx-home"></i> <span>All Sessions</span></a></li>
+          <li><a href="#Data"><i class="bx bx-checkbox-checked"></i> <span>Data Types</span></a></li>
+          <li><a href="#Strings"><i class="bx bx-checkbox-checked"></i> <span>JS Strings</span></a></li>
+          <li><a href="#Arrays"><i class="bx bx-checkbox-checked"></i> <span>JS Arrays</span></a></li>
+          <li><a href="#Dates"><i class="bx bx-checkbox-checked"></i> <span>JS Dates</span></a></li>
+          <li><a href="text-editor.html"><i class="bx bx-caret-right-circle"></i> <span>Text Editor</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <main id="main">
+    <section id="Data" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>Data Types</h2>
+        <ul>
+          <li>
+            JavaScript Types are Dynamic <br>
+            <p>means that the same variable can be used to hold different data types</p>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+  let x;           // Now x is undefined
+  x = 5;           // Now x is a Number
+  x = "Ahmed";      // Now x is a String
+              </code>
+            </pre>
+          </li>
+          <li>
+            JavaScript Strings <br>
+            <p>A string (or a text string) is a series of characters like "Ahmed mohamed".</p>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+  let answer1 = "It's alright";             // Single quote inside double quotes
+  let answer2 = "He is called 'Ahmed'";    // Single quotes inside double quotes
+  let answer3 = 'He is called "Ahmed"';    // Double quotes inside single quotes
+              </code>
+            </pre>
+          </li>
+          <li>
+            JavaScript Numbers<br>
+            <p>JavaScript has only one type of numbers,Numbers can be written with, or without decimals.</p>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+  let x1 = 34.00;     // Written with decimals
+  let x2 = 34;        // Written without decimals
+              </code>
+            </pre>
+          </li>
+          <li>
+            JavaScript Booleans<br>
+            <p>Booleans can only have two values: true or false.</p>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+  let x = 5;
+  let y = 5;
+  let z = 6;
+  (x == y)       // Returns true
+  (x == z)       // Returns false
+              </code>
+            </pre>
+          </li>
+          <li>
+            JavaScript Arrays<br>
+            <p>JavaScript arrays are written with square brackets.
+              Array items are separated by commas.</p>
+              <b class="text-primary">EX: </b><br>
+              <pre>
+                <code>
+  const cars = ["Saab", "Volvo", "BMW"];
+                </code>
+              </pre>
+          </li>
+          <li>
+            JavaScript Objects<br>
+            <p>JavaScript objects are written with curly braces {}.
+              Object properties are written as name:value pairs, separated by commas.</p>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+  const person = {firstName:"Ahmed", lastName:"mohamed", age:50, eyeColor:"blue"};
+              </code>
+            </pre>
+          </li>
+          <li>
+            The typeof Operator<br>
+            <p>The typeof operator returns the type of a variable or an expression</p>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+  typeof ""             // Returns "string"
+  typeof 314            // Returns "number"
+  typeof 3.14           // Returns "number"
+              </code>
+            </pre>
+          </li>
+          <li>
+            Undefined<br>
+            <p>a variable without a value, has the value undefined. The type is also undefined</p>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+  car = undefined;    // Value is undefined, type is undefined
+              </code>
+            </pre>
+          </li>
+          <li>
+            Empty Values<br>
+            <p>An empty value has nothing to do with undefined.
+              An empty string has both a legal value and a type.</p>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+  let car = "";    // The value is "", the typeof is "string"
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Strings" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>Js Strings</h2>
+        <ul>
+          <li>A JavaScript string is zero or more characters written inside quotes.</li>
+          <li>
+            <h4>String Length</h4>
+            <p>To find the length of a string</p>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+text.length;    // Will return 26
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Escape Character</h4>
+            <p>The backslash (\) escape character turns special characters into string characters</p>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+text.length;    // Will return 26
+              </code>
+            </pre>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr>
+                    <th class="text-center" style="width:20%">Code</th>
+                    <th class="text-center" style="width:20%">Result</th>
+                    <th style="width:20%">Description</th>
+                    <th style="width:40%">Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td  class="text-center font-weight-bold">(\')</td>
+                  <td class="text-center font-weight-bold">'</td>
+                  <td>Single quote</td>
+                  <td>
+                    <pre>
+                      <code>
+let text= 'It\'s alright.';<br>
+result : It's alright.
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center font-weight-bold">(\")</td>
+                  <td class="text-center font-weight-bold">"</td>
+                  <td>Double quote</td>
+                  <td>
+                    <pre>
+                      <code>
+let text = "We are the so-called \"Vikings\" from the north.";<br>
+result : We are the so-called "Vikings" from the north.
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center font-weight-bold">(\\)</td>
+                  <td class="text-center font-weight-bold">\</td>
+                  <td>Backslash</td>
+                  <td>
+                    <pre>
+                      <code>
+let text = "The character \\ is called backslash.";<br>
+result : The character \ is called backslash 
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+          </li>
+          <li> 
+            <h4>Six other escape sequences are valid in JavaScript:</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr>
+                    <th class="text-center" style="width:20%">Code</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center font-weight-bold">(\b)</td>
+                    <td>Backspace</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center font-weight-bold">(\f)</td>
+                    <td>Form Feed</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center font-weight-bold">(\n)</td>
+                    <td>New Line</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center font-weight-bold">(\r)</td>
+                    <td>Carriage Return</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center font-weight-bold">(\t)</td>
+                    <td>Horizontal Tabulator</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center font-weight-bold">(\v)</td>
+                    <td>Vertical Tabulator</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> 
+          </li>
+          <li>
+            <h4>Breaking Long Code Lines</h4>
+            <b class="text-primary">EX: </b> <br>
+              <pre>
+                <code>
+  document.getElementById("demo").innerHTML =
+  "Hello Dolly!";
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>Strings Can be Objects</h4>
+            <b class="text-primary">EX: </b><br>
+            <pre>
+              <code>
+  let x = "Ahmed";
+  let y = new String("Ahmed");
+  // typeof x will return string
+  // typeof y will return object
+  // (x == y) is true because x and y have equal values not identical
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>String Methods and Properties</h2>
+        <ul>
+          <li>
+            <h4>String Length</h4>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  txt.length     // Returns 26
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Extracting String Parts</h4>
+            <ul>
+              <li>
+                The slice(start, end) Method <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  let str = "Apple, Banana, Kiwi";
+  str.slice(7, 13)     // Returns Banana
+  let str = "Apple, Banana, Kiwi";
+  str.slice(-12, -6)    // Returns Banana
+                  </code>
+                </pre>
+              </li>
+              <li>
+                The substring(start, end or length of word) Method <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  let str = "Apple, Banana, Kiwi";
+  substring(7, 13)    // Returns Banana
+  //cannot accept negative indexes.<br>
+  If the first parameter is negative,<br>
+  the position counts from the end of the string.
+                  </code>
+                </pre>
+              </li>
+              <li>
+                the replace() Method <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  let text = "Please visit Microsoft!";
+  let newText = text.replace("Microsoft", "W3Schools");
+  //replaces only the first match.
+  //this method is case sensitive.
+  let newText = text.replace(/MICROSOFT/i, "W3Schools");
+  //use a regular expression with an /i flag (insensitive)
+                  </code>
+                </pre>
+              </li>
+              <li>
+                toUpperCase() Method <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  let text1 = "Hello World!";       // String
+  let text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+                  </code>
+                </pre>
+              </li>
+              <li>
+                toLowerCase() Method <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  let text1 = "Hello World!";       // String
+  let text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+                  </code>
+                </pre>
+              </li>
+              <li>
+                The concat() Method <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  let text1 = "Hello";
+  let text2 = "World";
+  let text3 = text1.concat(" ", text2);
+                  </code>
+                </pre>
+              </li>
+              <li>
+                String.trim() <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  let text = "       Hello World!        ";
+  text.trim()    // Returns "Hello World!";
+  //removes whitespace from both sides of a string.
+                  </code>
+                </pre>
+              </li>
+              <li>
+                padStart() and padEnd() <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  //support padding at the beginning and at the end of a string                      
+  let text = "5";
+  text.padStart(4,0)    // Returns 0005
+  let text = "5";
+  text.padEnd(4,0)     // Returns 5000                        
+                  </code>
+                </pre>
+              </li>
+              <li>
+                charAt(position) <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  // returns the character at a specified index (position) in a string
+  let text = "HELLO WORLD";
+  text.charAt(0)           // Returns H                  
+                  </code>
+                </pre>
+              </li>
+              <li>
+                The charCodeAt() Method <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  // returns the unicode of the character at a specified index in a string
+  let text = "HELLO WORLD";
+  text.charCodeAt(0)       // Returns 72                  
+                  </code>
+                </pre>
+              </li>
+              <li>
+                Property Access <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  // allows property access [ ] on strings
+  let text = "HELLO WORLD";
+  text[0]                   // returns H                  
+                  </code>
+                </pre>
+              </li>
+              <li>
+                Converting a String to an Array "split()" <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  text.split(",")          // Split on commas
+  text.split(" ")          // Split on spaces
+  text.split("|")          // Split on pipe                
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>JavaScript String Search</h2>
+        <ul>
+          <li>
+            String.indexOf() <br>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  // returns the index of (the position of) the first occurrence of a specified text in a string<br>
+  let str = "Please locate where 'locate' occurs!";
+  str.indexOf("locate")    // Returns 7  
+              </code>
+            </pre>
+          </li>
+          <li>
+            String.lastIndexOf() <br>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  //returns the index of the last occurrence of a specified text in a string <br>                 
+  let str = "Please locate where 'locate' occurs!";
+  str.lastIndexOf("locate")    // Returns 21              
+              </code>
+            </pre>
+          </li>
+          <li>
+            String.startsWith() <br>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  // returns true if a string begins with a specified value, otherwise false
+  let text = "Hello world, welcome to the universe.";
+  text.startsWith("Hello")   // Returns true  
+              </code>
+            </pre>
+          </li>
+          <li>
+            String.endsWith() <br>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  // returns true if a string ends with a specified value, otherwise false
+  var text = "Ahmed mohamed";
+  text.endsWith("mohamed")    // Returns true  
+              </code>
+            </pre>
+          </li>
+          <li>
+            String.search() <br>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  //searches a string for a specified value and returns the position of the matc
+  //This method is not equal to indexOf()
+  let str = "Please locate where 'locate' occurs!";
+  str.search("locate")     // Returns 7
+              </code>
+            </pre>
+          </li>
+          <li>
+            String.match() <br>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  //  searches a string for a match against a regular expression, 
+  and returns the matches, as an Array object
+  let text = "The rain in SPAIN stays mainly in the plain";
+  text.match(/ain/g)    // Returns an array [ain,ain,ain]
+              </code>
+            </pre>
+          </li>
+          <li>
+            String.includes() <br>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  // returns true if a string contains a specified value.
+  let text = "Hello world, welcome to the universe.";
+  text.includes("world")    // Returns true
+  string.includes(searchvalue, start)
+  let text = "Hello world, welcome to the universe.";
+  text.includes("world", 12)    // Returns false
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>JavaScript Template Literals</h2>
+        <ul>
+          <li>
+            Back-Tics Syntax <br>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  //back-ticks (``) rather than the quotes ("") to define a string
+  let text = `Hello World!`;
+              </code>
+            </pre>
+          </b>
+          <ul>
+          <li>Quotes Inside Strings</li>
+          <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  //single and double qoutes can use for string
+  let text = `He's often called "Ahmed"`;
+              </code>
+            </pre>
+          </b>
+          <li>Multiline Strings</li>
+          <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  let text =
+  `The quick
+  brown fox
+  jumps over
+  the lazy dog`;
+              </code>
+            </pre>
+          </b>
+          </ul>
+          </li>
+          <li>
+            Interpolation <br>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  //Template literals provide an easy way 
+  to interpolate variables and expressions into strings.
+  ${...}
+              </code>
+            </pre>
+            <ul>
+              <li>
+                Variable Substitutions <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  //allow variables in strings
+  let firstName = "Ahmed";
+  let lastName = "mohamed";
+  let text = `Welcome ${firstName}, ${lastName}!`;
+                  </code>
+                </pre>
+              </li>
+              <li>
+                Expression Substitution <br>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  //allow expressions in strings
+  let price = 10;
+  let VAT = 0.25;
+  let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Arrays" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>Js Arrays</h2>
+        <ul>
+          <li>JavaScript arrays are used to store multiple values in a single variable</li>
+          <li>
+            <b class="text-primary">Examples: </b>
+              <pre>
+                <code>
+const array_name = [item1, item2, ...]; 
+const cars = ["Saab", "Volvo", "BMW"];
+const cars = [
+"Saab",
+"Volvo",
+"BMW"
+];
+const cars = new Array("Saab", "Volvo", "BMW");
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>Accessing Array Elements</h4>
+            <p>access an array element by referring to the index number</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+const cars = ["Saab", "Volvo", "BMW"];
+let x = cars[0];    // x = "Saab"
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Changing an Array Element</h4>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Opel";
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Access the Full Array</h4>
+            <p>the full array can be accessed by referring to the array name</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Arrays are Objects</h4>
+            <p>Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays</p>  
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+const person = ["Ahmed", "mohamed", 46]; // array
+const person = {firstName:"Ahmed", lastName:"mohamed", age:46}; // object
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>Array Properties and Methods</h2>
+        <ul>
+          <li>
+            <h4>The length Property</h4>
+            <p>The length property of an array returns the length of an array (the number of array elements)</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  fruits.length;   // Returns 4
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Accessing the First Array Element</h4>
+            <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  fruits[0];    // Returns "Banana"
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>Accessing the Last Array Element</h4>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  fruits[fruits.length - 1];  // Returns "Mango"  
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Looping Array Elements</h4>
+            <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+  // using for loop 
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  let fLen = fruits.length;
+  text = "&lt;ul&gt;";
+  for (let i = 0; i < fLen; i++) {
+    text += "&lt;li&gt;" + fruits[i] + "&lt;/li&gt;";
+  }
+  text += "&lt;/ul&gt;"; 
+
+  //using forEach loop
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  let text = "&lt;ul&gt;";
+  fruits.forEach(myFunction);
+  text += "&lt;/ul&gt;";
+  function myFunction(value) {
+  text += "&lt;li&gt;" + value + "&lt;/li&gt;";
+  }         
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>Adding Array Elements</h4>
+            <p>add a new element to an array is using the push() method</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const fruits = ["Banana", "Orange", "Apple"];
+  fruits.push("Lemon");  // Adds a new element (Lemon) to fruits  
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Associative Arrays</h4>
+            <p>arrays with named indexes.</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const person = [];
+  person[0] = "Ahmed";
+  person[1] = "mohamed";
+  person[2] = 46;
+  person.length;    // Will return 3
+  person[0];        // Will return "Ahmed"  
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>How to Recognize an Array (isArray())</h4>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const fruits = ["Banana", "Orange", "Apple"];
+  Array.isArray(fruits);   // returns true
+  fruits instanceof Array;   // returns true
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>JavaScript Array Methods</h2>
+        <ul>
+          <li>
+            <h4>Converting Arrays to Strings</h4>
+            <ul>
+              <li>
+                <code>tostring()</code>
+                <p>The JavaScript method toString() converts an array to a string of (comma separated) array values.</p>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = fruits.toString();
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <code>join()</code>
+                <p>The join() method also joins all array elements into a string and specify the separator</p>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+                    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    document.getElementById("demo").innerHTML = fruits.join(" * ");
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Popping and Pushing</h4>
+            <ul>
+              <li>
+                <h5>Popping</h5>
+                <p>The pop() method removes the last element from an array</p>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.pop();  // Removes "Mango" from fruits  
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <h5>Pushing</h5>
+                <p>The push() method adds a new element to an array (at the end)</p>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.push("Kiwi");   // Adds "Kiwi" to fruits
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Shifting Elements</h4>
+            <ul>
+              <li>
+                <code>shift()</code>
+                <p>The shift() method removes the first array element and "shifts" all other elements to a lower index</p>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.shift();   // Removes "Banana" from fruits  
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <code>unshift()</code>
+                <p>The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements</p>
+                <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.unshift("Lemon");    // Adds "Lemon" to fruits  
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Changing Elements</h4>
+            <p>Array elements are accessed using their index number</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits[0] = "Kiwi";        // Changes the first element of fruits to "Kiwi"  
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Deleting Elements</h4>
+            <p>elements can be deleted by using the JavaScript operator delete</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    delete fruits[0];           // Changes the first element in fruits to undefined  
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Splicing an Array</h4>
+            <p>The splice() method can be used to add new items to an array</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.splice(2, 0, "Lemon", "Kiwi");  
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>splice() to Remove Elements</h4>
+            <p>splice() to remove elements without leaving "holes" in the array</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.splice(0, 1);   // Removes the first element  
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Merging (Concatenating) Arrays</h4>
+            <p>The concat() method creates a new array by merging (concatenating) existing arrays</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+    const myGirls = ["Cecilie", "Lone"];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+    // Concatenate (join) myGirls and myBoys
+    const myChildren = myGirls.concat(myBoys);    
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Slicing an Array</h4>
+            <p>The slice() method creates a new array. It mohameds not remove any elements from the source array</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+    const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    const citrus = fruits.slice(1);  
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>JavaScript Sorting Arrays</h2>
+        <ul>
+          <li>
+            <h4>Sorting an Array</h4>
+            <p>The sort() method sorts an array alphabetically</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  fruits.sort();        // Sorts the elements of fruits
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Reversing an Array</h4>
+            <p>The reverse() method reverses the elements in an array.</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();        // First sort the elements of fruits
+fruits.reverse();     // Then reverse the order of the elements
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Numeric Sort</h4>
+            <p>the sort() function sorts values as strings</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const points = [40, 100, 1, 5, 25, 10];
+  points.sort(function(a, b){return a - b}); 
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>The Compare Function</h4>
+            <p>The purpose of the compare function is to define an alternative sort order.
+              The compare function should return a negative, zero, or positive value, depending on the arguments</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  function(a, b){return a - b}
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Sorting an Array in Random Order</h4>
+            <p>add a new element to an array is using the push() method</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+                const points = [40, 100, 1, 5, 25, 10];
+                points.sort(function(a, b){return 0.5 - Math.random()});  
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Find the Highest (or Lowest) Array Value</h4>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  // Ascending
+  const points = [40, 100, 1, 5, 25, 10];
+  points.sort(function(a, b){return a - b});
+  // now points[0] contains the lowest value
+  // and points[points.length-1] contains the highest value
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Math.max() on an Array</h4>
+            <p>Math.max.apply to find the highest number in an array</p>
+          <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Math.min() on an Array</h4>
+            <p>Math.max.apply to find the highest number in an array</p>
+          <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  function myArrayMin(arr) {
+    return Math.min.apply(null, arr);
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Sorting Object Arrays</h4>
+            <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+  const cars = [
+    {type:"Volvo", year:2016},
+    {type:"Saab", year:2001},
+    {type:"BMW", year:2010}
+  ];
+  cars.sort(function(a, b){return a.year - b.year});
+                </code>
+              </pre>
+          </li>
+        </ul>
+        <h2>JavaScript Array Iteration</h2>
+        <ul>
+          <li>
+            <h4>Array.forEach()</h4>
+            <p>The forEach() method calls a function (a callback function) once for each array element</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const numbers = [45, 4, 9, 16, 25];
+  let txt = "";
+  numbers.forEach(myFunction);
+  function myFunction(value) {
+    txt += value + "&lt;br&gt;";
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Array.map()</h4>
+            <p>The map() method creates a new array by performing a function on each array element.<br>
+              The map() method mohameds not execute the function for array elements without values.<br>
+              The map() method mohameds not change the original array</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const numbers1 = [45, 4, 9, 16, 25];
+  const numbers2 = numbers1.map(myFunction);
+  function myFunction(value, index, array) {
+    return value * 2;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Array.filter()</h4>
+            <p>The filter() method creates a new array with array elements that passes a test</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  fconst numbers = [45, 4, 9, 16, 25];
+  const over18 = numbers.filter(myFunction);
+  function myFunction(value) {
+    return value > 18;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Array.reduce()</h4>
+            <p>The reduce() method runs a function on each array element to produce (reduce it to) a single value.<br>
+              The reduce() method works from left-to-right in the array. See also reduceRight()</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const numbers = [45, 4, 9, 16, 25];
+  let sum = numbers.reduce(myFunction);
+  function myFunction(total, value) {
+    return total + value;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Array.reduceRight()</h4>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const numbers = [45, 4, 9, 16, 25];
+  let sum = numbers1.reduceRight(myFunction);
+  function myFunction(total, value) {
+    return total + value;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Array.every()</h4>
+            <p>The every() method check if all array values pass a test.</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const numbers = [45, 4, 9, 16, 25];
+  let allOver18 = numbers.every(myFunction);
+  function myFunction(value, index, array) {
+    return value > 18;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Array.some()</h4>
+            <p>The some() method check if some array values pass a test.</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const numbers = [45, 4, 9, 16, 25];
+  let someOver18 = numbers.some(myFunction);
+  function myFunction(value, index, array) {
+    return value > 18;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Array.find()</h4>
+            <p>The find() method returns the value of the first array element that passes a test function</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const numbers = [4, 9, 16, 25, 29];
+  let first = numbers.find(myFunction);
+  function myFunction(value, index, array) {
+    return value > 18;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Array.findIndex()</h4>
+            <p>The findIndex() method returns the index of the first array element that passes a test function.</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const numbers = [4, 9, 16, 25, 29];
+  let first = numbers.findIndex(myFunction);
+  function myFunction(value, index, array) {
+    return value > 18;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Array.from()</h4>
+            <p>The Array.from() method returns an Array object from any object with a length property or any iterable object.</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  Array.from("ABCDEFG")   // Returns [A,B,C,D,E,F,G]
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Array.Keys()</h4>
+            <p>The Array.keys() method returns an Array Iterator object with the keys of an array.</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  const keys = fruits.keys();
+  for (let x of keys) {
+    text += x + "<br>";
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>JavaScript Array Const</h2>
+        <ul>
+          <li>
+            <h4>An array declared with const cannot be reassigned</h4>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const cars = ["Saab", "Volvo", "BMW"];
+  cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+              </code>
+            </pre>
+          </li>
+          <li><h4>Arrays are Not Constants</h4></li>
+          <li>
+            <h4>Elements Can be Reassigned</h4>
+            <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+  // You can create a constant array:
+  const cars = ["Saab", "Volvo", "BMW"];
+  
+  // You can change an element:
+  cars[0] = "Toyota";
+  
+  // You can add an element:
+  cars.push("Audi");
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>Assigned when Declared</h4>
+            <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+  const cars;
+  cars = ["Saab", "Volvo", "BMW"];
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>An array declared with const has Block Scope</h4>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  const cars;
+  cars = ["Saab", "Volvo", "BMW"];
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h5>Redeclaring an array declared with var is allowed anywhere in a program</h5>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+  var cars = ["Volvo", "BMW"];   // Allowed
+  var cars = ["Toyota", "BMW"];  // Allowed
+  cars = ["Volvo", "Saab"];      // Allowed
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Dates" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>Creating Date Objects</h2>
+        <ul>
+          <li>
+            <h4>new Date()</h4>
+            <p>new Date() creates a new date object with the current date and time</p>
+            <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+  const d = new Date();
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>new Date(year, month, ...)</h4>
+            <p>new Date(year, month, ...) creates a new date object with a specified date and time</p>
+            <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+    const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+                </code>
+              </pre>
+          </li>
+          <li> 
+            <h4>Previous Century</h4>
+            <p>One and two digit years will be interpreted as 19xx</p>
+            <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+    const d = new Date(99, 11, 24);
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>new Date(dateString)</h4>
+            <p>new Date(dateString) creates a new date object from a date string</p> 
+            <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+    const d = new Date("October 13, 2014 11:13:00");
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>new Date(milliseconds)</h4>
+            <p>new Date(milliseconds) creates a new date object as zero time plus milliseconds</p>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+    const d = new Date(0);
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>Date Methods</h2>
+        <ul>
+          <li>
+            <h4>Displaying Dates</h4>
+            <p>JavaScript will (by default) output dates in full text string format</p>
+              <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+  Wed Mar 25 2015 02:00:00 GMT+0200 (Eastern European Standard Time)
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>toString()</h4>
+            <b class="text-primary">EX: </b>
+                <pre>
+                  <code>
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toString();
+                  </code>
+                </pre>
+          </li>
+          <li>
+            <h4>toUTCString()</h4>
+            <p>The toUTCString() method converts a date to a UTC string (a date display standard)</p>
+              <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toUTCString();
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>toDateString()</h4>
+            <p>The toDateString() method converts a date to a more readable format</p>
+              <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toDateString();
+                </code>
+              </pre>
+          </li>
+          <li>
+            <h4>toISOString()</h4>
+            <p>The toISOString() method converts a Date object to a string, using the ISO standard format</p>
+              <b class="text-primary">EX: </b>
+              <pre>
+                <code>
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toISOString();
+                </code>
+              </pre>
+          </li>
+        </ul>   
+        <h2>JavaScript Get Date Methods</h2>
+        <div class="table-responsive"> 
+          <table class="table table-bordered table-active">
+            <thead>
+              <tr>
+                <th style="width:20%">Method</th>
+                <th style="width:30%">Description</th>
+                <th style="width:40%">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>getFullYear()</td>
+                <td>Get the year as a four digit number (yyyy)</td>
+                <td>
+                  <pre>
+                    <code>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.getFullYear();
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>getMonth()</td>
+                <td>Get the month as a number (0-11)</td>
+                <td>
+                  <pre>
+                    <code>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.getMonth();
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>getDate()</td>
+                <td>Get the day as a number (1-31)</td>
+                <td>
+                  <pre>
+                    <code>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.getDate();
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>getHours()</td>
+                <td>Get the hour (0-23)</td>
+                <td>
+                  <pre>
+                    <code>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.getHours();
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>getMinutes()</td>
+                <td>Get the minute (0-59)</td>
+                <td>
+                  <pre>
+                  <code>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.getMinutes();
+                  </code>
+                </pre>
+              </td>
+              </tr>
+              <tr>
+                <td>getSeconds()</td>
+                <td>returns the seconds of a date as a number (0-59)</td>
+                <td>
+                  <pre>
+                  <code>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.getSeconds();
+                  </code>
+                </pre>
+              </td>
+              </tr>
+              <tr>
+                <td>getMilliseconds()</td>
+                <td>Get the millisecond (0-999)</td>
+                <td> 
+                  <pre>
+                  <code>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.getMilliseconds();
+                  </code>
+                </pre>
+              </td>
+              </tr>
+              <tr>
+                <td>getTime()</td>
+                <td>Get the time (milliseconds since January 1, 1970)</td>
+                <td>
+                  <pre>
+                    <code>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.getTime();
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>getDay()</td>
+                <td>Get the weekday as a number (0-6)</td>
+                <td>
+                  <pre>
+                  <code>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.getTDay();
+                  </code>
+                </pre>
+              </td>
+              </tr>
+              <tr>
+                <td>Date.now()</td>
+                <td>Get the time.</td>
+                <td><pre>
+                  <code>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.now();
+                  </code>
+                </pre></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h2>JavaScript Set Date Methods</h2>
+        <div class="table-responsive"> 
+          <table class="table table-bordered table-active">
+            <tbody>
+            <tr>
+              <th style="width:20%">Method</th>
+              <th style="width:30%">Description</th>
+              <th style="width:40%">EX</th>
+            </tr>
+            <tr>
+              <td>setFullYear()</td>
+              <td>set the year as a four digit number (yyyy)</td>
+              <td>
+                <pre>
+                  <code>
+  const d = new Date();
+  d.setFullYear();
+                  </code>
+                </pre>
+              </td>
+            </tr>
+            <tr>
+              <td>setMonth()</td>
+              <td>set the month as a number (0-11)</td>
+              <td>
+                <pre>
+                  <code>
+  const d = new Date();
+  d.setMonth();
+                  </code>
+                </pre>
+              </td>
+            </tr>
+            <tr>
+              <td>setDate()</td>
+              <td>set the day as a number (1-31)</td>
+              <td>
+                <pre>
+                  <code>
+  const d = new Date();
+  d.setDate(d.getDate() + 50);
+                  </code>
+                </pre>
+              </td>
+            </tr>
+            <tr>
+              <td>setHours()</td>
+              <td>set the hour (0-23)</td>
+              <td>
+                <pre>
+                  <code>
+  const d = new Date();
+  d.setHours();
+                  </code>
+                </pre>
+              </td>
+            </tr>
+            <tr>
+              <td>setMinutes()</td>
+              <td>set the minute (0-59)</td>
+              <td>
+                <pre>
+                <code>
+  const d = new Date();
+  d.setMinutes();
+                </code>
+              </pre>
+            </td>
+            </tr>
+            <tr>
+              <td>setSeconds()</td>
+              <td>set the seconds of a date as a number (0-59)</td>
+              <td>
+                <pre>
+                <code>
+  const d = new Date();
+  d.setSeconds();
+                </code>
+              </pre>
+            </td>
+            </tr>
+            <tr>
+              <td>setMilliseconds()</td>
+              <td>set the millisecond (0-999)</td>
+              <td> 
+                <pre>
+                <code>
+  const d = new Date();
+  d.setMilliseconds();
+                </code>
+              </pre>
+            </td>
+            </tr>
+            <tr>
+              <td>setTime()</td>
+              <td>set the time (milliseconds since January 1, 1970)</td>
+              <td>
+                <pre>
+                  <code>
+  const d = new Date();
+  d.setTime();
+                  </code>
+                </pre>
+              </td>
+            </tr>
+            <tr>
+              <td>setDay()</td>
+              <td>set the weekday as a number (0-6)</td>
+              <td>
+                <pre>
+                <code>
+  const d = new Date();
+  d.setTDay();
+                </code>
+              </pre>
+            </td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Master Code</span></strong> 
+      </div>
+      <div class="credits">
+        <strong style="color:red;"> &hearts; </strong> Designed by <a href="https://www.facebook.com/MasterC0de">Master Code</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <a href="#" class="back-to-top"><i class="bx bx-chevrons-up"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

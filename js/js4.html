@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MasterCode Course</title>
+  <meta content="MasterCode Course" name="description">
+  <meta content="Html, Css, Js, jquery, bootstrap, oop, course, mastercode" name="keywords">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none" style="font-size: 37px;"><i class="bx bx-menu"></i></button>
+  <img src="../assets/img/logo.png" alt="" class="img-fluid d-md-block d-xl-none" style="width: 118px;padding: 8px 30px 0;">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/img/logo.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Master Code</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/MasterC00636045" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/MasterC0de" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          
+          <a href="https://www.linkedin.com/in/master-code-8a57b81b6/?midToken=AQEVsPwSvGBmEA&midSig=2a1-hWoTMQ7pQ1&trk=eml-email_pymk_02-header-49-profile&trkEmail=eml-email_pymk_02-header-49-profile-null-dyijnh%7Ekq942ap0%7Etr-null-neptune%2Fprofile%7Evanity%2Eview" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="../javascript.html"><i class="bx bx-home"></i> <span>All Sessions</span></a></li>
+          <li class="active"><a href="#DOM"><i class="bx bx-checkbox-checked"></i> <span>JS HTML DOM</span></a></li>
+          <li><a href="#BOM"><i class="bx bx-checkbox-checked"></i> <span>JS Browser BOM</span></a></li>
+          <li><a href="#Objects"><i class="bx bx-checkbox-checked"></i> <span>JS Objects</span></a></li>
+          <li><a href="#Classes"><i class="bx bx-checkbox-checked"></i> <span>JS Classes</span></a></li>
+          <li><a href="#Sources"><i class="bx bx-checkbox-checked"></i> <span>Extra Sources</span></a></li>
+          <li><a href="text-editor.html"><i class="bx bx-caret-right-circle"></i> <span>Text Editor</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <main id="main">
+    <section id="DOM" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>JS HTML DOM</h2>
+        <ul>
+          <li>With the HTML DOM, JavaScript can access and change all the elements of an HTML document.</li>
+          <li>When a web page is loaded, the browser creates a Document Object Model of the page.</li>
+          <li>
+            <div class="row">
+              <div class="col-12"><b>The HTML DOM Tree of Objects :</b> </div>
+              <div class="col-12 col-md-7 text-center m-md-4"><img src="dom.png" class="d-block w-100"></div>
+            </div>
+          </li>
+          <li>
+            The HTML DOM is a standard object model and programming interface for HTML. It defines:
+            <ul>
+              <li>The HTML elements as <b>objects</b>
+              </li><li>The <b>properties</b> of all HTML elements
+              </li><li>The <b>methods</b> to access all HTML elements</li>
+              <li>The <strong>events</strong> for all HTML elements</li>
+            </ul>
+          </li>
+          <li>The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</li>
+        </ul>
+        <h2>HTML DOM Methods</h2>
+        <ul>
+          <li>The HTML DOM can be accessed with JavaScript (and with other programming languages).</li>
+          <li>In the DOM, all HTML elements are defined as objects.</li>
+          <li>The programming interface is the properties and methods of each object.</li>
+          <li>A <b>property</b> is a value that you can get or set (like changing the content of an HTML element).</li>
+          <li>A <b>method</b> is an action you can do (like add or deleting an HTML element).</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>My First Page</h2>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML = "Hello World!";
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+        </ul>
+        <h2>The HTML DOM Document Object</h2>
+        <ul>
+          <li>The document object represents your web page.</li>
+          <li>If you want to access any element in an HTML page, you always start with accessing the document object.</li>
+          <li>
+            <h4>Finding HTML Elements</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr class="text-primary">
+                    <th>Method</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>document.getElementById(<em>id</em>)</td>
+                    <td>Find an element by element id</td>
+                  </tr>
+                  <tr>
+                    <td>document.getElementsByTagName(<em>name</em>)</td>
+                    <td>Find elements by tag name</td>
+                  </tr>
+                  <tr>
+                    <td>document.getElementsByClassName(<em>name</em>)</td>
+                    <td>Find elements by class name</td>
+                  </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<form id="form1" action="#">
+  name: <input type="text" name="name" value="Ahmed"><br><br>
+  Age :  <input type="number" name="age" value="30"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<p>These are the values of each element in the form:</p>
+<p id="demo"></p>
+<script>
+  const x = document.forms["form1"];
+  let text = "";
+  for (let i = 0; i < x.length-1 ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li>
+            <h4>Changing HTML Elements</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr class="text-primary">
+                    <th>Property</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>element</em>.innerHTML =&nbsp; <em>new html content</em></td>
+                    <td>Change the inner HTML of an element</td>
+                  </tr>
+                  <tr>
+                    <td><em>element</em>.<em>attribute = new value</em></td>
+                    <td>Change the attribute value of an HTML element</td>
+                  </tr>
+                  <tr>
+                    <td><em>element</em>.style.<em>property = new style</em></td>
+                    <td>Change the style of an HTML element</td>
+                  </tr>
+                  <tr class="text-primary">
+                    <th>Method</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td><em>element</em>.setAttribute<em>(attribute, value)</em></td>
+                    <td>Change the attribute value of an HTML element</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="id01">Old Heading</h1>
+<img id="myImage" src="smiley.gif">
+<p id="demo"></p>
+<script>document.write(Date());</script>
+<script>
+  const element = document.getElementById("id01");
+  element.innerHTML = "New Heading";
+  document.getElementById("myImage").src = "landscape.jpg";
+  document.getElementById("demo").innerHTML = "Date : " + Date();
+</script>
+</body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li>
+            <h4>Adding and Deleting Elements</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr class="text-primary">
+                    <th>Method</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>document.createElement(<em>element</em>)</td>
+                    <td>Create an HTML element</td>
+                  </tr>
+                  <tr>
+                    <td>document.removeChild(<em>element</em>)</td>
+                    <td>Remove an HTML element</td>
+                  </tr>
+                  <tr>
+                    <td>document.appendChild(<em>element</em>)</td>
+                    <td>Add an HTML element</td>
+                  </tr>
+                  <tr>
+                    <td>document.replaceChild(<em>new, old</em>)</td>
+                    <td>Replace an HTML element</td>
+                  </tr>
+                  <tr>
+                    <td>document.write(<em>text</em>)</td>
+                    <td>Write into the HTML output stream</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <h4>Adding Events Handlers</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr class="text-primary">
+                    <th>Method</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>document.getElementById(<em>id</em>).onclick = function(){<em>code</em>}</td>
+                    <td>Adding event handler code to an onclick event</td>
+                  </tr>
+                  </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <h4>Finding HTML Objects</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr class="text-primary">
+                    <th>Method</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>document.anchors</td>
+                    <td>Returns all &lt;a&gt; elements that have a name attribute</td>
+                  </tr>
+                  <tr>
+                    <td>document.baseURI</td>
+                    <td>Returns the absolute base URI of the document</td>
+                  </tr>
+                  <tr>
+                    <td>document.body</td>
+                    <td>Returns the &lt;body&gt; element </td>
+                  </tr>
+                  <tr>
+                    <td>document.cookie</td>
+                    <td>Returns the document's cookie</td>
+                  </tr>
+                  <tr>
+                    <td>document.doctype</td>
+                    <td>Returns the document's doctype</td>
+                  </tr>
+                  <tr>
+                    <td>document.documentElement</td>
+                    <td>Returns the &lt;html&gt; element </td>
+                  </tr>
+                  <tr>
+                    <td>document.documentMode</td>
+                    <td>Returns the mode used by the browser</td>
+                  </tr>
+                  <tr>
+                    <td>document.documentURI</td>
+                    <td>Returns the URI of the document </td>
+                  </tr>
+                  <tr>
+                    <td>document.domain</td>
+                    <td>Returns the domain name of the document server </td>
+                  </tr>
+                  <tr>
+                    <td>document.embeds</td>
+                    <td>Returns all &lt;embed&gt; elements</td>
+                  </tr>
+                  <tr>
+                    <td>document.forms</td>
+                    <td>Returns all &lt;form&gt; elements </td>
+                  </tr>
+                  <tr>
+                    <td>document.head</td>
+                    <td>Returns the &lt;head&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>document.images</td>
+                    <td>Returns all &lt;img&gt; elements </td>
+                  </tr>
+                  <tr>
+                    <td>document.implementation</td>
+                    <td>Returns the DOM implementation</td>
+                  </tr>
+                  <tr>
+                    <td>document.inputEncoding</td>
+                    <td>Returns the document's encoding (character set)</td>
+                  </tr>
+                  <tr>
+                    <td>document.lastModified</td>
+                    <td>Returns the date and time the document was updated</td>
+                  </tr>
+                  <tr>
+                    <td>document.links</td>
+                    <td>Returns all &lt;area&gt; and &lt;a&gt; elements that have a href attribute</td>
+                  </tr>
+                  <tr>
+                    <td>document.readyState</td>
+                    <td>Returns the (loading) status of the document</td>
+                  </tr>
+                  <tr>
+                    <td>document.referrer</td>
+                    <td>Returns the URI of the referrer (the linking document)</td>
+                  </tr>
+                  <tr>
+                    <td>document.scripts</td>
+                    <td>Returns all &lt;script&gt; elements</td>
+                  </tr>
+                  <tr>
+                    <td>document.strictErrorChecking</td>
+                    <td>Returns if error checking is enforced</td>
+                  </tr>
+                  <tr>
+                    <td>document.title</td>
+                    <td>Returns the &lt;title&gt; element </td>
+                  </tr>
+                  <tr>
+                    <td>document.URL</td>
+                    <td>Returns the complete URL of the document </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+        <h2>JavaScript Form Validation</h2>
+        <div class="table-responsive xmp mb-4"> 
+          <xmp>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  label{
+      display:block;
+    }
+  </style>
+  <script>
+  function validateForm() {
+  let x = document.forms["myForm"]["name"].value;
+  let y = document.forms["myForm"]["age"].value;
+  let name = document.getElementById('name');
+  let age  = document.getElementById('age');
+  if (x == "") {
+    name.innerHTML = "Name must be filled out";
+    name.style.color = 'red';
+  }
+  if (isNaN(y) || y < 1 || y > 10) {
+      age.innerHTML = "Age is not valid" ;
+      age.style.color = 'red';
+  }
+  return false;
+  }
+  </script>
+  </head>
+  <body>
+  <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+  <label id="name">Name: </label><input type="text" name="name"> <br> <br>
+  <label id="age">Age: </label><input type="text" name="age"> <br> <br>
+  <input type="submit" value="Submit">
+  </form>
+  </body>
+  </html>
+          </xmp>
+        </div>
+        <h2>JavaScript HTML DOM Events</h2>
+        <ul>
+          <li>A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element (onclick=JavaScript).</li>
+          <li>
+            Examples of HTML events:
+            <ul>
+              <li>When a user clicks the mouse</li>
+              <li>When a web page has loaded</li>
+              <li>When an image has been loaded</li>
+              <li>When the mouse moves over an element</li>
+              <li>When an input field is changed</li>
+              <li>When an HTML form is submitted</li>
+              <li>When a user strokes a key </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Reacting to Events</h4>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr class="text-primary">
+                    <th style="width: 15%;">Event</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>onclick</td>
+                    <td>
+                      <div class="table-responsive xmp"> 
+                        <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<h1 onclick="changeText(this)">Click on this text</h1>
+<script>
+  function changeText(id) {
+    id.innerHTML = "Text Changed";
+  }
+</script>
+</body>
+</html>
+                        </xmp>  
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>onload && <br> onunload</td>
+                    <td>
+                      <ul>
+                        <li>The <code>onload</code> and <code>onunload</code> events are triggered when the user enters or leaves the page.</li>
+                        <li>The <code>onload</code> event can be used to check the visitor's browser type and browser version, and load the proper version of the web page based on the information.</li>
+                      </ul>
+                      <div class="table-responsive xmp"> 
+                        <xmp>
+<!DOCTYPE html>
+<html>
+<body onload="checkCookies()">
+<p id="demo"></p>
+<script>
+  function checkCookies() {
+    var text = "";
+    if (navigator.cookieEnabled == true) {
+      text = "Cookies are enabled.";
+    } else {
+      text = "Cookies are not enabled.";
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
+</script>
+</body>
+</html> 
+                        </xmp>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>onchange</td>
+                    <td>
+                      The <code>onchange</code> event is often used in combination with validation of input fields.
+                      <div class="table-responsive xmp"> 
+                        <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+your name: <input type="text" id="name" onchange="upperCase()">
+<p>When you leave the input field, a function is triggered.</p>
+<script>
+  function upperCase() {
+    const x = document.getElementById("name");
+    x.value = x.value.toUpperCase();
+  }
+</script>
+</body>
+</html>
+                        </xmp>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>onmouseover && onmouseout </td>
+                    <td>
+                      The <code>onmouseover</code> and <code>onmouseout</code> events can be used to trigger a function when the user mouses over, or out of, an HTML element
+                      <div class="table-responsive xmp"> 
+                        <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;padding:40px;">
+Over Me</div>
+<script>
+  function mOver(obj) {
+    obj.innerHTML = "Thank You"
+  }
+  function mOut(obj) {
+    obj.innerHTML = "Mouse Over Me"
+  }
+</script>
+</body>
+</html> 
+                        </xmp>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>onmousedown && onmouseup</td>
+                    <td>
+                      The <code>onmousedown</code>, <code>onmouseup</code>, and <code>onclick</code> events are all parts of a mouse-click. First when a mouse-button is clicked, the <code>onmousedown</code> event is triggered, then, when the mouse-button is released, the <code>onmouseup</code> event is triggered, finally, when the mouse-click is completed, the <code>onclick</code> event is triggered.
+                      <div class="table-responsive xmp"> 
+                        <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;padding:40px;">
+Click Me</div>
+<script>
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Release Me";
+}
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+  obj.innerHTML="Thank You";
+}
+</script>
+</body>
+</html> 
+                        </xmp>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <h4>The addEventListener() method</h4>
+            <ul>
+              <li>The <code>addEventListener()</code> method attaches an event handler to an element without overwriting existing event handlers.</li>
+              <li>You can add many event handlers to one element.</li>
+              <li>When using the <code>addEventListener()</code> method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.</li>
+              <li>You can easily remove an event listener by using the <code>removeEventListener()</code> method.</li>
+              <li>The <code>addEventListener()</code> method allows you to add event listeners on any HTML DOM object such as HTML elements, the HTML document, the window object, or other objects that support events, like the xmlHttpRequest object.</li>
+              <li><b>Syntax :</b> <code>element.addEventListener(event, function, useCapture);</code></li>
+              <li>The first parameter is the type of the event (like "click" or "mousedown" or any other HTML DOM Event.)</li>
+              <li>The second parameter is the function we want to call when the event occurs.</li>
+              <li>The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.</li>
+              <li>The default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation.</li>
+              <li>
+                <b class="text-primary">Examples : </b>
+                <pre>
+                  <code>
+  // Add an Event Handler to an Element 
+  element.addEventListener("click", function(){ alert("Hello World!"); });
+
+  // You can also refer to an external "named" function
+  element.addEventListener("click", myFunction);
+  function myFunction() {
+    alert ("Hello World!");
+  }
+
+  // Add Many Event Handlers to the Element
+  element.addEventListener("click", myFunction);
+  element.addEventListener("click", mySecondFunction);
+
+  // You can add events of different types to the same element
+  element.addEventListener("mouseover", myFunction);
+  element.addEventListener("click", mySecondFunction);
+  element.addEventListener("mouseout", myThirdFunction);
+
+  // Add an event listener that fires when a user resizes the window
+  window.addEventListener("resize", function(){
+    document.getElementById("demo").innerHTML = "sometext";
+  });
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <h4>Passing Parameters</h4>
+                <ul>
+                  <li>When passing parameter values, use an "anonymous function" that calls the specified function with the parameters.</li>
+                  <li> <b class="text-primary">EX:</b>
+                    <div class="table-responsive xmp"> 
+                      <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Click the button to perform a calculation 5*7.</p>
+    <button id="myBtn">Try it</button>
+    <p id="demo"></p>
+    <script>
+      let p1 = 5;
+      let p2 = 7;
+      document.getElementById("myBtn").addEventListener("click", function() {
+        myFunction(p1, p2);
+      });
+      function myFunction(a, b) {
+        document.getElementById("demo").innerHTML = a * b;
+      }
+    </script>
+  </body>
+</html>
+                      </xmp>
+                    </div>
+                  </li>
+                  <li>
+                    <h4>Event Bubbling and Event Capturing</h4>
+                    <ul>
+                      <li>There are two ways of event propagation in the HTML DOM, bubbling and capturing.</li>
+                      <li>
+                        Event propagation is a way of defining the element order when an event occurs.
+                        If you have a <code>&lt;p&gt;</code> element inside a <code>&lt;div&gt;</code> element, and the user clicks on the <code>&lt;p&gt;</code> element, which element's 
+                        "click" event should be handled first? <br>
+                        In <em>bubbling </em>the inner most element's event is handled first and then the outer:
+                        the <code>&lt;p&gt;</code> element's click event is handled first, then the <code>&lt;div&gt;</code> element's click event. <br>
+                        In <em>capturing </em>the outer most element's event is handled first and then the inner:
+                        the <code>&lt;div&gt;</code> element's click event will be handled first, then the <code>&lt;p&gt;</code> element's click event. 
+                      </li>
+                      <li>
+                        <b class="text-primary">EX:</b>
+                        <div class="table-responsive xmp"> 
+                          <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #myDiv1, #myDiv2 {
+        background-color: coral;
+        padding: 50px;
+      }
+      #myP1, #myP2 {
+        background-color: white; 
+        font-size: 20px;
+        border: 1px solid;
+        padding: 20px;
+      }
+    </style>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  </head>
+  <body>
+    <div id="myDiv1">
+      <h2>Bubbling:</h2>
+      <p id="myP1">Click me!</p>
+    </div><br>
+    <div id="myDiv2">
+      <h2>Capturing:</h2>
+      <p id="myP2">Click me!</p>
+    </div>
+    <script>
+      document.getElementById("myP1").addEventListener("click", function() {
+        alert("You clicked the white element!");
+      }, false);
+      document.getElementById("myDiv1").addEventListener("click", function() {
+        alert("You clicked the orange element!");
+      }, false);
+      document.getElementById("myP2").addEventListener("click", function() {
+        alert("You clicked the white element!");
+      }, true);
+      document.getElementById("myDiv2").addEventListener("click", function() {
+        alert("You clicked the orange element!");
+      }, true);
+    </script>
+  </body>
+</html>
+                          </xmp>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>The removeEventListener() method</h4>
+            The <code>removeEventListener()</code> method removes event handlers that have been attached with the <code>addEventListener()</code> method.
+            <pre>
+              <code>
+  element.removeEventListener("mousemove", myFunction);
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>DOM Nodes</h2>
+        <ul>
+          <li>everything in an HTML document is a node.</li>
+          <li>With the HTML DOM, all nodes in the node tree can be accessed by JavaScript.</li>
+          <li>New nodes can be created, and all nodes can be modified or deleted.</li>
+          <li>The nodes in the node tree have a hierarchical relationship to each other.</li>
+          <li>
+            The terms parent, child, and sibling are used to describe the relationships.
+            <ul>
+              <li>In a node tree, the top node is called the root (or root node)</li>
+              <li>Every node has exactly one parent, except the root (which has no parent)</li>
+              <li>A node can have a number of children</li>
+              <li>Siblings (brothers or sisters) are nodes with the same parent</li>
+            </ul>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-7">
+                <b class="text-primary">EX:</b>
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<html>
+  <head>
+    <title>DOM Tutorial</title>
+  </head>
+  <body>
+    <h1>DOM Lesson one</h1>
+    <p>Hello world!</p>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </div>
+              <div class="col-md-5">
+                From the HTML above you can read:
+                <ul>
+                  <li><code>&lt;html&gt;</code> is the root node</li>
+                  <li><code>&lt;html&gt;</code> has no parents </li>
+                  <li><code>&lt;html&gt;</code> is the parent of <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code></li>
+                  <li><code>&lt;head&gt;</code> is the first child of <code>&lt;html&gt;</code></li>
+                  <li><code>&lt;body&gt;</code> is the last child of <code>&lt;html&gt;</code></li>
+                </ul>
+                and:
+                <ul>
+                  <li><code>&lt;head&gt;</code> has one child: <code>&lt;title&gt;</code></li>
+                  <li><code>&lt;title&gt;</code> has one child (a text node): "DOM Tutorial"</li>
+                  <li><code>&lt;body&gt;</code> has two children: <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code></li>
+                  <li><code>&lt;h1&gt;</code> has one child: "DOM Lesson one"</li>
+                  <li><code>&lt;p&gt;</code> has one child: "Hello world!"</li>
+                  <li><code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> are siblings</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h4>You can use the following node properties to navigate between nodes with JavaScript:</h4>
+            <ul>
+              <li><code>parentNode</code></li>
+              <li><code>childNodes[<em>nodenumber</em>]</code></li>
+              <li><code>firstChild</code></li>
+              <li><code>lastChild</code></li>
+              <li><code>nextSibling</code></li>
+              <li><code>previousSibling</code></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Child Nodes and Node Values</h4>
+            The nodeValue property specifies the value of a node.
+            <ul>
+              <li>nodeValue for element nodes is <code>null</code></li>
+              <li>nodeValue for text nodes is the text itself</li>
+              <li>nodeValue for attribute nodes is the attribute value</li>
+            </ul> 
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 id="id01">My First Page</h1>
+    <h2 id="id02"></h2>
+    <p id="id03"></p>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("id03").innerHTML = 
+      document.getElementById("id01").childNodes[0].nodeValue;
+      document.getElementById("id02").innerHTML = 
+      document.getElementById("id01").firstChild.nodeValue;
+      document.getElementById("demo").innerHTML = 
+      document.body.innerHTML;
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li>
+            <h4>The nodeName Property</h4>
+            The <code>nodeName</code> property specifies the name of a node.
+            <ul>
+              <li>nodeName is read-only</li>
+              <li>nodeName of an element node is the same as the tag name</li>
+              <li>nodeName of an attribute node is the attribute name</li>
+              <li>nodeName of a text node is always #text</li>
+              <li>nodeName of the document node is always #document</li>
+            </ul>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 id="id01">My First Page</h1>
+    <p id="id02"></p>
+    <script>
+      document.getElementById("id02").innerHTML = 
+      document.getElementById("id01").nodeName;
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li>
+            <h4>Creating New HTML Elements (Nodes)</h4>
+            To add a new element to the HTML DOM, you must create the element (element node) first, and then append it to an existing element.
+            <ul>
+              <li>This code creates a new p element : <code>document.createElement("p")</code></li>
+              <li>To add text to the p element, you must create a text node first. This code creates a text node: <code>document.createTextNode("This is a new paragraph.")</code></li>
+              <li>This code appends the new element to the existing element : <code>element.appendChild(new_element);</code></li>
+            </ul>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+    </div>
+    <script>
+      const para = document.createElement("p");
+      const node = document.createTextNode("This is new.");
+      para.appendChild(node);
+      const element = document.getElementById("div1");
+      element.appendChild(para);
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li>
+            <h4>Creating new HTML Elements - insertBefore()</h4>
+            <ul>
+              <li>The <code>appendChild()</code> method in the previous example, appended the new element as the last child of the parent.</li>
+              <li>
+                If you don't want that you can use the insertBefore() method:
+                <div class="table-responsive xmp mb-4"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="div1">
+      <p id="p1">This is a paragraph.</p>
+      <p id="p2">This is another paragraph.</p>
+    </div>
+    <script>
+      const para = document.createElement("p");
+      const node = document.createTextNode("This is new.");
+      para.appendChild(node);
+      const element = document.getElementById("div1");
+      const child = document.getElementById("p1");
+      element.insertBefore(para,child);
+    </script>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+              <li>
+                <h4>Removing Existing HTML Elements</h4>
+                To remove an HTML element, use the <code>remove()</code> method:
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>
+      <p id="p1">This is a paragraph.</p>
+      <p id="p2">This is another paragraph.</p>
+    </div>
+    <button onclick="myFunction()">Remove Element</button>
+    <script>
+      function myFunction() {
+        document.getElementById("p1").remove();
+      }
+    </script>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+              <li>
+                <h4>Removing a Child Node</h4>
+                For browsers that does not support the <code>remove()</code> method, you have to find the parent node to remove an element:
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="div1">
+      <p id="p1">This is a paragraph.</p>
+      <p id="p2">This is another paragraph.</p>
+    </div>
+    <script>
+      const parent = document.getElementById("div1");
+      const child = document.getElementById("p1");
+      parent.removeChild(child);
+    </script>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+              <li>
+                <h4>Replacing HTML Elements</h4>
+                To replace an element to the HTML DOM, use the <code>replaceChild()</code> method:
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="div1">
+      <p id="p1">This is a paragraph.</p>
+      <p id="p2">This is a paragraph.</p>
+    </div>
+    <script>
+      const parent = document.getElementById("div1");
+      const child = document.getElementById("p1");
+      const para = document.createElement("p");
+      const node = document.createTextNode("This is new.");
+      para.appendChild(node);
+      parent.replaceChild(para,child);
+    </script>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="mt-3">
+            <b class="text-primary">EX:</b>
+            Change the text color of all p elements:
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript HTML DOM</h2>
+    <p>Hello World</p>
+    <p>Hello Ahmed</p>
+    <p>Click the button to change the color of all p elements.</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+      function myFunction() {
+        const myCollection = document.getElementsByTagName("p");
+        for (let i = 0; i < myCollection.length; i++) {
+          myCollection[i].style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="BOM" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>JavaScript Window</h2>
+        <ul>
+          <li>The <code>window</code> object is supported by all browsers. It represents the browser's window.</li>
+          <li>All global JavaScript objects, functions, and variables automatically become members of the window object.</li>
+          <li>Global variables are properties of the window object.</li>
+          <li>Global functions are methods of the window object.</li>
+          <li>
+            Even the document object (of the HTML DOM) is a property of the window object: <br>
+            <code>window.document.getElementById("header");</code> = <code>document.getElementById("header");</code>
+          </li>
+          <li>
+            <h4>Window Methods</h4>
+            <ul>
+              <li><code>window.innerHeight</code> - the inner height of the browser window (in pixels)</li>
+              <li><code>window.innerWidth</code> - the inner width of the browser window (in pixels)</li>
+              <li><code>window.open()</code> - open a new window</li>
+              <li><code>window.close()</code> - close the current window</li>
+              <li><code>window.moveTo()</code> - move the current window</li>
+              <li><code>window.resizeTo()</code> - resize the current window</li>
+            </ul>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  let w = window.innerWidth;
+  let h = window.innerHeight;
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Window Screen</h4>
+            The window.screen object can be written without the window prefix.
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr class="text-primary">
+                    <td>Property</td>
+                    <td style="width: 50%;">Description</td>
+                    <td>Example</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>screen.width</td>
+                    <td>The <code>screen.width</code> property returns the width of the visitor's screen in pixels.</td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML
+= screen.width;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>screen.height</td>
+                    <td>The <code>screen.height</code> property returns the height of the visitor's screen in pixels.</td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML
+= screen.height;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>screen.availWidth</td>
+                    <td>The <code>screen.availWidth</code> property returns the width of the visitor's screen, in pixels, minus interface features like the Windows Taskbar.</td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML 
+= screen.availWidth;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>screen.availHeight</td>
+                    <td>The <code>screen.availHeight</code> property returns the height of the visitor's screen, in pixels, minus interface features like the Windows Taskbar.</td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML
+= screen.availHeight;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>screen.colorDepth</td>
+                    <td>
+                      <ul>
+                        <li>The <code>screen.colorDepth</code> property returns the number of bits used to display one color.</li>
+                        <li>All modern computers use 24 bit or 32 bit hardware for color resolution.</li>
+                        <li>24 bits =  16,777,216 different "True Colors"</li>
+                        <li>32 bits =  4,294,967,296 different "Deep Colors"</li>
+                        <li>Older computers used 16 bits: 65,536 different "High Colors" resolution.</li>
+                        <li>Very old computers, and old cell phones used 8 bits: 256 different "VGA colors".</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML
+= screen.colorDepth;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>screen.pixelDepth</td>
+                    <td>The <code>screen.pixelDepth</code> property returns the pixel depth of the screen.</td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML
+= screen.pixelDepth;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <h4>Window Location</h4>
+            The <code>window.location</code> object can be used to get the current page address (URL) and to redirect the browser to a new page.
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr class="text-primary">
+                    <td>Property</td>
+                    <td style="width: 50%;">Description</td>
+                    <td>Example</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>window.location.href</td>
+                    <td>The <code>window.location.href</code> property returns the URL of the current page.</td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML
+= "location is " + window.location.href;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>window.location.hostname</td>
+                    <td>The <code>window.location.hostname</code> property returns the name of the internet host (of the current page).</td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML
+="hostname is "+window.location.hostname;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>window.location.pathname</td>
+                    <td>The <code>window.location.pathname</code> property returns the pathname of the current page.</td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML
+= "path is " + window.location.pathname;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>window.location.protocol</td>
+                    <td>The <code>window.location.protocol</code> property returns the web protocol of the page.</td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML
+= "protocol is"+window.location.protocol;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>window.location.port</td>
+                    <td>The <code>window.location.port</code> property returns the number of the internet host port (of the current page).</td>
+                    <td>
+                      <pre>
+                        <code>
+document.getElementById("demo").innerHTML
+= "port number is "+window.location.port;
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <h4>Window History</h4>
+            <ul>
+              <li>The <code>window.history</code> object can be written without the window prefix.</li>
+              <li>To protect the privacy of the users, there are limitations to how JavaScript can access this object.</li>
+            </ul>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr class="text-primary">
+                    <td>Property</td>
+                    <td style="width: 50%;">Description</td>
+                    <td>Example</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>history.back()</td>
+                    <td>The <code>history.back()</code> method loads the previous URL in the history list.</td>
+                    <td>
+                      <pre>
+                        <code>
+function goBack() {
+  window.history.back()
+}
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>history.forward()</td>
+                    <td>The <code>history.forward()</code> method loads the next URL in the history list.</td>
+                    <td>
+                      <pre>
+                        <code>
+function goForward() {
+  window.history.forward()
+}
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <h4>Window Navigator</h4>
+            <ul>
+              The <code>window.navigator</code> object contains information about the visitor's browser.
+              <div class="table-responsive"> 
+                <table class="table table-bordered table-active">
+                  <thead>
+                    <tr class="text-primary">
+                      <td>Property</td>
+                      <td style="width: 50%;">Description</td>
+                      <td>Example</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Browser Cookies</td>
+                      <td>The <code>cookieEnabled</code> property returns true if cookies are enabled, otherwise false.</td>
+                      <td>
+                        <pre>
+                          <code>
+document.getElementById("demo").innerHTML =
+"cookiesEnabled is"+navigator.cookieEnabled;
+                          </code>
+                        </pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Browser Application Name</td>
+                      <td>The appName property returns the application name of the browser.</td>
+                      <td>
+                        <pre>
+                          <code>
+document.getElementById("demo").innerHTML =
+"navigator.appName is "+ navigator.appName;
+                          </code>
+                        </pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Application Code Name</td>
+                      <td>The <code>appCodeName</code> property returns the application code name of the browser.</td>
+                      <td>
+                        <pre>
+                          <code>
+document.getElementById("demo").innerHTML =
+"appCodeName is" + navigator.appCodeName;
+                          </code>
+                        </pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Browser Engine</td>
+                      <td>The <code>product</code> property returns the product name of the browser engine.</td>
+                      <td>
+                        <pre>
+                          <code>
+document.getElementById("demo").innerHTML =
+"navigator.product is " + navigator.product;
+                          </code>
+                        </pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Browser Version</td>
+                      <td>The <code>appVersion</code> property returns version information about the browser.</td>
+                      <td>
+                        <pre>
+                          <code>
+document.getElementById("demo").innerHTML = 
+navigator.appVersion;
+                          </code>
+                        </pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Browser Agent</td>
+                      <td>The <code>userAgent</code> property returns the user-agent header sent by the browser to the server.</td>
+                      <td>
+                        <pre>
+                          <code>
+document.getElementById("demo").innerHTML = 
+navigator.userAgent;
+                          </code>
+                        </pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Browser Platform</td>
+                      <td>The <code>platform</code> property returns the browser platform (operating system).</td>
+                      <td>
+                        <pre>
+                          <code>
+document.getElementById("demo").innerHTML = 
+navigator.platform;
+                          </code>
+                        </pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Browser Language</td>
+                      <td>The <code>language</code> property returns the browser's language.</td>
+                      <td>
+                        <pre>
+                          <code>
+document.getElementById("demo").innerHTML = 
+navigator.language;
+                          </code>
+                        </pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Browser Online</td>
+                      <td>The <code>onLine</code> property returns true if the browser is online.</td>
+                      <td>
+                        <pre>
+                          <code>
+document.getElementById("demo").innerHTML = 
+navigator.onLine;
+                          </code>
+                        </pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </ul>
+          </li>
+        </ul>
+        <h2>JavaScript Popup Boxes </h2>
+        <ul>
+          <li>
+            <h4>Alert Box </h4>
+            <ul>
+              <li>An alert box is often used if you want to make sure information comes through to the user.</li>
+              <li>When an alert box pops up, the user will have to click "OK" to proceed.</li>
+              <li><b class="text-primary">EX:</b> <code>alert("I am an alert box!");</code></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Confirm Box</h4>
+            <ul>
+              <li>A confirm box is often used if you want the user to verify or accept something.</li>
+              <li>When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.</li>
+              <li>If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+  function myFunction() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+  }
+</script>
+</body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Prompt Box</h4>
+            <ul>
+              <li>A prompt box is often used if you want the user to input a value before entering a page.</li>
+              <li>When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.</li>
+              <li>If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+<body>  
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+  function myFunction() {
+    let text;
+    let person = prompt("Please enter your name:", "Harry Potter");
+    if (person == null || person == "") {
+      text = "User cancelled the prompt.";
+    } else {
+      text = "Hello " + person + "! How are you today?";
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
+</script>
+</body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>JavaScript Timing Events</h2>
+        <ul>
+          <li>The window object allows execution of code at specified time intervals (These time intervals are called timing events).</li>
+          <li>
+            <h4>The setTimeout() Method</h4>
+            <ul>
+              <li><b class="text-primary">Syntax :</b> <code>setTimeout(function, milliseconds);</code></li>
+              <li>The first parameter is a function to be executed.</li>
+              <li>The second parameter indicates the number of milliseconds before execution.</li>
+              <li>
+                <b class="text-primary">EX:</b> 
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Click "Try it". Wait 3 seconds, and the page will alert "Hello".</p>
+    <button onclick="setTimeout(myFunction, 3000);">Try it</button>
+    <script>
+      function myFunction() {
+        alert('Hello');
+      }
+    </script>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+              <li>The <code>clearTimeout()</code> method stops the execution of the function specified in setTimeout().</li>
+              <li><b class="text-primary">Syntax :</b> <span class="d-block"><code>myVar = setTimeout(function, milliseconds);</code> <br> <code>clearTimeout(myVar);</code></span></li>
+              <li>
+                <b class="text-primary">EX:</b> 
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Click "Try it". Wait 3 seconds. The page will alert "Hello".</p>
+    <p>Click "Stop" to prevent the first function to execute.</p>
+    <p>(You must click "Stop" before the 3 seconds are up.)</p>
+    <button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+    <button onclick="clearTimeout(myVar)">Stop it</button>
+    <script>
+      function myFunction() {
+        alert("Hello");
+      }
+    </script>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>The setInterval() Method</h4>
+            <ul>
+              <li>The <code>setInterval()</code> method repeats a given function at every given time-interval.</li>
+              <li><b class="text-primary">Syntax :</b> <code>setInterval(function, milliseconds);</code></li>
+              <li>The first parameter is the function to be executed.</li>
+              <li>The second parameter indicates the length of the time-interval between each execution.</li>
+              <li>
+                <b class="text-primary">EX:</b> 
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>A script on this page starts this clock:</p>
+    <p id="demo"></p>
+    <script>
+      setInterval(myTimer, 1000);
+      function myTimer() {
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+      }
+    </script>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>The <code>clearInterval()</code> method stops the executions of the function specified in the <code>setInterval()</code> method.</li>
+          <li>The <code>clearInterval()</code> method uses the variable returned from <code>setInterval().</code></li>
+          <li>
+            <b class="text-primary">Syntax :</b> <br>
+            <code>
+              let myVar = setInterval(function, milliseconds); <br>
+              clearInterval(myVar);
+            </code>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b> 
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>A script on this page starts this clock:</p>
+    <p id="demo"></p>
+    <button onclick="clearInterval(myVar)">Stop time</button>
+    <script>
+      let myVar = setInterval(myTimer ,1000);
+      function myTimer() {
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+      }
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Objects" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>JavaScript Objects</h2>
+        <ul>
+          <li>
+            In JavaScript, almost "everything" is an object.
+            <ul>
+              <li>Booleans can be objects (if defined with the <code>new</code> keyword)</li>
+              <li>Numbers can be objects (if defined with the <code>new</code> keyword)</li>
+              <li>Strings can be objects (if defined with the <code>new</code> keyword)</li>
+              <li>Dates are always objects</li>
+              <li>Maths are always objects</li>
+              <li>Regular expressions are always objects</li>
+              <li>Arrays are always objects</li>
+              <li>Functions are always objects</li>
+            </ul>
+          </li>
+          <li>JavaScript variables can contain single values: ( <code>let person = "Ahmed mohamed";</code> )</li>
+          <li>Objects are variables too. But objects can contain many values.</li>
+          <li>Object values are written as name : value pairs (name and value separated by a colon).</li>
+          <li><b class="text-primary">EX: </b> <code>let person = {firstName:"Ahmed", lastName:"mohamed", age:30, eyeColor:"blue"};</code></li>
+          <li>It is a common practice to declare objects with the const keyword.</li>
+          <li><b class="text-primary">EX: </b> <code>const person = {firstName:"Ahmed", lastName:"mohamed", age:30, eyeColor:"blue"};</code></li>
+          <li>
+            <h4>Creating a JavaScript Object</h4>
+            There are different ways to create new objects:
+            <ul>
+              <li>Create a single object, using an object literal.</li>
+              <li>Create a single object, with the keyword <code>new</code>.</li>
+              <li>Define an object constructor, and then create objects of the constructed type.</li>
+              <li>Create an object using <code>Object.create()</code>.</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Using an Object Literal</h4>
+            <ul>
+              <li>An object literal is a list of name:value pairs (like age:20) inside curly braces {}.</li>
+              <li><b class="text-primary">EX: </b><code> const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</code></li>
+              <li>
+                <b class="text-primary">Spaces and line breaks are not important.</b>
+                <pre>
+                  <code>
+  const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+  };
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">This example creates an empty JavaScript object, and then adds 4 properties:</b>
+                <pre>
+                  <code>
+  const person = {};
+  person.firstName = "John";
+  person.lastName = "Doe";
+  person.age = 50;
+  person.eyeColor = "blue";
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Using the JavaScript Keyword new</h4>
+            The following example create a new JavaScript object using <code>new Object()</code>, and then adds 4 properties:
+            <pre>
+              <code>
+    const person = new Object();
+    person.firstName = "John";
+    person.lastName = "Doe";
+    person.age = 50;
+    person.eyeColor = "blue";
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>JavaScript Object Constructors</h4>
+            <ul>
+              <li>The constructor property returns a reference to the Object constructor function that created the instance object. Note that the value of this property is a reference to the function itself, not a string containing the function's name.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>It is considered good practice to name constructor functions with an upper-case first letter.</li>
+              <li>You cannot add a new property to an object constructor the same way you add a new property to an existing object.</li>
+              <li>You cannot add a new method to an object constructor the same way you add a new method to an existing object.</li>
+              <li>To add a new property or method to a constructor, you must add it to the constructor function.</li>
+              <li>
+                <pre>
+                  <code>
+  function Person(firstName, lastName, age, eyeColor) {
+    this.firstName = firstName; 
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+    this.nationality = "English"; // object property have default value.
+    this.changeName = function (name) {
+      this.lastName = name;
+    };
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <h4>Built-in JavaScript Constructors</h4>
+                <pre>
+                  <code>
+new String()     // A new String object
+new Number()    // A new Number object
+new Boolean()   // A new Boolean object
+new Object()    // A new Object object
+new Array()     // A new Array object
+new RegExp()    // A new RegExp object
+new Function()  // A new Function object
+new Date()      // A new Date object
+
+// it can be simple
+let x1 = "";             // new primitive string
+let x2 = 0;              // new primitive number
+let x3 = false;          // new primitive boolean
+const x4 = {};           // new Object object
+const x5 = [];           // new Array object
+const x6 = /()/          // new RegExp object
+const x7 = function(){}; // new function
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>JavaScript Object Properties</h2>
+        <ul>
+          <li>Properties are the values associated with a JavaScript object.</li>
+          <li>Properties can usually be changed, added, and deleted, but some are read only.</li>
+          <li>
+            The syntax for accessing the property of an object is: 
+            <code>objectName.property // person.age</code> OR
+            <code>objectName["property"] // person["age"]</code> OR
+            <code>objectName[expression] // x = "age"; person[x]</code> 
+          </li>
+          <li>
+            <h4>JavaScript for...in Loop</h4>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Looping object property values:</p>
+    <p id="demo"></p>
+    <script>
+      const person = {
+        fname:"John",
+        lname:"Doe",
+        age:25
+      }; 
+      let txt = "";
+      for (let x in person) {
+        txt += person[x] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li>
+            <h4>Adding New Properties</h4>
+            <ul>
+              <li>You can add new properties to an existing object by simply giving it a value.</li>
+              <li>
+                <pre>
+                  <code>
+  const person = {
+    firstname: "John",
+    lastname: "Doe",
+    age: 50,
+    eyecolor: "blue"
+  };
+  person.nationality = "English";
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <h4>Deleting Properties</h4>
+                <ul>
+                  <li>The <code>delete</code> keyword deletes a property from an object.</li>
+                  <li>
+                    <pre>
+                      <code>
+  const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+  };
+  delete person["age"];
+                      </code>
+                    </pre>
+                  </li>
+                  <li>The delete keyword deletes both the value of the property and the property itself.</li>
+                  <li>After deletion, the property cannot be used before it is added back again.</li>
+                  <li>The delete operator is designed to be used on object properties. It has no effect on variables or functions.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Nested Objects</h4>
+            <pre>
+              <code>
+  myObj = {
+    name:"John",
+    age:30,
+    cars: {
+      car1:"Ford",
+      car2:"BMW",
+      car3:"Fiat"
+    }
+  }
+  myObj.cars.car2;
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Nested Arrays and Objects</h4>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <script>
+      let x = "";
+      const myObj = {
+        name: "John",
+        age: 30,
+        cars: [
+          {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+          {name:"BMW", models:["320", "X3", "X5"]},
+          {name:"Fiat", models:["500", "Panda"]}
+        ]
+      }
+      for (let i in myObj.cars) {
+        x += "<h2>" + myObj.cars[i].name + "</h2>";
+        for (let j in myObj.cars[i].models) {
+          x += myObj.cars[i].models[j] + "<br>";
+        }
+      }
+      document.getElementById("demo").innerHTML = x;
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+        </ul>
+        <h2>JavaScript Object Methods</h2>
+        <ul>
+          <li>JavaScript methods are actions that can be performed on objects.</li>
+          <li>A JavaScript method is a property containing a function definition.</li>
+          <li>
+            <h4>Accessing Object Methods</h4>
+            <ul>
+              <li>
+                <pre>
+                  <code>
+  const person = {
+    firstName: "John",
+    lastName: "Doe",
+    id: 5566,
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+  document.getElementById("demo").innerHTML = person.fullName();
+                  </code>
+                </pre>
+              </li>
+              <li>If you access the fullName property, without (), it will return the function definition.</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Adding a Method to an Object</h4>
+            <pre>
+              <code>
+  const person = {
+    firstName: "John",
+    lastName: "Doe",
+    id: 5566,
+  };
+  person.name = function() {
+    return this.firstName + " " + this.lastName;
+  };
+  document.getElementById("demo").innerHTML =
+  "My father is " + person.name(); 
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>Using Object.values()</h2>
+        <div class="table-responsive xmp"> 
+          <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Object.values() converts an object to an array.</p>
+    <p id="demo"></p>
+    <script>
+      const person = {
+        name: "John",
+        age: 30,
+        city: "New York"
+      };
+      const myArray = Object.values(person);
+      document.getElementById("demo").innerHTML = "age is " + myArray[1];
+    </script>
+  </body>
+</html>
+          </xmp>
+        </div>
+        <h2>Object Accessors</h2>
+        <ul>
+          <li>
+            <h4>JavaScript Getter</h4>
+            <ul>
+              <li>This example uses a lang property to get the value of the language property.</li>
+              <li>
+                <pre>
+                  <code>
+  // Create an object:
+  const person = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "en",
+    get lang() {
+      return this.language;
+    }
+  };
+  // Display data from the object using a getter:
+  document.getElementById("demo").innerHTML = person.lang;
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>JavaScript Setter</h4>
+            <ul>
+              <li>This example uses a lang property to set the value of the language property.</li>
+              <li>
+                <pre>
+                  <code>
+  const person = {
+    firstName: "John",
+    lastName: "Doe",
+    language: "",
+    set lang(lang) {
+      this.language = lang;
+    }
+  };
+  // Set an object property using a setter:
+  person.lang = "en";
+  // Display data from the object:
+  document.getElementById("demo").innerHTML = person.language;
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>Object Prototypes</h2>
+        <ul>
+          <li>The JavaScript prototype property allows you to add new properties to object constructors.</li>
+          <li>
+            <pre>
+              <code>
+  function Person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
+  }
+  Person.prototype.nationality = "English";
+              </code>
+            </pre>
+          </li>
+          <li>The JavaScript prototype property also allows you to add new methods to objects constructors.</li>
+          <li>
+            <pre>
+              <code>
+  function Person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
+  }
+  Person.prototype.name = function() {
+    return this.firstName + " " + this.lastName;
+  };
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>The JavaScript call() Method</h2>
+        <ul>
+          <li>The <code>call()</code> method is a predefined JavaScript method.</li>
+          <li>It can be used to invoke (call) a method with an owner object as an argument (parameter).</li>
+          <li>With <code>call()</code>, an object can use a method belonging to another object.</li>
+          <li>
+            <b class="text-primary">EX: </b>
+            <pre>
+              <code>
+const person = {
+fullName: function() {
+  return this.firstName + " " + this.lastName;
+}
+}
+const person1 = {
+firstName:"John",
+lastName: "Doe"
+}
+const person2 = {
+firstName:"Mary",
+lastName: "Doe"
+}
+// This will return "John Doe":
+person.fullName.call(person1);
+              </code>
+            </pre>
+          </li>
+          <li>
+            <b class="text-primary">The call() method can accept arguments:</b>
+            <pre>
+              <code>
+const person = {
+fullName: function(city, country) {
+  return this.firstName + " " + this.lastName + "," + city + "," + country;
+}
+}
+
+const person1 = {
+firstName:"John",
+lastName: "Doe"
+}
+person.fullName.call(person1, "Oslo", "Norway");
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>The JavaScript apply() Method</h2>
+        <ul>
+          <li>With the <code>apply()</code> method, you can write a method that can be used on different objects.</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  const person = {
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  const person1 = {
+    firstName: "Mary",
+    lastName: "Doe"
+  }
+  // This will return "Mary Doe":
+  person.fullName.apply(person1);
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>The Difference Between call() and apply()</h4>
+            <ul>
+              <li>The <code>call()</code> method takes arguments separately.</li>
+              <li>The <code>apply()</code> method takes arguments as an array.</li>
+              <li>The <code>apply()</code> method is very handy if you want to use an array instead of an argument list.</li>
+            </ul>
+          </li>
+          <li>
+            <h4>The apply() Method with Arguments</h4>
+            The <code>apply()</code> method accepts arguments in an array.
+            <pre>
+              <code>
+  const person = {
+    fullName: function(city, country) {
+      return this.firstName + " " + this.lastName + "," + city + "," + country;
+    }
+  }
+  const person1 = {
+    firstName:"John",
+    lastName: "Doe"
+  }
+  person.fullName.apply(person1, ["Oslo", "Norway"]);
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Classes" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>JavaScript Classes</h2>
+        <ul>
+          <li>Use the keyword <code>class</code> to create a class.</li>
+          <li>Always add a method named <code>constructor()</code>.</li>
+          <li>
+            <b class="text-primary">Syntax :</b>
+            <pre>
+              <code>
+  class ClassName {
+    constructor() { ... }
+    method_1() { ... }
+    method_2() { ... }
+    method_3() { ... }
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            The constructor method is a special method:
+            <ul>
+              <li>It has to have the exact name "constructor"</li>
+              <li>It is executed automatically when a new object is created</li>
+              <li>It is used to initialize object properties</li>
+            </ul>
+            If you do not define a constructor method, JavaScript will add an empty constructor method.
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Class Method</h2>
+    <p>Pass a parameter into the "age()" method.</p>
+    <p id="demo"></p>
+    <script>
+      class Car {
+        constructor(name, year) {
+          this.name = name;
+          this.year = year;
+        }
+        age(x) {
+          return x - this.year;
+        }
+      }
+      let date = new Date();
+      let year = date.getFullYear();
+      let myCar = new Car("Ford", 2014);
+      document.getElementById("demo").innerHTML=
+      "My car is " + myCar.age(year) + " years old.";
+    </script>
+  </body>
+</html>                
+              </xmp>
+            </div>
+          </li>
+        </ul>
+        <h2>Class Inheritance</h2>
+        <ul>
+          <li>To create a class inheritance, use the <code>extends</code> keyword.</li>
+          <li>A class created with a class inheritance inherits all the methods from another class:</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Class Inheritance</h2>
+    <p>Use the "extends" keyword to inherit all methods from another class.</p>
+    <p>Use the "super" method to call the parent's constructor function.</p>
+    <p id="demo"></p>
+    <script>
+      class Car {
+        constructor(brand) {
+          this.carname = brand;
+        }
+        present() {
+          return 'I have a ' + this.carname;
+        }
+      }
+      class Model extends Car {
+        constructor(brand, mod) {
+          super(brand);
+          this.model = mod;
+        }
+        show() {
+          return this.present() + ', it is a ' + this.model;
+        }
+      }
+      let myCar = new Model("Ford", "Mustang");
+      document.getElementById("demo").innerHTML = myCar.show();
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li>The <code>super()</code> method refers to the parent class.</li>
+          <li>By calling the <code>super()</code> method in the constructor method, we call the parent's constructor method and gets access to the parent's properties and methods.</li>
+          <li>Inheritance is useful for code reusability: reuse properties and methods of an existing class when you create a new class.</li>
+        </ul>
+        <h2>Getters and Setters</h2>
+        <ul>
+          <li>Classes also allows you to use getters and setters. </li>
+          <li>It can be smart to use getters and setters for your properties, especially if you want to do something special with the value before returning them, or before you set them.</li>
+          <li>To add getters and setters in the class, use the <code>get</code> and <code>set</code> keywords.</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Class Gettter/Setter</h2>
+    <p id="demo"></p>
+    <script>
+      class Car {
+        constructor(brand) {
+          this.carname = brand;
+        }
+        get cnam() {
+          return this.carname;
+        }
+        set cnam(x) {
+          this.carname = x;
+        }
+      }
+      let myCar = new Car("Ford");
+      document.getElementById("demo").innerHTML = myCar.cnam;
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li>even if the getter is a method, you do not use parentheses when you want to get the property value.</li>
+          <li>Many programmers use an underscore character _ before the property name to separate the getter/setter from the actual property.</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+class Car {
+  constructor(brand) {
+    this._carname = brand;
+  }
+  get carname() {
+    return this._carname;
+  }
+  set carname(x) {
+    this._carname = x;
+  }
+}
+let myCar = new Car("Ford");
+document.getElementById("demo").innerHTML = myCar.carname;
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <h2>JavaScript Static Methods</h2>
+        <ul>
+          <li>Static class methods are defined on the class itself.</li>
+          <li>You cannot call a <code>static</code> method on an object, only on an object class.</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+class Car {
+  constructor(name) {
+    this.name = name;
+  }
+  static hello() {
+    return "Hello!!";
+  }
+}
+let myCar = new Car("Ford");
+// You can calll 'hello()' on the Car Class:
+document.getElementById("demo").innerHTML = Car.hello();
+// But NOT on a Car Object:
+// document.getElementById("demo").innerHTML = myCar.hello();
+// this will raise an error.
+              </code>
+            </pre>
+          </li>
+          <li>If you want to use the myCar object inside the <code>static</code> method, you can send it as a parameter.</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+class Car {
+  constructor(name) {
+    this.name = name;
+  }
+  static hello(x) {
+    return "Hello " + x.name;
+  }
+}
+let myCar = new Car("Ford");
+document.getElementById("demo").innerHTML = Car.hello(myCar);
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Sources" class="p-4 p-md-5 mb-5">
+      <div class="section-title">
+        <h2>Extra Sources</h2>
+        <p>There are more lessons in that chapter but it's your turn to try to find and learn them and here are some examples:</p>
+        <ul>
+          <li>JS regular expression</li>
+          <li>JS Sets</li>
+          <li>JS Maps</li>
+          <li>JS Cookies</li>
+          <li>JS Web APIs</li>
+          <li>JS AJAX</li>
+          <li>JS JSON</li>
+        </ul>
+      </div>
+    </section>
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Master Code</span></strong> 
+      </div>
+      <div class="credits">
+        <strong style="color:red;"> &hearts; </strong> Designed by <a href="https://www.facebook.com/MasterC0de">Master Code</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <a href="#" class="back-to-top"><i class="bx bx-chevrons-up"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
