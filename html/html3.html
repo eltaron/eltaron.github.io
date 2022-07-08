@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MasterCode Course</title>
+  <meta content="MasterCode Course" name="description">
+  <meta content="Html, Css, Js, jquery, bootstrap, oop, course, mastercode" name="keywords">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none" style="font-size: 37px;"><i class="bx bx-menu"></i></button>
+  <img src="../assets/img/logo.png" alt="" class="img-fluid d-md-block d-xl-none" style="width: 118px;padding: 8px 30px 0;"><!-- .nav-menu -->
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/img/logo.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Master Code</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="html.html" class="instagram"><i class="bx bx-exit"></i></a>
+          <a href="https://twitter.com/MasterC00636045" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/MasterC0de" class="facebook"><i class="bx bxl-facebook"></i></a>
+          
+          <a href="https://www.linkedin.com/in/master-code-8a57b81b6/?midToken=AQEVsPwSvGBmEA&midSig=2a1-hWoTMQ7pQ1&trk=eml-email_pymk_02-header-49-profile&trkEmail=eml-email_pymk_02-header-49-profile-null-dyijnh%7Ekq942ap0%7Etr-null-neptune%2Fprofile%7Evanity%2Eview" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="../html.html"><i class="bx bx-home"></i> <span>All Sessions</span></a></li>
+          <li class="active"><a href="#forms"><i class="bx bx-checkbox-checked"></i> <span>HTML Forms</span></a></li>
+          <li><a href="#classId"><i class="bx bx-checkbox-checked"></i> <span>HTML Class && Id</span></a></li>
+          <li><a href="#Css"><i class="bx bx-checkbox-checked"></i> <span>Html && Css</span></a></li>
+          <li><a href="#Semantic"><i class="bx bx-checkbox-checked"></i> <span>HTML Semantic Elements</span></a></li>
+          <li><a href="#Extra"><i class="bx bx-checkbox-checked"></i> <span>Extra Sources</span></a></li>
+          <li><a href="../text-editor.html"><i class="bx bx-caret-right-circle"></i> <span>Text Editor</span></a></li>
+        </ul>
+      </nav>
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <!-- End #main -->
+  <main id="main">
+    <section id="forms" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>HTML Forms</h2>
+        <ul>
+          <li>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</li>
+          <li>
+            <b class="text-primary">EX:</b><br>
+            <div class="row">
+              <div class="col-12">
+                <div class="table-responsive xmp">
+                  <xmp>
+  <form>
+    <label for="name">First name:</label><br>
+    <input type="text" id="name" name="name" value="Ahmed"><br>
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" value="22">
+  </form>
+                  </xmp>
+                </div>
+              </div>
+              <div class="col-12">
+                <b class="text-primary">Result:</b><br>
+                <form action="/action_page.php" method="get">
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname" value="John"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname" value="Doe">
+                </form>
+              </div>
+            </div>
+          </li>
+          <li>The HTML <code>&lt;form&gt;</code> element is used to create an HTML form for user input</li>
+          <li>The <code>&lt;form&gt;</code> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</li>
+          <li>The HTML <code>&lt;input&gt;</code> element is the most used form element.</li>
+          <li>An <code>&lt;input&gt;</code> element can be displayed in many ways, depending on the type attribute.</li>
+          <li>
+            <b class="text-primary">EX:</b><br>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>&lt;input type="text"&gt;</td>
+                    <td>Displays a single-line text input field</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;input type="radio"&gt;</td>
+                    <td>Displays a radio button (for selecting one of many choices)</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;input type="checkbox"&gt;</td>
+                    <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;input type="submit"&gt;</td>
+                    <td>Displays a submit button (for submitting the form)</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;input type="button"&gt;</td>
+                    <td>Displays a clickable button</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>The <code>&lt;label&gt;</code> tag defines a label for many form elements.</li>
+          <li>The <code>&lt;label&gt;</code> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element. <br>
+            The <code>&lt;label&gt;</code> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <code>&lt;label&gt;</code> element, it toggles the radio button/checkbox. <br>
+            The for attribute of the <code>&lt;label&gt;</code> tag should be equal to the id attribute of the <code><code>&lt;input&gt;</code></code> element to bind them together.
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>HTML Form Attributes</h2>
+        <h3>The Action Attribute</h3>
+        <ul>
+          <li>The <code>action</code> attribute defines the action to be performed when the form is submitted.</li>
+          <li>Usually, the form data is sent to a file on the server when the user clicks on the submit button.</li>
+        </ul>
+        <h3>The Method Attribute</h3>
+        <ul>
+          <li>The <code>method</code> attribute specifies the HTTP method to be used when submitting the form data.</li>
+          <li>The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").</li>
+          <li>
+            <b class="text-primary">Notes on GET:</b><br>
+            <ul>
+              <li>Appends the form data to the URL, in name/value pairs</li>
+              <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+              <li>The length of a URL is limited (2048 characters)</li>
+              <li>Useful for form submissions where a user wants to bookmark the result</li>
+              <li>GET is good for non-secure data, like query strings in Google</li>
+            </ul>
+          </li>
+          <li>
+            <b class="text-primary">Notes on POST:</b><br>
+            <ul>
+              <li>Appends the form data inside the body of the HTTP request (the submitted 
+              form data is not shown in the URL)</li>
+              <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+              <li>Form submissions with POST cannot be bookmarked</li>
+            </ul>
+          </li>
+        </ul>
+        <h3>List of All form Attributes</h3>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered">
+            <tbody><tr>
+              <th>Attribute</th>
+              <th>Description</th>
+             </tr>
+             <tr>
+              <td>accept-charset</td>
+              <td>Specifies the character encodings used for form submission</td>
+             </tr>
+             <tr class="text-success">
+              <td>action</td>
+              <td>Specifies where to send the form-data when a form is submitted</td>
+             </tr>
+             <tr>
+              <td>autocomplete</td>
+              <td>Specifies whether a form should have autocomplete on or off</td>
+             </tr>
+             <tr class="text-success">
+              <td>enctype</td>
+              <td>Specifies how the form-data should be encoded when submitting it to the 
+              server (only for method="post"). <br>
+              when we submit a form with (input with type = file) we use enctype = "multipart/form-data".
+              </td>
+             </tr>
+             <tr class="text-success">
+              <td>method</td>
+              <td>Specifies the HTTP method to use when sending form-data</td>
+             </tr>
+             <tr>
+              <td>name</td>
+              <td>Specifies the name of the form</td>
+             </tr>
+             <tr>
+              <td>novalidate</td>
+              <td>Specifies that the form should not be validated when submitted</td>
+             </tr>
+             <tr>
+              <td>rel</td>
+              <td>Specifies the relationship between a linked resource and the current 
+              document</td>
+             </tr>
+             <tr>
+              <td>target</td>
+              <td>Specifies where to display the response that is received after submitting 
+              the form</td>
+             </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="section-title">
+        <h2>The HTML form Elements</h2>
+        <h4>The HTML form element can contain one or more of the following form elements:</h4>
+        <ul class="row">
+          <li class="col-md-4"> <code>&lt;input&gt;</code></li>
+          <li class="col-md-4"> <code>&lt;label&gt;</code></li>
+          <li class="col-md-4"> <code>&lt;select&gt;</code></li>
+          <li class="col-md-4"> <code>&lt;textarea&gt;</code></li>
+          <li class="col-md-4"> <code>&lt;button&gt;</code></li>
+          <li class="col-md-4"> <code>&lt;fieldset&gt;</code></li>
+          <li class="col-md-4"> <code>&lt;legend&gt;</code></li>
+          <li class="col-md-4"> <code>&lt;datalist&gt;</code></li>
+          <li class="col-md-4"> <code>&lt;output&gt;</code></li>
+          <li class="col-md-4"> <code>&lt;option&gt;</code></li>
+          <li class="col-md-4"> <code>&lt;optgroup&gt;</code></li>
+        </ul>
+        <h3>The select Element</h3>
+        <ul>
+          <li>The select element defines a drop-down list.</li>
+          <li>
+            <b class="text-primary">EX:</b><br>
+            <div class="table-responsive xmp">
+              <xmp>
+<form>
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+</form>
+              </xmp>
+            </div>
+          </li>
+          <li>
+            Use the <code>size</code> attribute in select element to specify the number of visible values. <br>
+            &lt;select id="cars" name="cars" <code>size="3"</code>&gt;&lt;/select&gt;
+          </li>
+          <li>
+            The <code>&lt;option&gt;</code> elements defines an option that can be selected. <br>
+            By default, the first item in the drop-down list is selected. <br>
+            To define a pre-selected option, add the <code>selected</code> attribute to the option: <br>
+            &lt;option value="fiat" <code>selected</code>&gt;Fiat&lt;/option&gt;
+          </li>
+          <li>
+            Use the <code>multiple</code> attribute to allow the user to select more than one value. <br>
+            &lt;select id="cars" name="cars" size="4" <code>multiple</code>&gt;&lt;/select&gt;
+          </li>
+        </ul>
+        <h3>The textarea Element</h3>
+        <ul>
+          <li>The <code>&lt;textarea&gt;</code> element defines a multi-line input field (a text area).</li>
+          <li>
+            <b class="text-primary">EX:</b><br>
+            &lt;textarea <code>name="message"</code> <code>rows="10"</code> <code>cols="30"</code>&gt;&lt;/textarea&gt;
+          </li>
+          <li>The rows attribute specifies the visible number of lines in a text area.</li>
+          <li>The cols attribute specifies the visible width of a text area.</li>
+        </ul>
+        <h3>The button Element</h3>
+        <ul>
+          <li>The <code>&lt;button&gt;</code> element defines a clickable button.</li>
+          <li>
+            <b class="text-primary">EX:</b><br>
+            &lt;button <code>type="button"</code> <code>onclick="alert('Hello World!')"</code>&gtClick &lt;/button&gt;
+          </li>
+        </ul>
+        <h3>HTML Form Elements</h3>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered">
+            <tbody><tr>
+              <th>Tag</th>
+              <th>Description</th>
+              </tr>
+              <tr>
+              <td>&lt;form&gt;</td>
+              <td> Defines an HTML form for user input</td>
+              </tr>
+              <tr>
+              <td>&lt;input&gt;</td>
+              <td>Defines an input control</td>
+              </tr>
+              <tr>
+              <td>&lt;textarea&gt;</td>
+              <td>Defines a multiline input control (text area)</td>
+              </tr>
+              <tr>
+              <td>&lt;label&gt;</td>
+              <td>Defines a label for an &lt;input&gt; element</td>
+              </tr>
+              <tr>
+              <td>&lt;fieldset&gt;</td>
+              <td>Groups related elements in a form</td>
+              </tr>
+              <tr>
+              <td>&lt;legend&gt;</td>
+              <td>Defines a caption for a &lt;fieldset&gt; element</td>
+              </tr>
+              <tr>
+              <td>&lt;select&gt;</td>
+              <td>Defines a drop-down list</td>
+              </tr>
+              <tr>
+              <td>&lt;optgroup&gt;</td>
+              <td>Defines a group of related options in a drop-down list</td>
+              </tr>
+              <tr>
+              <td>&lt;option&gt;</td>
+              <td>Defines an option in a drop-down list</td>
+              </tr>
+              <tr>
+              <td>&lt;button&gt;</td>
+              <td>Defines a clickable button</td>
+              </tr>
+              <tr>
+              <td>&lt;datalist&gt;/td>
+              <td>Specifies a list of pre-defined options for input controls</td>
+              </tr>
+              <tr>
+              <td>&lt;output&gt;</td>
+              <td>Defines the result of a calculation</td>
+              </tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="section-title">
+        <h2>HTML Input Types</h2>
+        <h4>Here are the different input types you can use in HTML:</h4>
+        <ul class="row">
+          <li class="col-md-4"><code>&lt;input type="button"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="checkbox"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="color"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="date"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="datetime-local"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="email"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="file"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="hidden"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="image"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="month"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="number"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="password"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="radio"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="range"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="reset"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="search"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="submit"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="tel"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="text"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="time"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="url"&gt;</code></li>
+          <li class="col-md-4"><code>&lt;input type="week"&gt;</code></li>
+        </ul>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered">
+            <tbody>
+              <tr>
+                <td><code>&lt;input type="text"&gt;</code></td>
+                <td>defines a single-line text input field.</td>
+                <td><input type="text" value="text"></td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="password"&gt;</code></td>
+                <td>defines a password field.</td>
+                <td><input type="password" value="password"></td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="email"&gt;</code></td>
+                <td> is used for input fields that should contain an e-mail address.</td>
+                <td><input type="email" value="person@gmail.com"></td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="file"&gt;</code></td>
+                <td>  defines a file-select field and a "Browse" button for file uploads.</td>
+                <td><input type="file"></td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="submit"&gt;</code></td>
+                <td>defines a button for submitting form data to a form-handler.</td>
+                <td><input type="submit" value="submit"></td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="reset"&gt;</code></td>
+                <td>defines a reset button that will reset all form values to their default values.</td>
+                <td><input type="reset" value="reset"></td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="Radio"&gt;</code></td>
+                <td>Radio buttons let a user select ONLY ONE of a limited number of choices.</td>
+                <td>
+                  <input type="Radio" value="on" id="on">
+                  <label for="on">on</label> <br>
+                  <input type="Radio" value="off" id="off">
+                  <label for="on">off</label>
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="checkbox"&gt;</code></td>
+                <td>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</td>
+                <td>
+                  <input type="checkbox" value="Arabic" id="Arabic">
+                  <label for="Arabic">Arabic</label> <br>
+                  <input type="checkbox" value="English" id="English">
+                  <label for="English">English</label>
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="button"&gt;</code></td>
+                <td>defines a button.</td>
+                <td><input type="button" onclick="alert('This is button')" value="Click"></td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="color"&gt;</code></td>
+                <td>is used for input fields that should contain a color.</td>
+                <td><input type="color"></td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="datetime-local"&gt;</code></td>
+                <td>specifies a date and time input field, with no time zone.</td>
+                <td><input type="datetime-local"></td>
+              </tr>
+              <tr>
+                <td rowspan="2"><code>&lt;input type="date"&gt;</code></td>
+                <td>is used for input fields that should contain a date.</td>
+                <td><input type="date"></td>
+              </tr>
+              <tr>
+                <td>You can also use the min and max attributes to add restrictions to dates.</td>
+                <td>
+                  <label for="datemin">Enter a date after 2000-08-10:</label>
+                  <input type="date" name="datemin" min="2000-08-10">
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="Hidden"&gt;</code></td>
+                <td colspan="2">
+                  <ul>
+                    <li>defines a hidden input field (not visible to a user).</li>
+                    <li>A hidden field let web developers include data that cannot be seen or modified by users when a form is submitted.</li>
+                    <li>A hidden field often stores what database record that needs to be updated when the form is submitted.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="2"><code>&lt;input type="number"&gt;</code></td>
+                <td>defines a numeric input field.</td>
+                <td><input type="number" value="123456789"></td>
+              </tr>
+              <tr>
+                <td>You can also set restrictions on what numbers are accepted.</td>
+                <td><input type="number" id="quantity" name="quantity" style="width: 60%;" placeholder="from 1 to 5 only" min="1" max="5"></td>
+              </tr>
+              <tr>
+                <td><code>&lt;input type="range"&gt;</code></td>
+                <td>defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes.</td>
+                <td><input type="range" min="0" max="50"></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Input Restrictions</h3>
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+              <tbody><tr>
+                <th style="width:20%">Attribute</th>
+                <th>Description</th>
+                </tr>
+                <tr class="text-success">
+                <td>checked</td>
+                <td>Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")</td>
+                </tr>
+                <tr class="text-success">
+                <td >disabled</td>
+                <td>Specifies that an input field should be disabled</td>
+                </tr>
+                <tr class="text-success">
+                <td>max</td>
+                <td>Specifies the maximum value for an input field</td>
+                </tr>
+                <tr>
+                <td>maxlength</td>
+                <td>Specifies the maximum number of character for an input field</td>
+                </tr>
+                <tr class="text-success">
+                <td>min</td>
+                <td>Specifies the minimum value for an input field</td>
+                </tr>
+                <tr>
+                <td>pattern</td>
+                <td>Specifies a regular expression to check the input value against</td>
+                </tr>
+                <tr>
+                <td>readonly</td>
+                <td>Specifies that an input field is read only (cannot be changed)</td>
+                </tr>
+                <tr class="text-success">
+                <td>required</td>
+                <td>Specifies that an input field is required (must be filled out)</td>
+                </tr>
+                <tr>
+                <td>size</td>
+                <td>Specifies the width (in characters) of an input field</td>
+                </tr>
+                <tr>
+                <td>step</td>
+                <td>Specifies the legal number intervals for an input field</td>
+                </tr>
+                <tr class="text-success">
+                <td>value</td>
+                <td>Specifies the default value for an input field</td>
+                </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="classId" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>HTML class Attribute</h2>
+        <ul>
+          <li>
+            The HTML class attribute is used to specify a class for an HTML element.
+            <br> <b class="text-primary">EX:</b> <br>
+            <xmp>
+      <h2 class="className">This is h2</h2>
+            </xmp>
+          </li>
+          <li>
+            Multiple HTML elements can share the same class.
+            <br> <b class="text-primary">EX:</b> <br>
+            <xmp>
+      <h2 class="class1Name">This is h2</h2>
+      <h2 class="class2Name">This is h2</h2>
+            </xmp>
+          </li>
+          <li>
+            The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+            <br> <b class="text-primary">EX:</b> <br>
+            <div class="table-responsive xmp">
+              <xmp>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+      .name{
+        background-color: aliceblue;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="myFunction()">Hide element</button>
+    <h2 class="name">this h2 will be hiden when you click the button. </h2>
+    <script>
+      function myFunction() {
+        var mainObject = document.getElementsByClassName("name");
+        mainObject[0].style.display = "none";
+      }
+    </script>
+  </body>
+  </html>
+              </xmp>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>HTML id Attribute</h2>
+        <ul>
+          <li>
+              The HTML id attribute is used to specify a unique id for an HTML element.
+              <br> <b class="text-primary">EX:</b> <br>
+            <xmp>
+      <h2 id="idName">This is h2</h2>
+            </xmp>
+          </li>
+          <li>The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.</li>
+          <li>
+            The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+            <div class="table-responsive xmp">
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .button{
+        background-color: aliceblue;
+        padding: 15px;
+      }
+      #myHeader{
+        background-color: aliceblue;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="myHeader">this h2 will be change when you click the button.</h1>
+    <button onclick="displayResult()" class="button">Change text</button>
+    <script>
+      function displayResult() {
+        document.getElementById("myHeader").innerHTML = "text Changed";
+      }
+    </script>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li class="mt-3">
+            HTML bookmarks are used to allow readers to jump to specific parts of a webpage.
+            <br>
+            Bookmarks can be useful if your page is very long.
+            <br>
+            To use a bookmark, you must first create it, and then add a link to it.
+            <br>
+            Then, when the link is clicked, the page will scroll to the location with the bookmark.
+            <br> <b class="text-primary">EX:</b> <br>
+            <xmp>
+              <h2 id="C6">Chapter 6</h2>
+              <a href="#C6">Jump to Chapter 6</a>
+            </xmp>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Css" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>HTML && Css</h2>
+        <ul>
+          <li>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</li>
+          <li>
+            CSS can be added to HTML documents in 3 ways: <br>
+            <ul>
+              <li><strong>Inline</strong> - by using the <code>style</code> attribute inside HTML elements</li>
+              <li><strong>Internal</strong> - by using a <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> section</li>
+              <li><strong>External</strong> - by using a <code>&lt;link&gt;</code> 
+              element to link to an external CSS file</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Inline CSS</h3>
+            <ul>
+              <li>An inline CSS is used to apply a unique style to a single HTML element.</li>
+              <li>
+                <b class="text-primary">EX:</b> <br>
+                &lt;h1 <code>style="color:blue;"</code>&gt;A Blue Heading&lt;/h1&gt;
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Internal CSS</h3>
+            <ul>
+              <li>An internal CSS is used to define a style for a single HTML page.</li>
+              <li>An internal CSS is defined in the <code>&lt;head&gt;</code> section of an HTML page, within a <code>&lt;style&gt;</code> element.</li>
+              <li>
+                <b class="text-primary">EX:</b> <br>
+                <div class="table-responsive xmp">
+                  <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body         {background-color: powderblue;}
+      .h1Element   {color: blue;}
+      #pElement    {color: red;}
+    </style>
+  </head>
+  <body>
+    <h1 class="h1Element">This is a heading</h1>
+    <p id="pElement">This is a paragraph.</p>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>External CSS</h3>
+            <ul>
+              <li>An external style sheet is used to define the style for many HTML pages.</li>
+              <li>We will talk about it in detail in the next lessons</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Semantic" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>Semantic Elements in HTML</h2>
+        <ul>
+          <li>A semantic element clearly describes its meaning to both the browser and the developer.</li>
+          <li>Examples of non-semantic elements: <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> - Tells nothing about its content.</li>
+          <li>Examples of semantic elements: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code>, and <code>&lt;article&gt;</code> - Clearly defines its content.</li>
+        </ul>
+        <p>Below is a list of some of the semantic elements in HTML.</p>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered">
+            <tbody><tr>
+              <th style="width:20%">Tag</th>
+              <th>Description</th>
+              </tr>
+              <tr>
+                <td rowspan="2">&lt;section&gt;</td>
+                <td>Defines a section in a document</td>
+              </tr>
+              <tr>
+                  <td>
+                    Examples of where a section element can be used: <br>
+                    <ul>
+                      <li>Chapters</li>
+                      <li>Introduction</li>
+                      <li>News items</li>
+                      <li>Contact information</li>
+                    </ul>
+                  </td>
+              </tr>
+              <tr>
+              <td rowspan="2">&lt;article&gt;</td>
+              <td>Defines independent, self-contained content</td>
+              </tr>
+              <tr>
+                <td>
+                  Examples of where the article element can be used: <br>
+                  <ul>
+                    <li>Forum posts</li>
+                    <li>Blog posts</li>
+                    <li>User comments</li>
+                    <li>Product cards</li>
+                    <li>Newspaper articles</li>
+                  </ul>
+                </td>
+            </tr>
+              <tr>
+              <td>&lt;aside&gt;</td>
+              <td>Defines content aside from the page content</td>
+              </tr>
+              <tr>
+              <td>&lt;details&gt;</td>
+              <td>Defines additional details that the user can view or hide</td>
+              </tr>
+              <tr>
+              <td>&lt;figcaption&gt;</td>
+              <td>Defines a caption for a &lt;figure&gt; element</td>
+              </tr>
+              <tr>
+              <td>&lt;figure&gt;</td>
+              <td>Specifies self-contained content, like illustrations, diagrams, photos, code 
+              listings, etc.</td>
+              </tr>
+              <tr>
+              <tr>
+                <td rowspan="2">&lt;header&gt;</td>
+                <td>Specifies a header for a document or section</td>
+                </tr>
+                <tr>
+                  <td>A header element typically contains: <br>
+                    <ul>
+                      <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+                      <li>logo or icon</li>
+                      <li>authorship information</li>
+                    </ul>
+                  </td>
+                </tr>
+              <td rowspan="2">&lt;footer&gt;</td>
+              <td>Defines a footer for a document or section</td>
+              </tr>
+              <tr>
+                <td>A footer element typically contains: <br>
+                  <ul>
+                    <li>authorship information</li>
+                    <li>copyright information</li>
+                    <li>contact information</li>
+                    <li>sitemap</li>
+                    <li>back to top links</li>
+                    <li>related documents</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+              <td>&lt;main&gt;</td>
+              <td>Specifies the main content of a document</td>
+              </tr>
+              <tr>
+              <td>&lt;mark&gt;</td>
+              <td>Defines marked/highlighted text</td>
+              </tr>
+              <tr>
+              <td>&lt;nav&gt;</td>
+              <td>Defines navigation links</td>
+              </tr>
+              <tr>
+              <td>&lt;summary&gt;</td>
+              <td>Defines a visible heading for a &lt;details&gt; element</td>
+              </tr>
+              <tr>
+              <td>&lt;time&gt;</td>
+              <td>Defines a date/time</td>
+              </tr>
+              </tbody>
+          </table>
+        </div>
+        <h3>parts of a web page</h3>
+        <div class="row">
+          <div class="col-md-7">
+            <ul>
+              <li>Many web sites contain HTML code like: &lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt; to indicate navigation, header, and footer.</li>
+              <li>
+                In HTML there are some semantic elements that can be used to define different parts of a web page like <br>
+                <ul class="row">
+                  <li class="col-md-4"><code>&lt;article&gt;</code></li>
+                  <li class="col-md-4"><code>&lt;aside&gt;</code></li>
+                  <li class="col-md-4"><code>&lt;footer&gt;</code></li>
+                  <li class="col-md-4"><code>&lt;header&gt;</code></li>
+                  <li class="col-md-4"><code>main</code></li>
+                  <li class="col-md-4"><code>&lt;nav&gt;</code></li>
+                  <li class="col-md-4"><code>&lt;section&gt;</code></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5"><img src="parts.gif" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="Extra" class="p-4 p-md-5 mb-5">
+      <div class="section-title">
+        <h2>Extra Sources</h2>
+        <p>There are more lessons in that chapter but it's your turn to try to find and learn them and here are some examples:</p>
+        <ul>
+          <li>HTML Image Maps</li>
+          <li>HTML picture Element</li>
+          <li>HTML Computer Code Elements</li>
+          <li>HTML Symbols</li>
+          <li>Using Emojis in HTML</li>
+          <li>HTML Canvas Graphics</li>
+          <li>HTML SVG Graphics</li>
+          <li>Regular Expressions</li>
+          <li>And more......</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Master Code</span></strong> 
+      </div>
+      <div class="credits">
+        <strong style="color:red;"> &hearts; </strong> Designed by <a href="https://www.facebook.com/MasterC0de">Master Code</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <a href="#" class="back-to-top"><i class="bx bx-chevrons-up"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
