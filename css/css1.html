@@ -39,9 +39,9 @@
         <ul>
           <li><a href="../css.html"><i class="bx bx-home"></i> <span>All Sessions</span></a></li>
           <li class="active"><a href="#Introduction"><i class="bx bx-checkbox-checked"></i> <span>Css Introduction</span></a></li>
+          <li><a href="#Text"><i class="bx bx-checkbox-checked"></i> <span>Text && Fonts</span></a></li>
           <li><a href="#Colors"><i class="bx bx-checkbox-checked"></i> <span>Colors && Backgrounds</span></a></li>
           <li><a href="#Borders"><i class="bx bx-checkbox-checked"></i> <span>Css Borders</span></a></li>
-          <li><a href="#Text"><i class="bx bx-checkbox-checked"></i> <span>Text && Fonts</span></a></li>
           <li><a href="#Margin"><i class="bx bx-checkbox-checked"></i> <span>Margin && Padding</span></a></li>
           <li><a href="#Width"><i class="bx bx-checkbox-checked"></i> <span>Width && Height</span></a></li>
           <li><a href="#Lists"><i class="bx bx-checkbox-checked"></i> <span>Styling Lists</span></a></li>
@@ -183,494 +183,6 @@
     comment */
     p {
       color: red;  /* Set text color to red */
-    }
-              </code>
-            </pre>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <hr>
-    <section id="Colors" class="p-4 p-md-5">
-      <div class="section-title">
-        <h2>CSS Colors</h2>
-        <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
-        <ul>
-          <li>
-            <b class="text-primary">EX: <br>
-              <pre>
-                <code>
-    h1 {
-      color: white;
-      background-color: rgba(255, 99, 71, 0.5);
-      border:2px solid #ff0;
-    }
-                </code>
-              </pre>
-            </b>
-          </li>
-          <li>
-            <h4>CSS Color Values</h4>
-            <p>In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:</p>
-            <b class="text-primary">EX: </b><br>
-            <div class="table-responsive xmp"> 
-              <xmp>
-    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
-    <h1 style="background-color:#ff6347;">...</h1>
-    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
-    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
-    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
-              </xmp>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="section-title">
-        <h2>CSS Opacity </h2>
-        <ul>
-          <li>The opacity property specifies the opacity/transparency of an element. <br> The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent.</li>
-          <li>
-            <b class="text-primary">EX:</b> <br>
-            <pre>
-              <code>
-    img {
-      opacity: 0.5;
-    }
-              </code>
-            </pre>
-          </li>
-          <li>When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. </li>
-          <li>
-            <h3>If you do not want to apply opacity to child elements, like in our example above, use RGBA color values.</h3>
-            <pre>
-              <code>
-  div {
-    background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
-  }
-              </code>
-            </pre>
-          </li>
-        </ul>
-      </div>
-      <div class="section-title">
-        <h2>CSS Gradients </h2>
-        <ul>
-          <li>CSS gradients let you display smooth transitions between two or more specified colors.</li>
-          <li>
-            <h4>CSS defines two types of gradients</h4>
-            <ul>
-              <li><strong>Linear Gradients (goes down/up/left/right/diagonally)</strong></li>
-              <li><strong>Radial Gradients (defined by their center)</strong></li>
-              </ul>
-          </li>
-          <li>
-            <h4>CSS Linear Gradients</h4>
-            <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p>
-            <pre> 
-    Syntax :  <code> 
-        background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
-              </code>
-            </pre>
-            <pre style="background-image: linear-gradient(to right, red , yellow);"> 
-    Ex1 :   <code> 
-      #grad {
-        background-image: linear-gradient(to right, red , yellow);
-      }
-              </code>
-            </pre>
-            <pre style="background-image: linear-gradient(180deg, red, yellow);"> 
-    Ex2 :     <code> 
-      #grad {
-        background-image: linear-gradient(180deg, red, yellow);
-      }
-              </code>
-            </pre>
-            <pre style="background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);"> 
-    Ex3 :     <code> 
-      #grad {
-        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
-      }
-              </code>
-            </pre>
-            <pre style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));"> 
-    Ex4 :     <code> 
-      #grad {
-        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-      }
-              </code>
-            </pre>
-            <pre style="background-image: repeating-linear-gradient(red, yellow 10%, green 20%)"> 
-    Ex5 Using repeating-linear-gradient() :     <code> 
-      #grad {
-        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
-      }
-              </code>
-            </pre>
-          </li>
-        </ul>
-      </div>
-      <div class="section-title">
-        <h2>CSS Backgrounds </h2>
-        <h4>All CSS Background Properties</h4>
-        <div class="table-responsive"> 
-          <table class="table table-bordered table-active">
-            <tbody>
-              <tr>
-              <th style="width:30%">Property</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>background</td>
-              <td>Sets all the background properties in one declaration</td>
-            </tr>
-            <tr>
-              <td>background-attachment</td>
-              <td>Sets whether a background image is fixed or scrolls with the rest of the page</td>
-            </tr>
-            <tr>
-              <td>background-clip</td>
-              <td>Specifies the painting area of the background</td>
-            </tr>
-            <tr>
-              <td>background-color</td>
-              <td>Sets the background color of an element</td>
-            </tr>
-            <tr>
-              <td>background-image</td>
-              <td>Sets the background image for an element</td>
-            </tr>
-            <tr>
-              <td>background-origin</td>
-              <td>Specifies where the background image(s) is/are positioned</td>
-            </tr>
-            <tr>
-              <td>background-position</td>
-              <td>Sets the starting position of a background image</td>
-            </tr>
-            <tr>
-              <td>background-repeat</td>
-              <td>Sets how a background image will be repeated</td>
-            </tr>
-            <tr>
-              <td>background-size</td>
-              <td>Specifies the size of the background image(s)</td>
-            </tr>
-          </tbody>
-          </table>
-        </div>
-        <ul>
-          <li>
-            <h4>CSS background-color</h4>
-            <ul>
-              <li>The background-color property specifies the background color of an element.</li>
-              <li>
-                <b class="text-primary">EX:</b>
-                <pre>
-                  <code>
-    body {
-      background-color: lightblue;
-    }
-                  </code>
-                </pre>
-              </li>
-              <li>
-                <b class="text-primary">Transparency using RGBA:</b>
-                <p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
-                <pre>
-                  <code>
-    div {
-      background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
-    }
-                  </code>
-                </pre>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h4>CSS background-image</h4>
-            <ul>
-              <li>The background-image property specifies an image to use as the background of an element. By default, the image is repeated so it covers the entire element.</li>
-              <li>
-                <b class="text-primary">EX:</b>
-                <pre>
-                  <code>
-    p {
-      background-image: url("paper.png");
-    }
-                  </code>
-                </pre>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h4>CSS background-repeat</h4>
-            <ul>
-              <li>By default, the background-image property repeats an image both horizontally and vertically.</li>
-              <li>
-                <h5>To repeat an image vertically, set background-repeat: repeat-y;</h5>
-                <h5>To repeat an image horizontally , set background-repeat: repeat-x;</h5>
-                <h5>Showing the background image only once is also specified by the background-repeat property.</h5>
-              </li>
-              <li>
-                <b class="text-primary">EX:</b>
-                <pre>
-                  <code>
-    body {
-      background-image: url("gradient_bg.png");
-      background-repeat: repeat-x;
-    }
-                  </code>
-                </pre>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h4>CSS background-position</h4>
-            <ul>
-              <li>The background-position property is used to specify the position of the background image.</li>
-              <li>
-                <b class="text-primary">EX:</b>
-                <pre>
-                  <code>
-    body {
-      background-image: url("img_tree.png");
-      background-repeat: no-repeat;
-      background-position: right top;
-    }
-                  </code>
-                </pre>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h4>CSS background-attachment</h4>
-            <ul>
-              <li>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).</li>
-              <li>
-                <b class="text-primary">EX1:</b>
-                <pre>
-                  <code>
-    body {
-      background-image: url("img_tree.png");
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-attachment: scroll;
-    }
-                  </code>
-                </pre>
-              </li>
-              <li>
-                <b class="text-primary">EX2:</b>
-                <pre>
-                  <code>
-    body {
-      background-image: url("img_tree.png");
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-attachment: fixed;
-    }
-                  </code>
-                </pre>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h4>CSS background-attachment</h4>
-            <p>
-              To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
-              <br> Instead of writing: <br>
-              <pre>
-                <code>
-  body {
-    background-color: #ffffff;
-    background-image: url("img_tree.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-  }
-                </code>
-              </pre>
-              You can use the shorthand property background <br>
-              <pre>
-                <code>
-  body {
-    background: #ffffff url("img_tree.png") no-repeat right top;
-  }
-                </code>
-              </pre>
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <hr>
-    <section id="Borders" class="p-4 p-md-5">
-      <div class="section-title">
-        <h2>CSS Borders</h2>
-        <ul>
-          <li>The CSS border properties allow you to specify the style, width, and color of an element's border.</li>
-          <li>The border-style property specifies what kind of border to display.</li>
-          <li>
-            <h4>The following values are allowed:</h4>
-            <ul>
-              <li><code>dotted</code> - Defines a dotted border</li>
-              <li><code>dashed</code> - Defines a dashed border</li>
-              <li><code>solid</code> - Defines a solid border</li>
-              <li><code>double</code> - Defines a double border</li>
-              <li><code>groove</code> - Defines a 3D grooved border. The effect depends on the border-color value</li>
-              <li><code>ridge</code> - Defines a 3D ridged border. The effect depends on the border-color value</li>
-              <li><code>inset</code> - Defines a 3D inset border. The effect depends on the border-color value</li>
-              <li><code>outset</code> - Defines a 3D outset border. The effect depends on the border-color value</li>
-              <li><code>none</code> - Defines no border</li>
-              <li><code>hidden</code> - Defines a hidden border</li>
-              </ul>
-          </li>
-          <li>
-            <b class="text-primary">EX:</b>
-            <pre>
-              <code>
-    p.dotted {
-      border-style: dotted;
-    }
-    p.mix {
-      border-style: dotted dashed solid double;
-    }
-              </code>
-            </pre>
-          </li>
-          <div class="table-responsive"> 
-            <table class="table table-bordered table-active">
-              <thead>
-                <tr class="text-primary">
-                  <td>Property</td>
-                  <td>Description</td>
-                  <td>Example</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>CSS Border Width</td>
-                  <td>
-                    The border-width property specifies the width of the four borders. <br>
-                    The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).
-                  </td>
-                  <td>
-                    <pre>
-                      <code>
-    p.three {
-      border-style: solid;
-      border-width: 25px 10px 4px 35px; 
-      /* 25px top, 10px right, 4px bottom and 35px left */
-    }
-                      </code>
-                    </pre>
-                  </td>
-                </tr>
-                <tr>
-                  <td>CSS Border Color</td>
-                  <td>
-                    The border-color property is used to set the color of the four borders. <br>
-                    The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). 
-                  </td>
-                  <td>
-                    <pre>
-                      <code>
-    p.one {
-      border-style: solid;
-      border-color: red green blue yellow; 
-      /* red top, green right, blue bottom and yellow left */
-    }
-                      </code>
-                    </pre>
-                  </td>
-                </tr>
-                <tr>
-                  <td>CSS Rounded Borders</td>
-                  <td>
-                    The border-radius property is used to add rounded borders to an element. <br>
-                    The border-radius property can have from one to four values. <br>
-                    Ex : <br>
-                    border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner).
-                  </td>
-                  <td>
-                    <pre>
-                      <code>
-    p {
-      border: 2px solid red;
-      border-radius: 5px;
-    }
-                      </code>
-                    </pre>
-                  </td>
-                </tr>
-                <tr>
-                  <td>CSS Border Images</td>
-                  <td>
-                    The CSS border-image property allows you to specify an image to be used instead of the normal border around an element. <br>
-                  </td>
-                  <td>
-                    <pre>
-                      <code>
-    p {
-      border: 10px solid transparent;
-      padding: 15px;
-      border-image: url(border.png) 30 round;
-    }
-                      </code>
-                    </pre>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <h2>CSS Shorthand Border Property</h2>
-            <ul>
-              <li>To shorten the code, it is also possible to specify all the individual border properties in one property.</li>
-              <li>
-                The border property is a shorthand property for the following individual border properties: <br>
-                <ul>
-                  <li><code>border-width</code></li>
-                  <li><code>border-style</code> (required)</li>
-                  <li><code>border-color</code></li>
-                </ul>
-              </li>
-              <li>
-                <b class="text-primary">EX1:</b>
-                <pre>
-                  <code>
-  #example1 {
-    border: 5px solid red;
-  }
-                  </code>
-                </pre>
-                <b class="text-primary">EX2:</b>
-                <pre>
-                  <code>
-  #example1 {
-    border-left: 6px solid red;
-    background-color: lightgrey;
-  }
-                  </code>
-                </pre>
-              </li>
-            </ul>
-          </div>
-        </ul>
-      </div>
-      <div class="section-title">
-        <h2>CSS Outline</h2>
-        <ul>
-          <li>An outline is a line drawn outside the element's border.</li>
-          <li>
-            Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline. <br>
-            <div class="row">
-              <div class="col-md-6"><img src="css-outline-design.jpg" width="100%"></div>
-            </div>
-          </li>
-          <li>
-            <b class="text-primary">EX:</b>
-            <pre>
-              <code>
-    #example1 {
-      outline-style: dotted;
     }
               </code>
             </pre>
@@ -986,6 +498,494 @@
                 </pre>
               </li>
             </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Colors" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Colors</h2>
+        <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+        <ul>
+          <li>
+            <b class="text-primary">EX: <br>
+              <pre>
+                <code>
+    h1 {
+      color: white;
+      background-color: rgba(255, 99, 71, 0.5);
+      border:2px solid #ff0;
+    }
+                </code>
+              </pre>
+            </b>
+          </li>
+          <li>
+            <h4>CSS Color Values</h4>
+            <p>In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:</p>
+            <b class="text-primary">EX: </b><br>
+            <div class="table-responsive xmp"> 
+              <xmp>
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+    <h1 style="background-color:#ff6347;">...</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+              </xmp>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Opacity </h2>
+        <ul>
+          <li>The opacity property specifies the opacity/transparency of an element. <br> The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent.</li>
+          <li>
+            <b class="text-primary">EX:</b> <br>
+            <pre>
+              <code>
+    img {
+      opacity: 0.5;
+    }
+              </code>
+            </pre>
+          </li>
+          <li>When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. </li>
+          <li>
+            <h3>If you do not want to apply opacity to child elements, like in our example above, use RGBA color values.</h3>
+            <pre>
+              <code>
+  div {
+    background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Backgrounds </h2>
+        <h4>All CSS Background Properties</h4>
+        <div class="table-responsive"> 
+          <table class="table table-bordered table-active">
+            <tbody>
+              <tr>
+              <th style="width:30%">Property</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>background</td>
+              <td>Sets all the background properties in one declaration</td>
+            </tr>
+            <tr>
+              <td>background-attachment</td>
+              <td>Sets whether a background image is fixed or scrolls with the rest of the page</td>
+            </tr>
+            <tr>
+              <td>background-clip</td>
+              <td>Specifies the painting area of the background</td>
+            </tr>
+            <tr>
+              <td>background-color</td>
+              <td>Sets the background color of an element</td>
+            </tr>
+            <tr>
+              <td>background-image</td>
+              <td>Sets the background image for an element</td>
+            </tr>
+            <tr>
+              <td>background-origin</td>
+              <td>Specifies where the background image(s) is/are positioned</td>
+            </tr>
+            <tr>
+              <td>background-position</td>
+              <td>Sets the starting position of a background image</td>
+            </tr>
+            <tr>
+              <td>background-repeat</td>
+              <td>Sets how a background image will be repeated</td>
+            </tr>
+            <tr>
+              <td>background-size</td>
+              <td>Specifies the size of the background image(s)</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        <ul>
+          <li>
+            <h4>CSS background-color</h4>
+            <ul>
+              <li>The background-color property specifies the background color of an element.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+    body {
+      background-color: lightblue;
+    }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">Transparency using RGBA:</b>
+                <p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+                <pre>
+                  <code>
+    div {
+      background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS background-image</h4>
+            <ul>
+              <li>The background-image property specifies an image to use as the background of an element. By default, the image is repeated so it covers the entire element.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+    p {
+      background-image: url("paper.png");
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS background-repeat</h4>
+            <ul>
+              <li>By default, the background-image property repeats an image both horizontally and vertically.</li>
+              <li>
+                <h5>To repeat an image vertically, set background-repeat: repeat-y;</h5>
+                <h5>To repeat an image horizontally , set background-repeat: repeat-x;</h5>
+                <h5>Showing the background image only once is also specified by the background-repeat property.</h5>
+              </li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+    body {
+      background-image: url("gradient_bg.png");
+      background-repeat: repeat-x;
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS background-position</h4>
+            <ul>
+              <li>The background-position property is used to specify the position of the background image.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+    body {
+      background-image: url("img_tree.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS background-attachment</h4>
+            <ul>
+              <li>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).</li>
+              <li>
+                <b class="text-primary">EX1:</b>
+                <pre>
+                  <code>
+    body {
+      background-image: url("img_tree.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-attachment: scroll;
+    }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <b class="text-primary">EX2:</b>
+                <pre>
+                  <code>
+    body {
+      background-image: url("img_tree.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-attachment: fixed;
+    }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS background-attachment</h4>
+            <p>
+              To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+              <br> Instead of writing: <br>
+              <pre>
+                <code>
+  body {
+    background-color: #ffffff;
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+                </code>
+              </pre>
+              You can use the shorthand property background <br>
+              <pre>
+                <code>
+  body {
+    background: #ffffff url("img_tree.png") no-repeat right top;
+  }
+                </code>
+              </pre>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Gradients </h2>
+        <ul>
+          <li>CSS gradients let you display smooth transitions between two or more specified colors.</li>
+          <li>
+            <h4>CSS defines two types of gradients</h4>
+            <ul>
+              <li><strong>Linear Gradients (goes down/up/left/right/diagonally)</strong></li>
+              <li><strong>Radial Gradients (defined by their center)</strong></li>
+              </ul>
+          </li>
+          <li>
+            <h4>CSS Linear Gradients</h4>
+            <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p>
+            <pre> 
+    Syntax :  <code> 
+        background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+              </code>
+            </pre>
+            <pre style="background-image: linear-gradient(to right, red , yellow);"> 
+    Ex1 :   <code> 
+      #grad {
+        background-image: linear-gradient(to right, red , yellow);
+      }
+              </code>
+            </pre>
+            <pre style="background-image: linear-gradient(180deg, red, yellow);"> 
+    Ex2 :     <code> 
+      #grad {
+        background-image: linear-gradient(180deg, red, yellow);
+      }
+              </code>
+            </pre>
+            <pre style="background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);"> 
+    Ex3 :     <code> 
+      #grad {
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+      }
+              </code>
+            </pre>
+            <pre style="background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));"> 
+    Ex4 :     <code> 
+      #grad {
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+      }
+              </code>
+            </pre>
+            <pre style="background-image: repeating-linear-gradient(red, yellow 10%, green 20%)"> 
+    Ex5 Using repeating-linear-gradient() :     <code> 
+      #grad {
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+      }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Borders" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Borders</h2>
+        <ul>
+          <li>The CSS border properties allow you to specify the style, width, and color of an element's border.</li>
+          <li>The border-style property specifies what kind of border to display.</li>
+          <li>
+            <h4>The following values are allowed:</h4>
+            <ul>
+              <li><code>dotted</code> - Defines a dotted border</li>
+              <li><code>dashed</code> - Defines a dashed border</li>
+              <li><code>solid</code> - Defines a solid border</li>
+              <li><code>double</code> - Defines a double border</li>
+              <li><code>groove</code> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+              <li><code>ridge</code> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+              <li><code>inset</code> - Defines a 3D inset border. The effect depends on the border-color value</li>
+              <li><code>outset</code> - Defines a 3D outset border. The effect depends on the border-color value</li>
+              <li><code>none</code> - Defines no border</li>
+              <li><code>hidden</code> - Defines a hidden border</li>
+              </ul>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+    p.dotted {
+      border-style: dotted;
+    }
+    p.mix {
+      border-style: dotted dashed solid double;
+    }
+              </code>
+            </pre>
+          </li>
+          <div class="table-responsive"> 
+            <table class="table table-bordered table-active">
+              <thead>
+                <tr class="text-primary">
+                  <td>Property</td>
+                  <td>Description</td>
+                  <td>Example</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CSS Border Width</td>
+                  <td>
+                    The border-width property specifies the width of the four borders. <br>
+                    The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).
+                  </td>
+                  <td>
+                    <pre>
+                      <code>
+    p.three {
+      border-style: solid;
+      border-width: 25px 10px 4px 35px; 
+      /* 25px top, 10px right, 4px bottom and 35px left */
+    }
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS Border Color</td>
+                  <td>
+                    The border-color property is used to set the color of the four borders. <br>
+                    The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). 
+                  </td>
+                  <td>
+                    <pre>
+                      <code>
+    p.one {
+      border-style: solid;
+      border-color: red green blue yellow; 
+      /* red top, green right, blue bottom and yellow left */
+    }
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS Rounded Borders</td>
+                  <td>
+                    The border-radius property is used to add rounded borders to an element. <br>
+                    The border-radius property can have from one to four values. <br>
+                    Ex : <br>
+                    border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner).
+                  </td>
+                  <td>
+                    <pre>
+                      <code>
+    p {
+      border: 2px solid red;
+      border-radius: 5px;
+    }
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS Border Images</td>
+                  <td>
+                    The CSS border-image property allows you to specify an image to be used instead of the normal border around an element. <br>
+                  </td>
+                  <td>
+                    <pre>
+                      <code>
+    p {
+      border: 10px solid transparent;
+      padding: 15px;
+      border-image: url(border.png) 30 round;
+    }
+                      </code>
+                    </pre>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h2>CSS Shorthand Border Property</h2>
+            <ul>
+              <li>To shorten the code, it is also possible to specify all the individual border properties in one property.</li>
+              <li>
+                The border property is a shorthand property for the following individual border properties: <br>
+                <ul>
+                  <li><code>border-width</code></li>
+                  <li><code>border-style</code> (required)</li>
+                  <li><code>border-color</code></li>
+                </ul>
+              </li>
+              <li>
+                <b class="text-primary">EX1:</b>
+                <pre>
+                  <code>
+  #example1 {
+    border: 5px solid red;
+  }
+                  </code>
+                </pre>
+                <b class="text-primary">EX2:</b>
+                <pre>
+                  <code>
+  #example1 {
+    border-left: 6px solid red;
+    background-color: lightgrey;
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Outline</h2>
+        <ul>
+          <li>An outline is a line drawn outside the element's border.</li>
+          <li>
+            Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline. <br>
+            <div class="row">
+              <div class="col-md-6"><img src="css-outline-design.jpg" width="100%"></div>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+    #example1 {
+      outline-style: dotted;
+    }
+              </code>
+            </pre>
           </li>
         </ul>
       </div>
