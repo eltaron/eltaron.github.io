@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MasterCode Course</title>
+  <meta content="MasterCode Course" name="description">
+  <meta content="Html, Css, Js, jquery, bootstrap, oop, course, mastercode" name="keywords">
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none" style="font-size: 37px;"><i class="bx bx-menu"></i></button>
+  <img src="../assets/img/logo.png" alt="" class="img-fluid d-md-block d-xl-none" style="width: 118px;padding: 8px 30px 0;">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/img/logo.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Master Code</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/MasterC00636045" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/MasterC0de" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          
+          <a href="https://www.linkedin.com/in/master-code-8a57b81b6/?midToken=AQEVsPwSvGBmEA&midSig=2a1-hWoTMQ7pQ1&trk=eml-email_pymk_02-header-49-profile&trkEmail=eml-email_pymk_02-header-49-profile-null-dyijnh%7Ekq942ap0%7Etr-null-neptune%2Fprofile%7Evanity%2Eview" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="../css.html"><i class="bx bx-home"></i> <span>All Sessions</span></a></li>
+          <li class="active"><a href="#Sizing"><i class="bx bx-checkbox-checked"></i> <span>Box Sizing</span></a></li>
+          <li><a href="#Shadows"><i class="bx bx-checkbox-checked"></i> <span>Css Shadows</span></a></li>
+          <li><a href="#Display"><i class="bx bx-checkbox-checked"></i> <span>Css Display</span></a></li>
+          <li><a href="#Position"><i class="bx bx-checkbox-checked"></i> <span>Css Position</span></a></li>
+          <li><a href="#Float"><i class="bx bx-checkbox-checked"></i> <span>Overflow && Float</span></a></li>
+          <li><a href="#Combinators"><i class="bx bx-checkbox-checked"></i> <span>Combinators & Pseudo</span></a></li>
+          <li><a href="#Queries"><i class="bx bx-checkbox-checked"></i> <span>Media Queries & Flexbox</span></a></li>
+          <li><a href="#Links"><i class="bx bx-checkbox-checked"></i> <span>Styling Links</span></a></li>
+          <li  style="margin-bottom: 150px;"><a href="../text-editor.html"><i class="bx bx-caret-right-circle"></i> <span>Text Editor</span></a></li>         
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <main id="main">
+    <section id="Sizing" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>Box Sizing</h2>
+        <ul>
+          <li>The CSS box-sizing property allows us to include the padding and border in an element's total width and height.</li>
+          <li>
+            <h4>Without the CSS box-sizing Property</h4>
+            By default, the width and height of an element is calculated like this: 
+            <ul>
+              <li>width + padding + border = actual width of an element</li>
+              <li>height + padding + border = actual height of an element</li>
+            </ul>
+            This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height). <br>
+            The box-sizing property solves this problem.
+          </li>
+          <li>
+            The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.
+            <h4 class="mt-3 mb-3">Syntax : box-sizing: content-box|border-box|initial|inherit;</h4>
+            <div class="table-responsive">
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr>
+                      <th style="width:20%">Value</th>
+                      <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td> content-box</td>
+                    <td>Default. The width and height properties (and min/max properties) includes only the content. Border 
+                    and padding are not included</td>
+                  </tr>
+                  <tr>
+                    <td> border-box</td>
+                    <td>The width and height properties (and min/max properties) includes 
+                    content, padding and border</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value. </td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element. </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp mt-3 mb-3"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style> 
+    div.container {
+      width: 100%;
+      border: 2px solid black;
+    }
+    div.box {
+      box-sizing: border-box;
+      width: 50%;
+      border: 5px solid red;
+      float: left;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">This div occupies the left half</div>
+      <div class="box">This div occupies the right half</div>
+      <div style="clear:both;"></div>
+    </div>
+  </body>
+</html>
+              </xmp>
+            </div>
+            <h5>Try this code once, and remove box-sizing: border-box; and try again to see the difference.</h5>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Shadows" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Shadow Effects</h2>
+        <ul>
+          <li>
+            With CSS you can add shadow to text and to elements with following properties.
+            <ul>
+              <li><code>text-shadow</code></li>
+              <li><code>box-shadow</code></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Box Shadow</h2>
+        <ul>
+          <li>The CSS box-shadow property applies shadow to elements.</li>
+          <li>
+            <h4 class="mt-3 mb-3">Syntax : box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;</h4>
+            <div class="table-responsive">
+              <table class="table table-bordered table-active">
+                <thead>
+                    <tr>
+                      <th style="width:20%">Value</th>
+                      <th>Description</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>none</td>
+                    <td>Default value. No shadow is displayed</td>
+                  </tr>
+                  <tr>
+                    <td><i>h-offset</i></td>
+                    <td>Required. The horizontal offset of the shadow. A positive value puts the 
+                    shadow on the right side of the box, a negative value puts the shadow on the 
+                    left side of the box</td>
+                  </tr>
+                  <tr>
+                    <td><i>v-offset</i></td>
+                    <td>Required. The vertical offset of the shadow. A positive value puts the 
+                    shadow below the box, a negative value puts the shadow above the box</td>
+                  </tr>
+                  <tr>
+                    <td><i>blur</i></td>
+                    <td>Optional. The blur radius. The higher the number, the more blurred the 
+                    shadow will be</td>
+                  </tr>
+                  <tr>
+                    <td><i>spread</i></td>
+                    <td>Optional. The spread radius. A positive value increases the size of the 
+                    shadow, a negative value decreases the size of the shadow</td>
+                  </tr>
+                  <tr>
+                    <td><i>color</i></td>
+                    <td>Optional. The color of the shadow. The default value is the text color.</td>
+                  </tr>
+                  <tr>
+                    <td>inset</td>
+                    <td>Optional. Changes the shadow from an outer shadow (outset) to an inner shadow</td>
+                  </tr>
+                  <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value.</td>
+                  </tr>
+                  <tr>
+                    <td>inherit</td>
+                    <td>Inherits this property from its parent element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <b class="text-primary">Examples:</b>
+            <pre>
+              <code>
+  /* shadow with blur effect */
+  #example1 {
+    box-shadow: 10px 10px 8px #888888;
+  }
+
+  /* Define the spread radius of the shadow */
+  #example2 {
+    box-shadow: 10px 10px 8px 10px #888888;
+  }
+
+  /* Define multiple shadows */
+  #example3 {
+    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Display" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Display</h2>
+        <ul>
+          <li>The display property is the most important CSS property for controlling layout.</li>
+          <li>The display property specifies if/how an element is displayed.</li>
+          <li>Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.</li>
+          <li>
+            <h4>Block-level Elements</h4>
+            <p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+            <b class="text-primary">Examples of block-level elements:</b>
+            <ul class="row">
+              <li class="col-md-4"><code>&lt;div&gt;</code></li>
+              <li class="col-md-4"><code>&lt;h1&gt; - &lt;h6&gt;</code></li>
+              <li class="col-md-4"><code>&lt;p&gt;</code></li>
+              <li class="col-md-4"><code>&lt;form&gt;</code></li>
+              <li class="col-md-4"><code>&lt;header&gt;</code></li>
+              <li class="col-md-4"><code>&lt;footer&gt;</code></li>
+              <li class="col-md-4"><code>&lt;section&gt;</code></li>
+            </ul>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  span {
+    display: block;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Inline Elements</h4>
+            <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+            <b class="text-primary">Examples of inline elements:</b>
+            <ul class="row">
+              <li class="col-md-4"><code>&lt;span&gt;</code></li>
+              <li class="col-md-4"><code>&lt;a&gt;</code></li>
+              <li class="col-md-4"><code>&lt;img&gt;</code></li>
+            </ul>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  li {
+    display: inline;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Display: none;</h4>
+            <p>Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there.</p>
+            <p>
+              visibility:hidden; also hides an element. <br>
+              However, the element will still take up the same space as before. The element will be hidden, but still affect the layout.
+            </p>
+            <b class="text-primary">EX:</b>
+            <pre>
+              <code>
+  li {
+    display: none;
+  }
+  h1 {
+    visibility: hidden;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>The display: inline-block Value</h4>
+            <ul>
+              <li>Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.</li>
+              <li>Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.</li>
+              <li>Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.</li>
+              <li>
+                <b class="text-primary mb-3">EX:</b>
+                <div class="table-responsive xmp"> 
+                  <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      span.a {
+        display: inline;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        background-color: aliceblue; 
+      }
+      span.b {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        background-color: aliceblue; 
+      }
+      span.c {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        background-color: aliceblue; 
+      }
+    </style>
+  </head>
+  <body>
+    <h2>display: inline</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      <span class="a">Aliquam</span> <span class="a">venenatis</span> 
+      gravida nisl sit amet facilisis.
+    </div>
+    <h2>display: inline-block</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      <span class="b">Aliquam</span> <span class="b">venenatis</span> 
+      gravida nisl sit amet facilisis.
+    </div>
+    <h2>display: block</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      <span class="c">Aliquam</span> <span class="c">venenatis</span> 
+      gravida nisl sit amet facilisis.
+    </div>
+  </body>
+</html>
+                  </xmp>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Position" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Position </h2>
+        <ul>
+          <li>The position property specifies the type of positioning method used for an element.</li>
+          <li>
+            There are five different position values:
+            <ul>
+              <li><code>static</code></li>
+              <li><code>relative</code></li>
+              <li><code>fixed</code></li>
+              <li><code>absolute</code></li>
+              <li><code>sticky</code></li>
+              </ul>
+          </li>
+          <li>Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.</li>
+          <li>
+            <h4>position: static;</h4>
+            <ul>
+              <li>HTML elements are positioned static by default.</li>
+              <li>Static positioned elements are not affected by the top, bottom, left, and right properties.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  div.static {
+    position: static;
+    border: 3px solid #73AD21;
+  }
+                  </code>
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>position: relative;</h4>
+            <ul>
+              <li>An element with position: relative; is positioned relative to its normal position.</li>
+              <li>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</li>
+              <li>
+                <b class="text-primary">EX:</b>
+                <pre>
+                  <code>
+  div.relative {
+    position: relative;
+    left: 30px;
+    top:20px;
+  }
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <h4>position: fixed;</h4>
+                <ul>
+                  <li>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</li>
+                  <li>A fixed element does not leave a gap in the page where it would normally have been located.</li>
+                  <li>
+                    <b class="text-primary">EX:</b>
+                    <pre>
+                      <code>
+  div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+  }
+                      </code>
+                    </pre>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4>position: absolute;</h4>
+                <ul>
+                  <li>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</li>
+                  <li>However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</li>
+                </ul>
+                <b class="text-primary">EX:</b>
+                  <div class="table-responsive xmp"> 
+                    <xmp>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div.relative {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      border: 3px solid #149ddd;
+    } 
+    div.absolute {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      height: 100px;
+      border: 3px solid #149ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="relative">This div element has position: relative;
+    <div class="absolute">
+      This div element has position: absolute;
+    </div>
+  </div>
+</body>
+</html>
+                    </xmp>
+                  </div>
+              </li>
+              <li>
+                <h4>position: sticky;</h4>
+                <ul>
+                  <li>An element with position: sticky; is positioned based on the user's scroll position.</li>
+                  <li>A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</li>
+                  <li>
+                    <b class="text-primary">EX:</b>
+                    <pre>
+                      <code>
+  div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #149ddd;
+  }
+                      </code>
+                    </pre>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4>CSS z-index</h4>
+                <ul>
+                  <li>The z-index property specifies the stack order of an element.</li>
+                  <li>An element with greater stack order is always in front of an element with a lower stack order.</li>
+                  <li>z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).</li>
+                  <li>
+                    Syntax : z-index: auto|number|initial|inherit; <br>
+                    <div class="table-responsive mt-3">
+                      <table class="table table-bordered table-active">
+                        <thead>
+                            <tr>
+                              <th style="width:20%">Value</th>
+                              <th>Description</th>
+                            </tr> 
+                        </thead>
+                        <tbody> 
+                          <tr>
+                            <td>auto</td>
+                            <td>Sets the stack order equal to its parents. This is default</td>
+                          </tr>
+                          <tr>
+                            <td><i>number</i></td>
+                            <td>Sets the stack order of the element. Negative numbers are allowed</td>
+                          </tr>
+                          <tr>
+                            <td>initial</td>
+                            <td>Sets this property to its default value.</td>
+                            </tr>
+                          <tr>
+                            <td>inherit</td>
+                            <td>Inherits this property from its parent element.</td>
+                            </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <b class="text-primary">EX:</b>
+                    <pre>
+                      <code>
+  img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+                      </code>
+                    </pre>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>All CSS Positioning Properties</h4>
+            <div class="table-responsive mt-3">
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr>
+                    <tr>
+                      <th style="width:20%">Property</th>
+                      <th style="width:55%">Description</th>
+                    </tr>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>bottom</td>
+                    <td>Sets the bottom margin edge for a positioned box</td>
+                  </tr>
+                  <tr>
+                    <td>left</td>
+                    <td>Sets the left margin edge for a positioned box</td>
+                  </tr>
+                  <tr>
+                    <td>position</td>
+                    <td>Specifies the type of positioning for an element</td>
+                  </tr>
+                  <tr>
+                    <td>right</td>
+                    <td>Sets the right margin edge for a positioned box</td>
+                  </tr>
+                  <tr>
+                    <td>top</td>
+                    <td>Sets the top margin edge for a positioned box</td>
+                  </tr>
+                  <tr>
+                    <td>z-index</td>
+                    <td>Sets the stack order of an element</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Float" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Overflow</h2>
+        <ul>
+          <li>The CSS overflow property controls what happens to content that is too big to fit into an area.</li>
+          <li>The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.</li>
+          <li>
+            The overflow property has the following values:
+            <ul>
+              <li><code>visible</code> - Default. The overflow is not clipped. 
+              The content renders outside the element's box</li>
+              <li><code>hidden</code> - The overflow is clipped, and the rest of the content will be invisible</li>
+              <li><code>scroll</code> - The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+              <li><code>auto</code> - Similar to <code>scroll</code>, 
+              but it adds scrollbars only when necessary</li>
+            </ul>
+          </li>
+          <li>
+            <h4>overflow values</h4>
+            <div class="table-responsive mt-3">
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr>
+                    <td style="width:20%">Value</td>
+                    <td style="width:55%">Description</td>
+                    <td style="width:25%">Example</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>overflow: visible</td>
+                    <td>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box.</td>
+                    <td>
+                      <pre>
+                        <code>
+div {
+  width: 200px;
+  height: 50px;
+  background-color: #eee;
+  overflow: visible;
+}
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>overflow: hidden</td>
+                    <td>With the hidden value, the overflow is clipped, and the rest of the content is hidden.</td>
+                    <td>
+                      <pre>
+                        <code>
+div {
+  overflow: hidden;
+}
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>overflow: scroll</td>
+                    <td>Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it).</td>
+                    <td>
+                      <pre>
+                        <code>
+div {
+  overflow: scroll;
+}
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>overflow: auto</td>
+                    <td>The auto value is similar to scroll, but it adds scrollbars only when necessary.</td>
+                    <td>
+                      <pre>
+                        <code>
+div {
+  overflow: auto;
+}
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>overflow-x <br> overflow-y</td>
+                    <td>
+                      The overflow-x and overflow-y properties specifies whether to change the overflow of content just horizontally or vertically (or both).
+                      <ul>
+                        <li>overflow-x specifies what to do with the left/right edges of the content.</li>
+                        <li>overflow-y specifies what to do with the top/bottom edges of the content.</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+div {
+  /* Hide horizontal scrollbar */
+  overflow-x: hidden; 
+  /* Add vertical scrollbar */
+  overflow-y: scroll; 
+}
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS float and clear</h2>
+        <ul>
+          <li>The CSS float property specifies how an element should float.</li>
+          <li>The CSS clear property specifies what elements can float beside the cleared element and on which side.</li>
+          <li>
+            The float property can have one of the following values: 
+            <ul>
+              <li> <code>left</code> - The element floats to the left of its container</li>
+              <li> <code>right</code> - The element floats to the right of its container</li>
+              <li> <code>none</code> - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+              <li> <code>inherit</code> - The element inherits the float value of its parent</li>
+            </ul>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp">
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        float: left;
+        padding: 15px; 
+      }
+      .div1 {
+        background: red;
+      }
+      .div2 {
+        background: yellow;
+      }
+      .div3 {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2</div>
+    <div class="div3">Div 3</div>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>Clear Property</h2>
+        <ul>
+          <li>When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.</li>
+          <li>The clear property specifies what should happen with the element that is next to a floating element.</li>
+          <li>
+            The clear property can have one of the following values : 
+            <ul>
+              <li> <code>none</code> - The element is not pushed below 
+              left or right floated elements. This is default</li>
+              <li> <code>left</code> - The element is pushed below left 
+              floated elements</li>
+              <li> <code>right</code> - The element is pushed below 
+              right floated elements</li>
+              <li> <code>both</code> - The element is pushed below both 
+              left and right floated elements</li>
+              <li> <code>inherit</code> - The element inherits the clear value 
+              from its parent</li>
+            </ul>
+          </li>
+          <li>When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left.</li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp">
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .div1 {
+        float: left;
+        padding: 10px;
+        border: 3px solid #73AD21;
+      }
+      .div2 {
+        padding: 10px;
+        border: 3px solid red;
+      }
+      .div3 {
+        float: left;
+        padding: 10px;  
+        border: 3px solid #73AD21;
+      }
+      .div4 {
+        padding: 10px;
+        border: 3px solid red;
+        clear: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Without clear</h2>
+    <div class="div1">div1</div>
+    <div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+    <br><br>
+    <h2>With clear</h2>
+    <div class="div3">div3</div>
+    <div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+  </body>
+</html>                
+              </xmp>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Combinators" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Combinators</h2>
+        <ul>
+          <li>A combinator is something that explains the relationship between the selectors.</li>
+          <li>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</li>
+          <li>
+            There are four different combinators in CSS:
+            <ul>
+              <li>descendant selector (space)</li>
+              <li>child selector (&gt;)</li>
+              <li>adjacent sibling selector (+)</li>
+              <li>general sibling selector (~)</li>
+            </ul>
+          </li>
+          <li>
+            <h4>combinators in CSS</h4>
+            <div class="table-responsive">
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr>
+                    <td style="width: 20%;">Selector</td>
+                    <td style="width: 55%;">Description</td>
+                    <td style="width: 25%;">Example</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Descendant Selector (space)</td>
+                    <td>The descendant selector matches all elements that are descendants of a specified element.</td>
+                    <td>
+                      <pre>
+                        <code>
+  div p {
+    background-color: yellow;
+  }
+                        </code>
+                      </pre>
+                      <p>The following example selects all &lt;p&gt; elements inside &lt;div&gt; elements. </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Child Selector (>)</td>
+                    <td>The child selector selects all elements that are the children of a specified element.</td>
+                    <td>
+                      <pre>
+                        <code>
+  div > p {
+    background-color: yellow;
+  }
+                        </code>
+                      </pre>
+                      <p>The following example selects all &lt;p&gt; elements that are children of a &lt;div&gt; element.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Adjacent Sibling Selector (+)</td>
+                    <td>
+                      The adjacent sibling selector is used to select an element that is directly after another specific element. 
+                      <br> Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  div + p {
+    background-color: yellow;
+  }
+                        </code>
+                      </pre>
+                      <p>The following example selects the first &lt;p&gt; element that are placed immediately after &lt;div&gt; elements.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>General Sibling Selector (~)</td>
+                    <td>The general sibling selector selects all elements that are next siblings of a specified element.</td>
+                    <td>
+                      <pre>
+                        <code>
+  div ~ p {
+    background-color: yellow;
+  }
+                        </code>
+                      </pre>
+                      <p>The following example selects all &lt;p&gt; elements that are next siblings of &lt;div&gt; elements.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Attribute Selectors</h2>
+        <h4>It is possible to style HTML elements that have specific attributes or attribute values.</h4> <br>
+        <div class="table-responsive">
+          <table class="table table-bordered table-active">
+            <thead>
+              <tr>
+                <th style="width: 20%;">Attribute Selectors</th>
+                <th style="width: 50%;">Description</th>
+                <th style="width: 30%;">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CSS [attribute] Selector</td>
+                <td>The [attribute] selector is used to select elements with a specified attribute.</td>
+                <td>
+                  The following example selects all <a> elements with a target attribute: <br>
+                  <pre>
+                    <code>
+a[target] {
+  background-color: yellow;
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS [attribute="value"] Selector</td>
+                <td>The [attribute="value"] selector is used to select elements with a specified attribute and value.</td>
+                <td>
+                  The following example selects all <a> elements with a target="_blank" attribute: <br>
+                  <pre>
+                    <code>
+a[target="_blank"] {
+  background-color: yellow;
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS [attribute~="value"] Selector</td>
+                <td>The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.</td>
+                <td>
+                  The following example selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower": <br>
+                  <pre>
+                    <code>
+[title~="flower"] {
+  border: 5px solid yellow;
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS [attribute|="value"] Selector</td>
+                <td>The [attribute|="value"] selector is used to select elements with the specified attribute starting with the specified value.</td>
+                <td>
+                  The following example selects all elements with a class attribute value that begins with "top": <br>
+                  <pre>
+                    <code>
+[class|="top"] {
+  background: yellow;
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS [attribute^="value"] Selector</td>
+                <td>The [attribute^="value"] selector is used to select elements whose attribute value begins with a specified value.</td>
+                <td>
+                  The following example selects all elements with a class attribute value that begins with "top": <br>
+                  <pre>
+                    <code>
+[class^="top"] {
+  background: yellow;
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS [attribute$="value"] Selector</td>
+                <td>The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.</td>
+                <td>
+                  The following example selects all elements with a class attribute value that ends with "test": <br>
+                  <pre>
+                    <code>
+[class$="test"] {
+  background: yellow;
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS [attribute*="value"] Selector</td>
+                <td>The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.</td>
+                <td>
+                  The following example selects all elements with a class attribute value that contains "te": <br>
+                  <pre>
+                    <code>
+[class*="te"] {
+  background: yellow;
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Example:</h3>
+        <div class="table-responsive xmp"> 
+          <xmp>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    input[type=text] {
+      width: 150px;
+      display: block;
+      margin-bottom: 10px;
+      background-color: yellow;
+    }
+    input[type=button] {
+      width: 120px;
+      margin-left: 35px;
+      display: block;
+    }
+  </style>
+  </head>
+  <body>
+    <form name="input" action="" method="get">
+      Firstname:<input type="text" name="Name" value="Ahmed" size="20">
+      Age:<input type="number" name="Age" value="32" size="20">
+      <input type="button" value="Example Button">
+    </form>
+  </body>
+</html>
+          </xmp>
+        </div>
+      </div>
+      <div class="section-title">
+        <h2>CSS Pseudo-classes</h2>
+        <ul>
+          <li>A pseudo-class is used to define a special state of an element.</li>
+          <li>
+            Syntax : The syntax of pseudo-classes:
+          <pre>
+            <code>
+  selector:pseudo-class {
+    property: value;
+  }
+            </code>
+          </pre>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp mt-3"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    p {
+      display: none;
+      background-color: yellow;
+      padding: 20px;
+    }
+    div:hover p {
+      display: block;
+    }
+    </style>
+  </head>
+  <body>
+    <div>Hover over me to show the p element
+      <p>Here I am!</p>
+    </div>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li class="mt-5">
+            <h4> All CSS Pseudo Classes</h4>
+            <div class="table-responsive mt-3">
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr>
+                    <th style="width:20%">Selector</th>
+                    <th style="width:20%">Example</th>
+                    <th>Example description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>:active</td>
+                    <td>a:active</td>
+                    <td>Selects the active link</td>
+                  </tr>
+                  <tr>
+                    <td>:checked</td>
+                    <td>input:checked</td>
+                    <td>Selects every checked &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>:disabled</td>
+                    <td>input:disabled</td>
+                    <td>Selects every disabled &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>:empty</td>
+                    <td>p:empty</td>
+                    <td>Selects every &lt;p&gt; element that has no children</td>
+                  </tr>
+                  <tr>
+                    <td>:enabled</td>
+                    <td>input:enabled</td>
+                    <td>Selects every enabled &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>:first-child</td>
+                    <td>p:first-child</td>
+                    <td>Selects every &lt;p&gt; elements that is the first child of its parent</td>
+                  </tr>
+                  <tr>
+                    <td>:first-of-type</td>
+                    <td>p:first-of-type</td>
+                    <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+                  </tr>
+                  <tr>
+                    <td>:focus</td>
+                    <td>input:focus</td>
+                    <td>Selects the &lt;input&gt; element that has focus</td>
+                  </tr>
+                  <tr>
+                    <td>:hover</td>
+                    <td>a:hover</td>
+                    <td>Selects links on mouse over</td>
+                  </tr>
+                  <tr>
+                    <td>:in-range</td>
+                    <td>input:in-range</td>
+                    <td>Selects &lt;input&gt; elements with a value within a specified range</td>
+                  </tr>
+                  <tr>
+                    <td>:invalid</td>
+                    <td>input:invalid</td>
+                    <td>Selects all &lt;input&gt; elements with an invalid value</td>
+                  </tr>
+                  <tr>
+                    <td>:lang(<i>language</i>)</td>
+                    <td>p:lang(it)</td>
+                    <td>Selects every &lt;p&gt; element with a lang attribute value starting with "it"</td>
+                  </tr>
+                  <tr>
+                    <td>:last-child</td>
+                    <td>p:last-child</td>
+                    <td>Selects every &lt;p&gt; elements that is the last child of its parent</td>
+                  </tr>
+                  <tr>
+                    <td>:last-of-type</td>
+                    <td>p:last-of-type</td>
+                    <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+                  </tr>
+                  <tr>
+                    <td>:link</td>
+                    <td>a:link</td>
+                    <td>Selects all unvisited links</td>
+                  </tr>
+                  <tr>
+                    <td>:not(selector)</td>
+                    <td>:not(p)</td>
+                    <td>Selects every element that is not a &lt;p&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>:nth-child(n)</td>
+                    <td>p:nth-child(2)</td>
+                    <td>Selects every &lt;p&gt; element that is the second child of its parent</td>
+                  </tr>
+                  <tr>
+                    <td>:nth-last-child(n)</td>
+                    <td>p:nth-last-child(2)</td>
+                    <td>Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child</td>
+                  </tr>
+                  <tr>
+                    <td>:nth-last-of-type(n)</td>
+                    <td>p:nth-last-of-type(2)</td>
+                    <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from the last child</td>
+                  </tr>
+                  <tr>
+                    <td>:nth-of-type(n)</td>
+                    <td>p:nth-of-type(2)</td>
+                    <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+                  </tr>
+                  <tr>
+                    <td>:only-of-type</td>
+                    <td>p:only-of-type</td>
+                    <td>Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+                  </tr>
+                  <tr>
+                    <td>:only-child</td>
+                    <td>p:only-child</td>
+                    <td>Selects every &lt;p&gt; element that is the only child of its parent</td>
+                  </tr>
+                  <tr>
+                    <td>:optional</td>
+                    <td>input:optional</td>
+                    <td>Selects &lt;input&gt; elements with no "required" attribute</td>
+                  </tr>
+                  <tr>
+                    <td>:out-of-range</td>
+                    <td>input:out-of-range</td>
+                    <td>Selects &lt;input&gt; elements with a value outside a specified range</td>
+                  </tr>
+                  <tr>
+                    <td>:read-only</td>
+                    <td>input:read-only</td>
+                    <td>Selects &lt;input&gt; elements with a "readonly" attribute specified</td>
+                  </tr>
+                  <tr>
+                    <td>:read-write</td>
+                    <td>input:read-write</td>
+                    <td>Selects &lt;input&gt; elements with no "readonly" attribute</td>
+                  </tr>
+                  <tr>
+                    <td>:required</td>
+                    <td>input:required</td>
+                    <td>Selects &lt;input&gt; elements with a "required" attribute specified</td>
+                  </tr>
+                  <tr>
+                    <td>:root</td>
+                    <td>root</td>
+                    <td>Selects the document's root element</td>
+                  </tr>
+                  <tr>
+                    <td>:target</td>
+                    <td>#news:target</td>
+                    <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+                  </tr>
+                  <tr>
+                    <td>:valid</td>
+                    <td>input:valid</td>
+                    <td>Selects all &lt;input&gt; elements with a valid value</td>
+                  </tr>
+                  <tr>
+                    <td>:visited</td>
+                    <td>a:visited</td>
+                    <td>Selects all visited links</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Pseudo-elements</h2>
+        <ul>
+          <li>A CSS pseudo-element is used to style specified parts of an element.</li>
+          <li>
+            Syntax : The syntax of pseudo-elements:
+            <pre>
+              <code>
+  selector::pseudo-element {
+    property: value;
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp mt-3"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1::after {
+        content: ' after';
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+  </body>
+</html>
+              </xmp>
+            </div>
+          </li>
+          <li class="mt-5">
+            <h4> All CSS Pseudo Elements</h4>
+            <div class="table-responsive mt-3">
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr>
+                    <th style="width:20%">Selector</th>
+                    <th style="width:20%">Example</th>
+                    <th>Example description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>::after</td>
+                    <td>p::after</td>
+                    <td>Insert something after the content of each &lt;p&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>::before</td>
+                    <td>p::before</td>
+                    <td>Insert something before the content of each &lt;p&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>::first-letter</td>
+                    <td>p::first-letter</td>
+                    <td>Selects the first letter of each &lt;p&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>::first-line</td>
+                    <td>p::first-line</td>
+                    <td>Selects the first line of each &lt;p&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>::marker</td>
+                    <td>::marker</td>
+                    <td>Selects the markers of list items</td>
+                  </tr>
+                  <tr>
+                    <td>::selection</td>
+                    <td>p::selection</td>
+                    <td>Selects the portion of an element that is selected by a user</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Queries" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Media Queries</h2>
+        <ul>
+          <li>The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.</li>
+          <li>Examples: You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on.</li>
+          <li>Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.</li>
+          <li>
+            Media queries can be used to check many things, such as : 
+            <ul>
+              <li>width and height of the viewport</li>
+              <li>width and height of the device</li>
+              <li>orientation (is the tablet/phone in landscape or portrait mode?)</li>
+              <li>resolution</li>
+            </ul>
+          </li>
+          <li>Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones).</li>
+          <li>
+            <h4>Media Query Syntax</h4>
+            <pre>
+              <code>
+  @media not|only mediatype and (expressions) {
+    CSS-Code;
+  }
+              </code>
+            </pre>
+            <ul>
+              <li>The result of the query is true if the specified media type matches the type of device the document is being displayed on and all expressions in the media query are true. When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules.</li>
+              <li>Unless you use the not or only operators, the media type is optional and the all type will be implied.</li>
+            </ul>
+          </li>
+          <li>
+            <h4>CSS Media Types</h4>
+            <div class="table-responsive">
+              <table class="table table-bordered table-active">
+                <thead>
+                  <tr>
+                    <th style="width:20%">Value</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td>all</td>
+                    <td>Used for all media type devices</td>
+                  </tr>
+                  <tr>
+                    <td>print</td>
+                    <td>Used for printers</td>
+                  </tr>
+                    <tr>
+                    <td>screen</td>
+                    <td>Used for computer screens, tablets, smart-phones etc.</td>
+                    </tr>
+                  <tr>
+                    <td>speech</td>
+                    <td>Used for screenreaders that "reads" the page out loud</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <h4>Media Queries Examples</h4>
+            <pre>
+              <code>
+  @media screen and (min-width: 480px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
+  }
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </div>
+      <div class="section-title">
+        <h2>CSS Flexbox</h2>
+        <ul>
+          <li>
+            <h4>Before the Flexbox Layout module, there were four layout modes:</h4>
+            <ul>
+              <li>Block, for sections in a webpage</li>
+              <li>Inline, for text</li>
+              <li>Table, for two-dimensional table data</li>
+              <li>Positioned, for explicit position of an element</li>
+            </ul>
+            The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+          </li>
+          <li>
+            <b class="text-primary">EX :</b>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: DodgerBlue;
+      }
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>  
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>    
+    </div>
+    <p>Try resizing the browser window.</p>
+  </body>
+</html>                
+              </xmp>
+            </div>
+          </li>
+          <li class="mt-5">
+            <h4>CSS Flex Container</h4>
+            The flex container becomes flexible by setting the display property to flex <br>
+            <b class="text-primary">EX :</b>
+            <pre>
+              <code>
+  .flex-container {
+    display: flex;
+  }
+              </code>
+            </pre>
+            The flex container properties are: 
+            <ul class="row">
+              <li class="col-md-4"><code>flex-direction</code></li>
+              <li class="col-md-4"><code>flex-wrap</code></li>
+              <li class="col-md-4"><code>flex-flow</code></li>
+              <li class="col-md-4"><code>justify-content</code></li>
+              <li class="col-md-4"><code>align-items</code></li>
+              <li class="col-md-4"><code>align-content</code></li>
+            </ul>
+            <div class="table-responsive"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 20%;">Property</th>
+                  <th style="width: 55%;">Description</th>
+                  <th style="width: 25%;">Example</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>flex-direction</td>
+                    <td>
+                      The <code>flex-direction</code> property defines in which direction the container wants to stack the flex items.
+                      <ul>
+                        <li>The <code>column</code> value stacks the flex items vertically (from top to bottom).</li>
+                        <li>The <code>column-reverse</code> value stacks the flex items vertically (but from bottom to top).</li>
+                        <li>The <code>row</code> value stacks the flex items horizontally (from left to right).</li>
+                        <li>The <code>row-reverse</code> value stacks the flex items horizontally (but from right to left).</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>flex-wrap</td>
+                    <td>
+                      The <code>flex-wrap</code> property specifies whether the flex items should wrap or not.
+                      <ul>
+                        <li>The <code>wrap</code> value specifies that the flex items will wrap if necessary.</li>
+                        <li>The <code>nowrap</code> value specifies that the flex items will not wrap (this is default).</li>
+                        <li>The <code>wrap-reverse</code> value specifies that the flexible items will wrap if necessary, in reverse order.</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>flex-flow</td>
+                    <td>The <code>flex-flow</code> property is a shorthand property for setting both the <code>flex-direction</code> and <code>flex-wrap</code> properties.</td>                    
+                    <td>
+                      <pre>
+                        <code>
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>justify-content </td>
+                    <td>
+                      The <code>justify-content</code> property is used to align the flex items.
+                      <ul>
+                        <li>The <code>flex-start</code> value aligns the flex items at the beginning of the container (this is default).</li>
+                        <li>The <code>flex-end</code> value aligns the flex items at the end of the container.</li>
+                        <li>The <code>space-around </code> value displays the flex items with space before, between, and after the lines.</li>
+                        <li>The <code>space-between</code> value displays the flex items with space between the lines.</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>align-items</td>
+                    <td>
+                      The align-items property is used to align the flex items.
+                      <ul>
+                        <li>The <code>center</code> value aligns the flex items in the middle of the container.</li>
+                        <li>The <code>flex-start</code> value aligns the flex items at the top of the container.</li>
+                        <li>The <code>flex-end</code> value aligns the flex items at the bottom of the container.</li>
+                        <li>The <code>stretch</code> value stretches the flex items to fill the container (this is default).</li>
+                        <li>The <code>baseline</code> value aligns the flex items such as their baselines aligns.</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  .flex-container {
+    display: flex;
+    height: 200px;
+    align-items: center;
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>align-content</td>
+                    <td>
+                      The <code>align-content</code> property is used to align the flex lines.
+                      <ul>
+                        <li>The <code>space-between</code> value displays the flex lines with equal space between them.</li>
+                        <li>The <code>space-around</code> value displays the flex lines with space before, between, and after them.</li>
+                        <li>The <code>stretch</code> value stretches the flex lines to take up the remaining space (this is default).</li>
+                        <li>The <code>center</code> value displays display the flex lines in the middle of the container.</li>
+                        <li>The <code>flex-start</code> value displays the flex lines at the start of the container.</li>
+                        <li>The <code>flex-end</code> value displays the flex lines at the end of the container.</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  .flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li>
+            <h4>CSS Flex Items</h4>
+            The direct child elements of a flex container automatically becomes flexible (flex) items. <br>
+            <b class="text-primary">EX:</b>
+            <div class="table-responsive xmp"> 
+              <xmp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: #f1f1f1;
+      }
+      .flex-container > div {
+        background-color: DodgerBlue;
+        color: white;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div> 
+      <div>4</div>
+    </div>
+  </body>
+</html>
+              </xmp>
+            </div> <br>
+            The flex item properties are:
+            <ul class="row">
+              <li class="col-md-4"><code>order</code></li>
+              <li class="col-md-4"><code>flex-grow</code></li>
+              <li class="col-md-4"><code>flex-shrink</code></li>
+              <li class="col-md-4"><code>flex-basis</code></li>
+              <li class="col-md-4"><code>flex</code></li>
+              <li class="col-md-4"><code>align-self</code></li>
+            </ul>
+            The following table lists all the CSS Flexbox Items properties:
+            <div class="table-responsive mt-3"> 
+              <table class="table table-bordered table-active">
+                <thead>
+                  <th style="width: 20%;">Property</th>
+                  <th style="width: 50%;">Description</th>
+                  <th style="width: 30%;">Example</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>align-self</td>
+                    <td>
+                      Specifies the alignment for a flex item (overrides the flex container's align-items property).
+                      <br> It has three values (center, flex-start, flex-end).
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  div{
+    align-self: flex-end
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>flex</td>
+                    <td>A shorthand property for the <code>flex-grow</code>, <code>flex-shrink</code>, and the <code>flex-basis</code> 
+                    properties.</td>
+                    <td>
+                      <pre>
+                        <code>
+  div{
+    flex: 0 0 200px
+  }
+                        </code>
+                      </pre>
+                      <p>Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>flex-basis</td>
+                    <td>Specifies the initial length of a flex item.</td>
+                    <td>
+                      <pre>
+                        <code>
+  div{
+    flex-basis: 200px
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>flex-grow</td>
+                    <td>Specifies how much a flex item will grow relative to the rest of the flex items inside the same container. <br>
+                      The value must be a number, default value is 0.
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  div{
+    flex-grow: 1
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>flex-shrink</td>
+                    <td>
+                      Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container. <br>
+                      The value must be a number, default value is 1.
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  div{
+    flex-shrink: 0
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>order</td>
+                    <td>
+                      Specifies the order of the flex items inside the same container. <br>
+                      The order value must be a number, default value is 0.
+                    </td>
+                    <td>
+                      <pre>
+                        <code>
+  div{
+    order: 3
+  }
+                        </code>
+                      </pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section id="Links" class="p-4 p-md-5">
+      <div class="section-title">
+        <h2>CSS Links</h2>
+        <ul>
+          <li>Links can be styled with any CSS property (e.g. color, font-family, background, etc.).</li>
+          <li>
+            The four links states are:
+            <ul>
+              <li><code>a:link</code> - a normal, unvisited link</li>
+              <li><code>a:visited</code> - a link the user has visited</li>
+              <li><code>a:hover</code> - a link when the user mouses over it</li>
+              <li><code>a:active</code> - a link the moment it is clicked</li>
+            </ul>
+          </li>
+          <li>
+            <b class="text-primary">Examples:</b>
+            <pre>
+              <code>
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+    background-color: cyan;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #0000ff;
+    background-color: cyan;
+    cursor: pointer
+  }
+
+  a:active {
+    text-decoration: underline;
+    background-color: cyan;
+    cursor: progress
+  }
+              </code>
+            </pre>
+          </li>
+          <li>
+            <h4>Cursor Values : </h4>
+            <ul class="row">
+              <li class="col-md-4"><code>cursor: auto</code></li>
+              <li class="col-md-4"><code>cursor: crosshair</code></li>
+              <li class="col-md-4"><code>cursor: default</code></li>
+              <li class="col-md-4"><code>cursor: e-resize</code></li>
+              <li class="col-md-4"><code>cursor: help</code></li>
+              <li class="col-md-4"><code>cursor: move</code></li>
+              <li class="col-md-4"><code>cursor: n-resize</code></li>
+              <li class="col-md-4"><code>cursor: ne-resize</code></li>
+              <li class="col-md-4"><code>cursor: nw-resize</code></li>
+              <li class="col-md-4"><code>cursor: pointer</code></li>
+              <li class="col-md-4"><code>cursor: progress</code></li>
+              <li class="col-md-4"><code>cursor: s-resize</code></li>
+              <li class="col-md-4"><code>cursor: se-resize</code></li>
+              <li class="col-md-4"><code>cursor: sw-resize</code></li>
+              <li class="col-md-4"><code>cursor: text</code></li>
+              <li class="col-md-4"><code>cursor: w-resize</code></li>
+              <li class="col-md-4"><code>cursor: wait</code></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Master Code</span></strong> 
+      </div>
+      <div class="credits">
+        <strong style="color:red;"> &hearts; </strong> Designed by <a href="https://www.facebook.com/MasterC0de">Master Code</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <a href="#" class="back-to-top"><i class="bx bx-chevrons-up"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
