@@ -1,0 +1,267 @@
+/*
+transition => الانتقال من حاله لحالة
+بتحكم في كيفيه الانتقال (المدة والديلاى وطريقة الانتقال نفسها)
+box-sizing =>   content-box الطول والعرض هم بتوع العنصر بس 
+                border-box المارجن والبادنج بقوا من العنصر 
+*/
+/*start global settings*/
+body{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+*{font-family: 'Noto Kufi Arabic', sans-serif;}
+a{
+    text-decoration: none;
+    color: #701919;
+}
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+}
+.clear{clear: both;}
+.title{
+    color: #701919;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 120px;
+}
+.title b{
+    border-bottom: 4px solid #c6a3a3;
+    padding-bottom: 1px;
+}
+.mainButton {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    border: none;
+    color: #fff;
+    padding: 20px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    background: linear-gradient(141deg, #c6a3a3 , #701919 );
+}
+.mainButton:hover{
+    background: linear-gradient(141deg, #701919, #c6a3a3  );
+}
+.col-6{
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+}
+.col-4{
+    width: 33%;
+    float: right;
+    box-sizing: border-box;
+}
+.col-8{
+    width: 67%;
+    float: right;
+    box-sizing: border-box;
+}
+/*end global settings*/
+/*start header*/
+header{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ddd;
+    z-index: 2;
+}
+header .logo {
+    width: 20%;
+    float: right;
+    text-align: center;
+    padding: 4px 0 0;
+}
+header .logo img{
+    width: 120px;
+    height: 55px;
+}
+header nav{
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+}
+header ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+header li{
+    display: inline-block;
+    padding: 0 35px 10px;
+    font-size: 21px;
+    font-weight: bold;
+    transition-duration: 0.5s; /*الانتقال من حالة لحالة هياخد وقت اد اية*/
+    transition-delay: 0.3s; /*استني كام ثانية عشان انتقل من حالة لحالة*/
+    transition-property: border-bottom,opacity;
+    opacity: 0.6;
+
+}
+header li.active {
+    border-bottom: 3px solid #701919;
+    opacity: 1;
+}
+header li:hover {
+    border-bottom: 3px solid #701919;
+    opacity: 1;
+}
+/*end header*/
+/*Start Home section*/
+#home {
+    height: 90vh;
+    background-image: url('../images/main.gif'),url('../images/main5.png');
+    background-size: 38%, contain;
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+    position: relative;
+}
+#home .makeCenter{
+    width: 29%;
+    padding: 75px 30px;
+    text-align: center;
+    color: #701919;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+#home .makeCenter h1 {
+    margin: 0;
+    font-size: 60px;
+}
+/*end Home section*/
+/*start about section*/
+#about{
+    padding: 0 80px;
+}
+#about .row{
+    color: #fff;
+    background-color: #701919;
+}
+#about .col-4 ul{
+    padding: 20px 0 0;
+    list-style: none;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+#about .col-4 li{
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 5px;
+}
+#about .col-4 li.active{background-color: #933333;}
+#about .col-4 li:hover{background-color: #933333;transition: 0.9s ease-in-out;}
+#about .row .mainImg{
+    margin-bottom: -9px;
+}
+#about .col-8{
+    position: relative;
+}
+#about .col-8 ul{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    padding: 0;
+}
+#about .col-8 ul li {
+    display: inline-block;
+    background-color: #701919;
+    padding: 2px 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+#about .col-8 h3{
+    position: absolute;
+    top: 29%;
+    right: 27%;
+    background-color: rgb(112 25 25 / 50%);
+    padding: 40px 80px;
+    font-size: 35px;
+    font-weight: bold;
+}
+/*end about section*/
+/*start services section*/
+#services .col-4{
+    color: #701919;
+    margin-bottom: 22px;
+    padding: 20px;
+    text-align: center;
+}
+#services .mainContent {
+    box-shadow: 0 2px 2px rgb(204 197 185 / 50%);
+    background-color: rgb(245 245 245);
+    padding-bottom: 25px;
+}
+#services .col-4 img{
+    width: 100%;
+    height: 300px;
+}
+#services .col-4 h3{
+    font-weight: bold;
+    font-size: 26px;
+    margin: 5px 0;
+}
+/*end services section*/
+/*start contact section*/
+#contact .contact-body {
+    background-color: rgb(245 245 245);
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+#contact .col-6 input, #contact .col-6 textarea{
+    width: 100%;
+    padding: 0;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin-bottom: 15px;
+}
+#contact .col-6 input
+{
+    height: 45px;
+}
+#contact .mainButton{
+    width: 43%;
+    padding: 9px 25px;
+}
+/*end contact section*/
+/*start footer section*/
+footer{
+    text-align: center;
+    background: linear-gradient(179deg, #c6a3a3 , #701919 );
+    padding: 30px 0 0;
+    color: #fff;
+}
+footer h2{
+    font-size: 45px;
+    margin-top: 0;
+}
+footer .copyright{
+    font-size: 24px;
+    direction: ltr;
+}
+footer .copyright a{color: #fff;}
+footer .copyright pre{margin: 0; text-align: right;}
+/*end footer section*/
+#backToTop{
+    position: fixed;
+    bottom: 16px;
+    color: #fff;
+    right: 24px;
+    font-size: 24px;
+    background-color: #701919;
+    padding: 0px 19px;
+    font-weight: bold;
+    box-shadow: 0 0 2px rgb(32, 32, 32);
+    border-radius: 50%;
+}
